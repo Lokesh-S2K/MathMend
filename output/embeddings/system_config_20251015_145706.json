@@ -1,0 +1,16 @@
+{
+  "timestamp": "20251015_145706",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "faiss_index_type": "Flat",
+  "vector_dimensions": {
+    "structure": 256,
+    "text": 384,
+    "hybrid": 640
+  },
+  "file_paths": {
+    "faiss_index": "output/embeddings/faiss_index_20251015_145706.bin",
+    "id_mapping": "output/embeddings/faiss_id_map_20251015_145706.json",
+    "embedding_records": "output/embeddings/embedding_records_20251015_145706.jsonl",
+    "pipeline_stats": "output/embeddings/pipeline_stats_20251015_145706.json"
+  }
+}

@@ -1,0 +1,1302 @@
+{
+  "0": {
+    "id": "1",
+    "metadata": {
+      "problem_text": "A car covers 150 km in 3 hours. What is its speed?",
+      "clean_text": "A car covers 150 km in 3 hours. What is its speed?",
+      "symbolic_fingerprint": "v1*v2**2*v3*v4 - 50",
+      "problem_type": "physics",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['speed = 150 / 3']"
+    }
+  },
+  "1": {
+    "id": "2",
+    "metadata": {
+      "problem_text": "The sum of two numbers is 40 and their difference is 10. Find the numbers.",
+      "clean_text": "The sum of two numbers is 40 and their difference is 10. Find the numbers.",
+      "symbolic_fingerprint": "v1 + v2 - 40; v1 - v2 - 10",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x + y = 40', 'x - y = 10']"
+    }
+  },
+  "2": {
+    "id": "3",
+    "metadata": {
+      "problem_text": "If a book costs $12 and you buy 5 books, how much do you spend?",
+      "clean_text": "If a book costs $12 and you buy 5 books, how much do you spend?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2 - 60",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['total = 12 * 5']"
+    }
+  },
+  "3": {
+    "id": "4",
+    "metadata": {
+      "problem_text": "A rectangle has a length of 10 cm and width of 6 cm. What is its area?",
+      "clean_text": "A rectangle has a length of 10 cm and width of 6 cm. What is its area?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 10",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 10']"
+    }
+  },
+  "4": {
+    "id": "5",
+    "metadata": {
+      "problem_text": "If 40% of a number is 80, what is the number?",
+      "clean_text": "If 40% of a number is 80, what is the number?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 32",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 80 * 40/100']"
+    }
+  },
+  "5": {
+    "id": "6",
+    "metadata": {
+      "problem_text": "A train travels at 60 km/h. How far does it travel in 2.5 hours?",
+      "clean_text": "A train travels at 60 km / h. How far does it travel in 2.5 hours?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2*v5*v6*v7 - 2",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 7,
+      "extracted_equations": "['solution = 2']"
+    }
+  },
+  "6": {
+    "id": "7",
+    "metadata": {
+      "problem_text": "The perimeter of a square is 36 cm. What is the length of each side?",
+      "clean_text": "The perimeter of a square is 36 cm. What is the length of each side?",
+      "symbolic_fingerprint": "v1**2*v3*v5 - 81; v2*v3*v4*v6 - 9",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 6,
+      "extracted_equations": "['side = 36 / 4', 'area = (36/4)^2']"
+    }
+  },
+  "7": {
+    "id": "8",
+    "metadata": {
+      "problem_text": "If 3 pens cost $6, how much do 8 pens cost?",
+      "clean_text": "If 3 pens cost $6, how much do 8 pens cost?",
+      "symbolic_fingerprint": "v1*v3*v4*v5**2 - 48; v2 - 2",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['total = 6 * 8', 'cost_per_item = 6 / 3']"
+    }
+  },
+  "8": {
+    "id": "9",
+    "metadata": {
+      "problem_text": "The sum of three consecutive numbers is 51. Find the numbers.",
+      "clean_text": "The sum of three consecutive numbers is 51. Find the numbers.",
+      "symbolic_fingerprint": "v1 + v2 - 51",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Easy",
+      "equation_count": 1,
+      "variable_count": 2,
+      "extracted_equations": "['x + y = 51']"
+    }
+  },
+  "9": {
+    "id": "10",
+    "metadata": {
+      "problem_text": "A store offers a 25% discount on a $80 item. What is the sale price?",
+      "clean_text": "A store offers a 25% discount on a $80 item. What is the sale price?",
+      "symbolic_fingerprint": "v1*v2*v3*v5 - 20; v4 - 60",
+      "problem_type": "finance",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['sale_price = 80 * (1 - 25/100)', 'part = 80 * 25/100']"
+    }
+  },
+  "10": {
+    "id": "11",
+    "metadata": {
+      "problem_text": "If the ratio of boys to girls is 3:2 and there are 15 boys, how many girls are there?",
+      "clean_text": "If the ratio of boys to girls is 3:2 and there are 15 boys, how many girls are there?",
+      "symbolic_fingerprint": "v1 + v2 - 15; v1/3 - v2/2",
+      "problem_type": "algebra",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/3 = y/2', 'x + y = 15']"
+    }
+  },
+  "11": {
+    "id": "12",
+    "metadata": {
+      "problem_text": "A circle has a radius of 5 cm. What is its circumference? (Use \u03c0 \u2248 3.14)",
+      "clean_text": "A circle has a radius of 5 cm. What is its circumference? ( Use \u03c0 \u2248 3.14 )",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 3",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 3']"
+    }
+  },
+  "12": {
+    "id": "13",
+    "metadata": {
+      "problem_text": "If a worker earns $15 per hour and works 40 hours a week, what is the weekly earnings?",
+      "clean_text": "If a worker earns $15 per hour and works 40 hours a week, what is the weekly earnings?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 15",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 15']"
+    }
+  },
+  "13": {
+    "id": "14",
+    "metadata": {
+      "problem_text": "The area of a triangle is 30 cm\u00b2 and its base is 10 cm. What is the height?",
+      "clean_text": "The area of a triangle is 30 cm\u00b2 and its base is 10 cm. What is the height?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 30",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 30']"
+    }
+  },
+  "14": {
+    "id": "15",
+    "metadata": {
+      "problem_text": "If you have $500 and spend 30% of it, how much is left?",
+      "clean_text": "If you have $500 and spend 30% of it, how much is left?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 500",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 500']"
+    }
+  },
+  "15": {
+    "id": "16",
+    "metadata": {
+      "problem_text": "A recipe requires 2 cups of flour for 24 cookies. How much flour is needed for 36 cookies?",
+      "clean_text": "A recipe requires 2 cups of flour for 24 cookies. How much flour is needed for 36 cookies?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2*v5*v6*v7 - 36",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 7,
+      "extracted_equations": "['solution = 36']"
+    }
+  },
+  "16": {
+    "id": "17",
+    "metadata": {
+      "problem_text": "If the average of 4 numbers is 25, what is their sum?",
+      "clean_text": "If the average of 4 numbers is 25, what is their sum?",
+      "symbolic_fingerprint": NaN,
+      "problem_type": "arithmetic",
+      "difficulty_level": "Easy",
+      "equation_count": 0,
+      "variable_count": 0,
+      "extracted_equations": "['sum = 4 * 25', 'sum = 4 * count']"
+    }
+  },
+  "17": {
+    "id": "18",
+    "metadata": {
+      "problem_text": "A tank holds 500 liters and is 60% full. How many liters are in the tank?",
+      "clean_text": "A tank holds 500 liters and is 60% full. How many liters are in the tank?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 500",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 500']"
+    }
+  },
+  "18": {
+    "id": "19",
+    "metadata": {
+      "problem_text": "If x + 5 = 20, what is the value of x?",
+      "clean_text": "If x + 5 = 20, what is the value of x?",
+      "symbolic_fingerprint": "-15",
+      "problem_type": "algebra",
+      "difficulty_level": "Easy",
+      "equation_count": 1,
+      "variable_count": 0,
+      "extracted_equations": "['5 = 20']"
+    }
+  },
+  "19": {
+    "id": "20",
+    "metadata": {
+      "problem_text": "The cost of 6 notebooks is $18. What is the cost of 10 notebooks?",
+      "clean_text": "The cost of 6 notebooks is $18. What is the cost of 10 notebooks?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 10",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 10']"
+    }
+  },
+  "20": {
+    "id": "21",
+    "metadata": {
+      "problem_text": "If a car depreciates by 15% each year and costs $20,000 now, what will it cost after 1 year?",
+      "clean_text": "If a car depreciates by 15% each year and costs $20,000 now, what will it cost after 1 year?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 3",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 20 * 15/100']"
+    }
+  },
+  "21": {
+    "id": "22",
+    "metadata": {
+      "problem_text": "The sum of angles in a triangle is 180\u00b0. If two angles are 50\u00b0 and 70\u00b0, what is the third angle?",
+      "clean_text": "The sum of angles in a triangle is 180\u00b0. If two angles are 50\u00b0 and 70\u00b0, what is the third angle?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 180",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 180']"
+    }
+  },
+  "22": {
+    "id": "23",
+    "metadata": {
+      "problem_text": "If you invest $1,000 at 5% annual interest, how much interest will you earn in 1 year?",
+      "clean_text": "If you invest $1,000 at 5% annual interest, how much interest will you earn in 1 year?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 1/20",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 1 * 5/100']"
+    }
+  },
+  "23": {
+    "id": "24",
+    "metadata": {
+      "problem_text": "A photo is 8 inches by 6 inches. If you enlarge it by a scale factor of 1.5, what are the new dimensions?",
+      "clean_text": "A photo is 8 inches by 6 inches. If you enlarge it by a scale factor of 1.5, what are the new dimensions?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 8",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 8']"
+    }
+  },
+  "24": {
+    "id": "25",
+    "metadata": {
+      "problem_text": "If the population of a city increases by 20% and was 100,000, what is the new population?",
+      "clean_text": "If the population of a city increases by 20% and was 100,000, what is the new population?",
+      "symbolic_fingerprint": "v1*v3*v4*v5 - 20; v2 - 120",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['new_value = 100 * (1 + 20/100)', 'part = 100 * 20/100']"
+    }
+  },
+  "25": {
+    "id": "26",
+    "metadata": {
+      "problem_text": "A student scored 85, 90, and 88 on three tests. What is the average score?",
+      "clean_text": "A student scored 85, 90, and 88 on three tests. What is the average score?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 85",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 85']"
+    }
+  },
+  "26": {
+    "id": "27",
+    "metadata": {
+      "problem_text": "If a recipe serves 4 people and uses 2 eggs, how many eggs are needed to serve 10 people?",
+      "clean_text": "If a recipe serves 4 people and uses 2 eggs, how many eggs are needed to serve 10 people?",
+      "symbolic_fingerprint": "v1**2*v2**3*v5 - 5; v1*v2**2*v3*v6*v7**2*v8 - 5; v4 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 3,
+      "variable_count": 8,
+      "extracted_equations": "['ingredient_needed = 2 * 10 / 4', 'needed = 2 * 10 / 4', 'required = 2 * 10 / 4']"
+    }
+  },
+  "27": {
+    "id": "28",
+    "metadata": {
+      "problem_text": "The distance between two cities is 300 km. If a car travels at 75 km/h, how long does it take?",
+      "clean_text": "The distance between two cities is 300 km. If a car travels at 75 km / h, how long does it take?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 300",
+      "problem_type": "physics",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 300']"
+    }
+  },
+  "28": {
+    "id": "29",
+    "metadata": {
+      "problem_text": "If the probability of an event is 0.25, what is the probability it does not occur?",
+      "clean_text": "If the probability of an event is 0.25, what is the probability it does not occur?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 0']"
+    }
+  },
+  "29": {
+    "id": "30",
+    "metadata": {
+      "problem_text": "A store buys items for $50 and sells them for $80. What is the profit margin percentage?",
+      "clean_text": "A store buys items for $50 and sells them for $80. What is the profit margin percentage?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 50",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 50']"
+    }
+  },
+  "30": {
+    "id": "31",
+    "metadata": {
+      "problem_text": "If 15% of a number is 45, what is 30% of that number?",
+      "clean_text": "If 15% of a number is 45, what is 30% of that number?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 27/4",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 45 * 15/100']"
+    }
+  },
+  "31": {
+    "id": "32",
+    "metadata": {
+      "problem_text": "A rectangular garden is 20 meters long and 15 meters wide. What is its perimeter?",
+      "clean_text": "A rectangular garden is 20 meters long and 15 meters wide. What is its perimeter?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 20",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 20']"
+    }
+  },
+  "32": {
+    "id": "33",
+    "metadata": {
+      "problem_text": "If a subscription costs $10 per month, how much does it cost for 2 years?",
+      "clean_text": "If a subscription costs $10 per month, how much does it cost for 2 years?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2 - 240",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['total_cost = $10 * 12 * 2', 'total = 10 * 12 * 2']"
+    }
+  },
+  "33": {
+    "id": "34",
+    "metadata": {
+      "problem_text": "The area of a square is 64 cm\u00b2. What is its perimeter?",
+      "clean_text": "The area of a square is 64 cm\u00b2. What is its perimeter?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 64",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 64']"
+    }
+  },
+  "34": {
+    "id": "35",
+    "metadata": {
+      "problem_text": "If you save $50 per week, how much will you save in 1 year?",
+      "clean_text": "If you save $50 per week, how much will you save in 1 year?",
+      "symbolic_fingerprint": "v1**2*v2*v3**2*v4 - 2600",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['total_savings = $50 * 52 * 1', 'annual = 50 * 52']"
+    }
+  },
+  "35": {
+    "id": "36",
+    "metadata": {
+      "problem_text": "A ball is dropped from 100 meters. If it bounces to 80% of its previous height, how high is the first bounce?",
+      "clean_text": "A ball is dropped from 100 meters. If it bounces to 80% of its previous height, how high is the first bounce?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 100",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 100']"
+    }
+  },
+  "36": {
+    "id": "37",
+    "metadata": {
+      "problem_text": "If the tax rate is 8% and an item costs $50, what is the total cost including tax?",
+      "clean_text": "If the tax rate is 8% and an item costs $50, what is the total cost including tax?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 4",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 50 * 8/100']"
+    }
+  },
+  "37": {
+    "id": "38",
+    "metadata": {
+      "problem_text": "A class has 30 students. If 20% are absent, how many are present?",
+      "clean_text": "A class has 30 students. If 20% are absent, how many are present?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 30",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 30']"
+    }
+  },
+  "38": {
+    "id": "39",
+    "metadata": {
+      "problem_text": "If 2x + 3 = 13, what is the value of x?",
+      "clean_text": "If 2x + 3 = 13, what is the value of x?",
+      "symbolic_fingerprint": "-10",
+      "problem_type": "algebra",
+      "difficulty_level": "Easy",
+      "equation_count": 1,
+      "variable_count": 0,
+      "extracted_equations": "['3 = 13']"
+    }
+  },
+  "39": {
+    "id": "40",
+    "metadata": {
+      "problem_text": "The ratio of apples to oranges in a basket is 5:3. If there are 15 apples, how many oranges are there?",
+      "clean_text": "The ratio of apples to oranges in a basket is 5:3. If there are 15 apples, how many oranges are there?",
+      "symbolic_fingerprint": "v1 + v2 - 15; v1/5 - v2/3",
+      "problem_type": "algebra",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/5 = y/3', 'x + y = 15']"
+    }
+  },
+  "40": {
+    "id": "41",
+    "metadata": {
+      "problem_text": "A book is on sale for 35% off. If the original price is $40, what is the sale price?",
+      "clean_text": "A book is on sale for 35% off. If the original price is $40, what is the sale price?",
+      "symbolic_fingerprint": "v1*v2*v3*v5 - 14; v4 - 26",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['sale_price = 40 * (1 - 35/100)', 'part = 40 * 35/100']"
+    }
+  },
+  "41": {
+    "id": "42",
+    "metadata": {
+      "problem_text": "The volume of a rectangular prism is 120 cm\u00b3. If the length is 10 cm and width is 4 cm, what is the height?",
+      "clean_text": "The volume of a rectangular prism is 120 cm\u00b3. If the length is 10 cm and width is 4 cm, what is the height?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 120",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 120']"
+    }
+  },
+  "42": {
+    "id": "43",
+    "metadata": {
+      "problem_text": "If a bicycle costs $300 and you pay $75 upfront, how much is left to pay?",
+      "clean_text": "If a bicycle costs $300 and you pay $75 upfront, how much is left to pay?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 300",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 300']"
+    }
+  },
+  "43": {
+    "id": "44",
+    "metadata": {
+      "problem_text": "The temperature increased by 8\u00b0C to reach 25\u00b0C. What was the original temperature?",
+      "clean_text": "The temperature increased by 8\u00b0C to reach 25\u00b0C. What was the original temperature?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 8",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 8']"
+    }
+  },
+  "44": {
+    "id": "45",
+    "metadata": {
+      "problem_text": "If 60% of students pass a test and there are 150 students, how many fail?",
+      "clean_text": "If 60% of students pass a test and there are 150 students, how many fail?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 90",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 150 * 60/100']"
+    }
+  },
+  "45": {
+    "id": "46",
+    "metadata": {
+      "problem_text": "A runner completes 5 km in 25 minutes. What is their speed in km/h?",
+      "clean_text": "A runner completes 5 km in 25 minutes. What is their speed in km / h?",
+      "symbolic_fingerprint": "v1*v2**2*v3*v4 - 12",
+      "problem_type": "physics",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['speed = (5 / 25) * 60']"
+    }
+  },
+  "46": {
+    "id": "47",
+    "metadata": {
+      "problem_text": "If a movie ticket costs $12 and you buy one for yourself and two for friends, how much do you spend?",
+      "clean_text": "If a movie ticket costs $12 and you buy one for yourself and two for friends, how much do you spend?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 12",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 12']"
+    }
+  },
+  "47": {
+    "id": "48",
+    "metadata": {
+      "problem_text": "A cube has sides of 5 cm. What is its volume?",
+      "clean_text": "A cube has sides of 5 cm. What is its volume?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "48": {
+    "id": "49",
+    "metadata": {
+      "problem_text": "If the ratio of cats to dogs is 4:7 and there are 28 dogs, how many cats are there?",
+      "clean_text": "If the ratio of cats to dogs is 4:7 and there are 28 dogs, how many cats are there?",
+      "symbolic_fingerprint": "v1 + v2 - 28; v1/4 - v2/7",
+      "problem_type": "algebra",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/4 = y/7', 'x + y = 28']"
+    }
+  },
+  "49": {
+    "id": "50",
+    "metadata": {
+      "problem_text": "A number is increased by 25% to become 100. What was the original number?",
+      "clean_text": "A number is increased by 25% to become 100. What was the original number?",
+      "symbolic_fingerprint": "v1*v3*v4*v5 - 25; v2 - 125",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['new_value = 100 * (1 + 25/100)', 'part = 100 * 25/100']"
+    }
+  },
+  "50": {
+    "id": "51",
+    "metadata": {
+      "problem_text": "If you divide 144 by 12, what is the quotient?",
+      "clean_text": "If you divide 144 by 12, what is the quotient?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 144",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 144']"
+    }
+  },
+  "51": {
+    "id": "52",
+    "metadata": {
+      "problem_text": "A store offers buy-one-get-one-free on items priced at $20. If you take advantage of this offer twice, how much do you spend?",
+      "clean_text": "A store offers buy - one - get - one - free on items priced at $20. If you take advantage of this offer twice, how much do you spend?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 20",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 20']"
+    }
+  },
+  "52": {
+    "id": "53",
+    "metadata": {
+      "problem_text": "The perimeter of a rectangle is 50 cm. If the length is 15 cm, what is the width?",
+      "clean_text": "The perimeter of a rectangle is 50 cm. If the length is 15 cm, what is the width?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 50",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 50']"
+    }
+  },
+  "53": {
+    "id": "54",
+    "metadata": {
+      "problem_text": "If a phone costs $600 and you get a 12% discount, how much do you pay?",
+      "clean_text": "If a phone costs $600 and you get a 12% discount, how much do you pay?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 600",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 600']"
+    }
+  },
+  "54": {
+    "id": "55",
+    "metadata": {
+      "problem_text": "A bucket contains 20 liters of water. If 25% leaks out, how much water remains?",
+      "clean_text": "A bucket contains 20 liters of water. If 25% leaks out, how much water remains?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 20",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 20']"
+    }
+  },
+  "55": {
+    "id": "56",
+    "metadata": {
+      "problem_text": "If you read 30 pages of a 300-page book, what percentage have you read?",
+      "clean_text": "If you read 30 pages of a 300 - page book, what percentage have you read?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 30",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 30']"
+    }
+  },
+  "56": {
+    "id": "57",
+    "metadata": {
+      "problem_text": "A parking lot charges $5 for the first hour and $2 for each additional hour. If you park for 4 hours, how much do you pay?",
+      "clean_text": "A parking lot charges $5 for the first hour and $2 for each additional hour. If you park for 4 hours, how much do you pay?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "57": {
+    "id": "58",
+    "metadata": {
+      "problem_text": "If the mean of 5 numbers is 20, and 4 of them are 15, 20, 25, 30, what is the fifth number?",
+      "clean_text": "If the mean of 5 numbers is 20, and 4 of them are 15, 20, 25, 30, what is the fifth number?",
+      "symbolic_fingerprint": NaN,
+      "problem_type": "statistics",
+      "difficulty_level": "Easy",
+      "equation_count": 0,
+      "variable_count": 0,
+      "extracted_equations": "['sum = 5 * 20']"
+    }
+  },
+  "58": {
+    "id": "59",
+    "metadata": {
+      "problem_text": "A plant grows 2 cm per week. How tall will it be after 10 weeks if it started at 5 cm?",
+      "clean_text": "A plant grows 2 cm per week. How tall will it be after 10 weeks if it started at 5 cm?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2*v5*v6*v7 - 10",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 7,
+      "extracted_equations": "['solution = 10']"
+    }
+  },
+  "59": {
+    "id": "60",
+    "metadata": {
+      "problem_text": "If the area of a circle is 78.5 cm\u00b2 (\u03c0 \u2248 3.14), what is its radius?",
+      "clean_text": "If the area of a circle is 78.5 cm\u00b2 ( \u03c0 \u2248 3.14 ) , what is its radius?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 78",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 78']"
+    }
+  },
+  "60": {
+    "id": "61",
+    "metadata": {
+      "problem_text": "A company gives a 10% bonus on salaries. If an employee earns $50,000, what is the new salary?",
+      "clean_text": "A company gives a 10% bonus on salaries. If an employee earns $50,000, what is the new salary?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 50 * 10/100']"
+    }
+  },
+  "61": {
+    "id": "62",
+    "metadata": {
+      "problem_text": "If a triangle has sides 3, 4, and 5, is it a right triangle? (Use Pythagorean theorem)",
+      "clean_text": "If a triangle has sides 3, 4, and 5, is it a right triangle? ( Use Pythagorean theorem )",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 3",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 3']"
+    }
+  },
+  "62": {
+    "id": "63",
+    "metadata": {
+      "problem_text": "A recipe calls for 1.5 cups of sugar. If you want to make half the recipe, how much sugar do you need?",
+      "clean_text": "A recipe calls for 1.5 cups of sugar. If you want to make half the recipe, how much sugar do you need?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 1",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 1']"
+    }
+  },
+  "63": {
+    "id": "64",
+    "metadata": {
+      "problem_text": "If the population doubles every 10 years and is currently 1,000, what will it be in 30 years?",
+      "clean_text": "If the population doubles every 10 years and is currently 1,000, what will it be in 30 years?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 30",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 30']"
+    }
+  },
+  "64": {
+    "id": "65",
+    "metadata": {
+      "problem_text": "A student needs 70% to pass. If the test has 50 questions and each is worth 2 points, what is the passing score?",
+      "clean_text": "A student needs 70% to pass. If the test has 50 questions and each is worth 2 points, what is the passing score?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 35",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 50 * 70/100']"
+    }
+  },
+  "65": {
+    "id": "66",
+    "metadata": {
+      "problem_text": "If a house is valued at $250,000 and increases by 5% per year, what will it be worth after 1 year?",
+      "clean_text": "If a house is valued at $250,000 and increases by 5% per year, what will it be worth after 1 year?",
+      "symbolic_fingerprint": "v1*v3*v4*v5 - 1/20; v2 - 21/20",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['new_value = 1 * (1 + 5/100)', 'part = 1 * 5/100']"
+    }
+  },
+  "66": {
+    "id": "67",
+    "metadata": {
+      "problem_text": "A factory produces 500 items per day. How many items are produced in 30 days?",
+      "clean_text": "A factory produces 500 items per day. How many items are produced in 30 days?",
+      "symbolic_fingerprint": "v1*v2*v3*v4**2*v5*v6*v7 - 30",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 7,
+      "extracted_equations": "['solution = 30']"
+    }
+  },
+  "67": {
+    "id": "68",
+    "metadata": {
+      "problem_text": "If you mix 3 cups of juice with 2 cups of water, what is the ratio of juice to total liquid?",
+      "clean_text": "If you mix 3 cups of juice with 2 cups of water, what is the ratio of juice to total liquid?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 3",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 3']"
+    }
+  },
+  "68": {
+    "id": "69",
+    "metadata": {
+      "problem_text": "A loan of $5,000 has a 6% annual interest rate. How much interest will you pay in 1 year?",
+      "clean_text": "A loan of $5,000 has a 6% annual interest rate. How much interest will you pay in 1 year?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 3/50",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 1 * 6/100']"
+    }
+  },
+  "69": {
+    "id": "70",
+    "metadata": {
+      "problem_text": "If the slope of a line is 2 and it passes through (0, 3), what is the y-intercept?",
+      "clean_text": "If the slope of a line is 2 and it passes through ( 0, 3 ) , what is the y - intercept?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 2",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 2']"
+    }
+  },
+  "70": {
+    "id": "71",
+    "metadata": {
+      "problem_text": "A bag contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?",
+      "clean_text": "A bag contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "71": {
+    "id": "72",
+    "metadata": {
+      "problem_text": "If a job pays $25/hour and you work 8 hours a day, what do you earn in 5 days?",
+      "clean_text": "If a job pays $25 / hour and you work 8 hours a day, what do you earn in 5 days?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "72": {
+    "id": "73",
+    "metadata": {
+      "problem_text": "The sum of a number and its reciprocal is 5. If the number is positive, what is it?",
+      "clean_text": "The sum of a number and its reciprocal is 5. If the number is positive, what is it?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "73": {
+    "id": "74",
+    "metadata": {
+      "problem_text": "If a chord is 12 cm long and the radius is 10 cm, how far is the chord from the center?",
+      "clean_text": "If a chord is 12 cm long and the radius is 10 cm, how far is the chord from the center?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 12",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 12']"
+    }
+  },
+  "74": {
+    "id": "75",
+    "metadata": {
+      "problem_text": "A person saves 15% of their income. If they earn $3,000 per month, how much do they save?",
+      "clean_text": "A person saves 15% of their income. If they earn $3,000 per month, how much do they save?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 9/20",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 3 * 15/100']"
+    }
+  },
+  "75": {
+    "id": "76",
+    "metadata": {
+      "problem_text": "If the exterior angle of a regular polygon is 30\u00b0, how many sides does it have?",
+      "clean_text": "If the exterior angle of a regular polygon is 30\u00b0, how many sides does it have?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 30",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 30']"
+    }
+  },
+  "76": {
+    "id": "77",
+    "metadata": {
+      "problem_text": "A train leaves at 8 AM and travels at 60 km/h. A car leaves at 10 AM and travels at 80 km/h. When will the car catch up?",
+      "clean_text": "A train leaves at 8 AM and travels at 60 km / h. A car leaves at 10 AM and travels at 80 km / h. When will the car catch up?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 8",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 8']"
+    }
+  },
+  "77": {
+    "id": "78",
+    "metadata": {
+      "problem_text": "If the product of two numbers is 24 and their sum is 10, what are the numbers?",
+      "clean_text": "If the product of two numbers is 24 and their sum is 10, what are the numbers?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 24",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 24']"
+    }
+  },
+  "78": {
+    "id": "79",
+    "metadata": {
+      "problem_text": "A painting is 60 cm by 80 cm. If you frame it with a 5 cm border, what are the outer dimensions?",
+      "clean_text": "A painting is 60 cm by 80 cm. If you frame it with a 5 cm border, what are the outer dimensions?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 60",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 60']"
+    }
+  },
+  "79": {
+    "id": "80",
+    "metadata": {
+      "problem_text": "If a quiz has 20 questions and you answer 18 correctly, what is your percentage score?",
+      "clean_text": "If a quiz has 20 questions and you answer 18 correctly, what is your percentage score?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 20",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 20']"
+    }
+  },
+  "80": {
+    "id": "81",
+    "metadata": {
+      "problem_text": "A ball's bounce height decreases by 20% each time. If it starts at 200 cm, what is the height of the 3rd bounce?",
+      "clean_text": "A ball's bounce height decreases by 20% each time. If it starts at 200 cm, what is the height of the 3rd bounce?",
+      "symbolic_fingerprint": "v1*v3*v4*v5 - 40; v2 - 160",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['new_value = 200 * (1 - 20/100)', 'part = 200 * 20/100']"
+    }
+  },
+  "81": {
+    "id": "82",
+    "metadata": {
+      "problem_text": "If the least common multiple of two numbers is 60 and the greatest common divisor is 5, and one number is 15, what is the other?",
+      "clean_text": "If the least common multiple of two numbers is 60 and the greatest common divisor is 5, and one number is 15, what is the other?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 60",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 60']"
+    }
+  },
+  "82": {
+    "id": "83",
+    "metadata": {
+      "problem_text": "A cylindrical tank has a radius of 3 m and height of 10 m. What is its volume? (Use \u03c0 \u2248 3.14)",
+      "clean_text": "A cylindrical tank has a radius of 3 m and height of 10 m. What is its volume? ( Use \u03c0 \u2248 3.14 )",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 3",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 3']"
+    }
+  },
+  "83": {
+    "id": "84",
+    "metadata": {
+      "problem_text": "If you buy an item for $100 and sell it for $150, what is the profit percentage?",
+      "clean_text": "If you buy an item for $100 and sell it for $150, what is the profit percentage?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 100",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 100']"
+    }
+  },
+  "84": {
+    "id": "85",
+    "metadata": {
+      "problem_text": "A class has a boy-to-girl ratio of 2:3. If there are 10 boys, how many girls are there?",
+      "clean_text": "A class has a boy - to - girl ratio of 2:3. If there are 10 boys, how many girls are there?",
+      "symbolic_fingerprint": "v1 + v2 - 10; v1/2 - v2/3",
+      "problem_type": "algebra",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/2 = y/3', 'x + y = 10']"
+    }
+  },
+  "85": {
+    "id": "86",
+    "metadata": {
+      "problem_text": "If the median of 5 numbers is 30 and the numbers are 10, 20, x, 40, 50, what is x?",
+      "clean_text": "If the median of 5 numbers is 30 and the numbers are 10, 20, x, 40, 50, what is x?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "86": {
+    "id": "87",
+    "metadata": {
+      "problem_text": "A rope is cut into 3 pieces in the ratio 2:3:4. If the total length is 36 m, what is the longest piece?",
+      "clean_text": "A rope is cut into 3 pieces in the ratio 2:3:4. If the total length is 36 m, what is the longest piece?",
+      "symbolic_fingerprint": "v1 + v2 - 4; v1/2 - v2/3",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/2 = y/3', 'x + y = 4']"
+    }
+  },
+  "87": {
+    "id": "88",
+    "metadata": {
+      "problem_text": "If a car uses 1 liter of fuel per 10 km and fuel costs $1.50 per liter, what is the cost per km?",
+      "clean_text": "If a car uses 1 liter of fuel per 10 km and fuel costs $1.50 per liter, what is the cost per km?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 1",
+      "problem_type": "unknown",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 1']"
+    }
+  },
+  "88": {
+    "id": "89",
+    "metadata": {
+      "problem_text": "The angles of a quadrilateral are in the ratio 1:2:3:4. What is the largest angle?",
+      "clean_text": "The angles of a quadrilateral are in the ratio 1:2:3:4. What is the largest angle?",
+      "symbolic_fingerprint": "v1 + v2 - 3; v1 - v2/2",
+      "problem_type": "geometry",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/1 = y/2', 'x + y = 3']"
+    }
+  },
+  "89": {
+    "id": "90",
+    "metadata": {
+      "problem_text": "If the probability of rain is 40%, what is the probability it will not rain?",
+      "clean_text": "If the probability of rain is 40%, what is the probability it will not rain?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 40",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 40']"
+    }
+  },
+  "90": {
+    "id": "91",
+    "metadata": {
+      "problem_text": "A store marks up items by 60% from cost. If an item costs $25 to make, what is the selling price?",
+      "clean_text": "A store marks up items by 60% from cost. If an item costs $25 to make, what is the selling price?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 15",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 25 * 60/100']"
+    }
+  },
+  "91": {
+    "id": "92",
+    "metadata": {
+      "problem_text": "If the diagonal of a square is 10 cm, what is the area of the square?",
+      "clean_text": "If the diagonal of a square is 10 cm, what is the area of the square?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 10",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 10']"
+    }
+  },
+  "92": {
+    "id": "93",
+    "metadata": {
+      "problem_text": "A farmer has 120 acres. If 30% is planted with corn, 25% with wheat, and the rest with soybeans, how many acres have soybeans?",
+      "clean_text": "A farmer has 120 acres. If 30% is planted with corn, 25% with wheat, and the rest with soybeans, how many acres have soybeans?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 15/2",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 25 * 30/100']"
+    }
+  },
+  "93": {
+    "id": "94",
+    "metadata": {
+      "problem_text": "If you invest $2,000 at 4% simple interest for 3 years, how much will you have?",
+      "clean_text": "If you invest $2,000 at 4% simple interest for 3 years, how much will you have?",
+      "symbolic_fingerprint": "v1*v2*v3*v4 - 3/25",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 4,
+      "extracted_equations": "['part = 3 * 4/100']"
+    }
+  },
+  "94": {
+    "id": "95",
+    "metadata": {
+      "problem_text": "A recipe uses butter and sugar in the ratio 1:2. If you use 150g of butter, how much sugar is needed?",
+      "clean_text": "A recipe uses butter and sugar in the ratio 1:2. If you use 150g of butter, how much sugar is needed?",
+      "symbolic_fingerprint": "v1 + v2 - 150; v1 - v2/2",
+      "problem_type": "algebra",
+      "difficulty_level": "Medium",
+      "equation_count": 2,
+      "variable_count": 2,
+      "extracted_equations": "['x/1 = y/2', 'x + y = 150']"
+    }
+  },
+  "95": {
+    "id": "96",
+    "metadata": {
+      "problem_text": "If the temperature is -5\u00b0C and rises by 12\u00b0C, what is the new temperature?",
+      "clean_text": "If the temperature is - 5\u00b0C and rises by 12\u00b0C, what is the new temperature?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 5']"
+    }
+  },
+  "96": {
+    "id": "97",
+    "metadata": {
+      "problem_text": "A ladder is 10 m long and leans against a wall. If the base is 6 m from the wall, how high does the ladder reach?",
+      "clean_text": "A ladder is 10 m long and leans against a wall. If the base is 6 m from the wall, how high does the ladder reach?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 10",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 10']"
+    }
+  },
+  "97": {
+    "id": "98",
+    "metadata": {
+      "problem_text": "If the average price of 4 items is $25, and three items cost $20, $30, and $15, what is the cost of the fourth item?",
+      "clean_text": "If the average price of 4 items is $25, and three items cost $20, $30, and $15, what is the cost of the fourth item?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 4",
+      "problem_type": "arithmetic",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 4']"
+    }
+  },
+  "98": {
+    "id": "99",
+    "metadata": {
+      "problem_text": "A store sells 500 items per week. If demand increases by 10% each week, how many items will be sold in week 2?",
+      "clean_text": "A store sells 500 items per week. If demand increases by 10% each week, how many items will be sold in week 2?",
+      "symbolic_fingerprint": "v1*v3*v4*v5 - 1/5; v2 - 11/5",
+      "problem_type": "algebra",
+      "difficulty_level": "Hard",
+      "equation_count": 2,
+      "variable_count": 5,
+      "extracted_equations": "['new_value = 2 * (1 + 10/100)', 'part = 2 * 10/100']"
+    }
+  },
+  "99": {
+    "id": "100",
+    "metadata": {
+      "problem_text": "If a triangle has angles of 60\u00b0, 60\u00b0, and 60\u00b0, what type of triangle is it?",
+      "clean_text": "If a triangle has angles of 60\u00b0, 60\u00b0, and 60\u00b0, what type of triangle is it?",
+      "symbolic_fingerprint": "v1*v2*v3*v4*v5*v6 - 60",
+      "problem_type": "geometry",
+      "difficulty_level": "Hard",
+      "equation_count": 1,
+      "variable_count": 6,
+      "extracted_equations": "['result = 60']"
+    }
+  }
+}

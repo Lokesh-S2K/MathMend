@@ -1,0 +1,45 @@
+{
+  "loaded_count": 100,
+  "data_quality": {
+    "valid_structure_vectors": 100,
+    "valid_fingerprints": 98,
+    "structure_vector_success_rate": 1.0,
+    "fingerprint_success_rate": 0.98
+  },
+  "text_embeddings": {
+    "valid_embeddings": 100,
+    "embedding_dimension": 384,
+    "success_rate": 1.0
+  },
+  "hybrid_vectors": {
+    "valid_hybrid_vectors": 100,
+    "hybrid_vector_dimension": 640,
+    "success_rate": 1.0
+  },
+  "faiss_index": {
+    "index_type": "Flat",
+    "vector_count": 100,
+    "dimension": 640,
+    "normalized": true,
+    "gpu_enabled": false
+  },
+  "evaluation": {
+    "precision@1": 1.0,
+    "recall@1": 0.38461538461538464,
+    "precision@3": 1.0,
+    "recall@3": 0.5,
+    "precision@5": 1.0,
+    "recall@5": 0.6538461538461539,
+    "precision@10": 1.0,
+    "recall@10": 0.7692307692307693
+  },
+  "evaluation_details": {
+    "test_set_size": 20,
+    "top_k_values": [
+      1,
+      3,
+      5,
+      10
+    ]
+  }
+}
