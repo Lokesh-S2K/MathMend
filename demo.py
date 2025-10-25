@@ -296,5 +296,4 @@ def main():
     print("Next: Neuro-symbolic solver that USES these similar problems to solve new ones!")
     print("--------------------------------------------------------------------")
 if __name__ == "__main__":
-    import re  # Add this import at the top
     main()
