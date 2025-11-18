@@ -1,0 +1,8 @@
+psycopg2-binary
+pgvector
+sympy
+sentence-transformers
+torch
+pandas
+python-dotenv
+tqdm

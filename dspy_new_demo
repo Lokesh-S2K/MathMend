@@ -1,0 +1,99 @@
+"""
+CalcMate DSPy Hybrid Neuro-Symbolic Retrieval Demo
+--------------------------------------------------
+Fully compatible with current SmartRetrievalPipeline API.
+Retrieves top-k similar problems, extracts equations, and shows neuro-symbolic reasoning.
+"""
+
+import time
+import textwrap
+from dspy_modules import SmartRetrievalPipeline
+
+class NeuroSymbolicDemo:
+    def __init__(self, llm_client=None):
+        self.index_path = "output/embeddings/faiss_index_20251015_145706.bin"
+        self.idmap_path = "output/embeddings/faiss_id_map_20251015_145706.json"
+        self.llm_client = llm_client
+        self.pipeline = None
+
+    def load_pipeline(self):
+        print("🔧 Loading DSPy Hybrid Neuro-Symbolic Retrieval System...")
+        try:
+            self.pipeline = SmartRetrievalPipeline(
+                self.index_path, self.idmap_path, llm_client=self.llm_client
+            )
+            print("✅ System loaded successfully!\n")
+        except Exception as e:
+            print(f"❌ Failed to load pipeline: {e}")
+            exit(1)
+
+    def run_query(self, query, top_k=3, explain=True):
+        print(f"\n🔍 Query: {query}")
+        print("-" * 70)
+        start = time.time()
+
+        try:
+            # Correct way for your version: just call with string input
+            prediction = self.pipeline(query, top_k=top_k, explain=explain)
+        except Exception as e:
+            print(f"❌ Pipeline failed: {e}")
+            return
+
+        # Retrieve similar problems
+        results = getattr(prediction, "results", [])
+        if not results:
+            print("⚠️ No similar problems found.")
+        else:
+            for i, res in enumerate(results, 1):
+                print(f"[{i}] Similarity Score: {res.get('similarity', 0):.4f}")
+                text = res.get('text', '')[:500]
+                print(textwrap.fill(f"Matched Text: {text}", width=90))
+
+                if explain and "explanation" in res:
+                    print("🧠 Explanation:")
+                    for k, v in res["explanation"].items():
+                        if isinstance(v, list):
+                            v = ", ".join(map(str, v[:10]))
+                        print(f"   • {k}: {v}")
+                print()
+
+        # Extracted equations
+        if getattr(prediction, "equations", None):
+            print("📘 Extracted Equations:")
+            for eq in prediction.equations:
+                print(f"   • {eq}")
+            print()
+
+        # Symbolic solutions
+        if getattr(prediction, "solution", None):
+            print("🧮 Solution:")
+            for k, v in prediction.solution.items():
+                print(f"   • {k} = {v}")
+            print()
+
+        # LLM reasoning steps
+        if getattr(prediction, "steps", None):
+            print("💡 LLM Reasoning Steps:")
+            print(textwrap.fill(prediction.steps[:1000], width=90))
+            print()
+
+        print(f"⏱ Query processed in {time.time() - start:.3f} seconds")
+
+    def run_demo(self, queries):
+        for i, q in enumerate(queries, 1):
+            print(f"\n=== TEST {i}/{len(queries)} ===")
+            self.run_query(q)
+
+if __name__ == "__main__":
+    demo = NeuroSymbolicDemo()
+    demo.load_pipeline()
+
+    test_queries = [
+        "A motorcycle travels 180 kilometers in 3 hours. What is its average speed?",
+        "If a pizza costs $18 and you order 3 pizzas, what's the total cost?",
+        "A rectangular playground has length 12 meters and width 8 meters. Calculate its area.",
+        "A train travels 90 km in 2 hours. Find its speed.",
+        "A rectangle has a length of 15 cm and width of 10 cm. Find its perimeter."
+    ]
+
+    demo.run_demo(test_queries)

@@ -1,0 +1,101 @@
+problem_id,problem_text,solution_text
+1,A car covers 150 km in 3 hours. What is its speed?,Speed = Distance / Time = 150 / 3 = 50 km/hr
+2,The sum of two numbers is 40 and their difference is 10. Find the numbers.,"Let x + y = 40, x − y = 10 → x = 25, y = 15"
+3,"If a book costs $12 and you buy 5 books, how much do you spend?",Total cost = 12 × 5 = $60
+4,A rectangle has a length of 10 cm and width of 6 cm. What is its area?,Area = Length × Width = 10 × 6 = 60 cm²
+5,"If 40% of a number is 80, what is the number?",Let x be the number: 0.4x = 80 → x = 200
+6,A train travels at 60 km/h. How far does it travel in 2.5 hours?,Distance = Speed × Time = 60 × 2.5 = 150 km
+7,The perimeter of a square is 36 cm. What is the length of each side?,Perimeter = 4 × side → 36 = 4s → s = 9 cm
+8,"If 3 pens cost $6, how much do 8 pens cost?",Cost per pen = 6/3 = $2 → 8 pens = 8 × 2 = $16
+9,The sum of three consecutive numbers is 51. Find the numbers.,"Let x, x+1, x+2 be the numbers: x + (x+1) + (x+2) = 51 → x = 16. Numbers are 16, 17, 18"
+10,A store offers a 25% discount on a $80 item. What is the sale price?,Discount = 0.25 × 80 = $20 → Sale price = 80 - 20 = $60
+11,"If the ratio of boys to girls is 3:2 and there are 15 boys, how many girls are there?",3:2 = 15:x → 3x = 30 → x = 10 girls
+12,A circle has a radius of 5 cm. What is its circumference? (Use π ≈ 3.14),Circumference = 2πr = 2 × 3.14 × 5 = 31.4 cm
+13,"If a worker earns $15 per hour and works 40 hours a week, what is the weekly earnings?",Weekly earnings = 15 × 40 = $600
+14,The area of a triangle is 30 cm² and its base is 10 cm. What is the height?,Area = (Base × Height)/2 → 30 = (10 × h)/2 → h = 6 cm
+15,"If you have $500 and spend 30% of it, how much is left?",Amount spent = 0.3 × 500 = $150 → Amount left = 500 - 150 = $350
+16,A recipe requires 2 cups of flour for 24 cookies. How much flour is needed for 36 cookies?,Proportion: 2/24 = x/36 → x = 3 cups
+17,"If the average of 4 numbers is 25, what is their sum?",Sum = Average × Count = 25 × 4 = 100
+18,A tank holds 500 liters and is 60% full. How many liters are in the tank?,Volume = 0.6 × 500 = 300 liters
+19,"If x + 5 = 20, what is the value of x?",x = 20 - 5 = 15
+20,The cost of 6 notebooks is $18. What is the cost of 10 notebooks?,Cost per notebook = 18/6 = $3 → 10 notebooks = 10 × 3 = $30
+21,"If a car depreciates by 15% each year and costs $20,000 now, what will it cost after 1 year?","Depreciation = 0.15 × 20,000 = $3,000 → New price = 20,000 - 3,000 = $17,000"
+22,"The sum of angles in a triangle is 180°. If two angles are 50° and 70°, what is the third angle?",Third angle = 180 - 50 - 70 = 60°
+23,"If you invest $1,000 at 5% annual interest, how much interest will you earn in 1 year?","Interest = 0.05 × 1,000 = $50"
+24,"A photo is 8 inches by 6 inches. If you enlarge it by a scale factor of 1.5, what are the new dimensions?","New length = 8 × 1.5 = 12 inches, New width = 6 × 1.5 = 9 inches"
+25,"If the population of a city increases by 20% and was 100,000, what is the new population?","Increase = 0.2 × 100,000 = 20,000 → New population = 100,000 + 20,000 = 120,000"
+26,"A student scored 85, 90, and 88 on three tests. What is the average score?",Average = (85 + 90 + 88)/3 = 263/3 ≈ 87.67
+27,"If a recipe serves 4 people and uses 2 eggs, how many eggs are needed to serve 10 people?",Proportion: 2/4 = x/10 → x = 5 eggs
+28,"The distance between two cities is 300 km. If a car travels at 75 km/h, how long does it take?",Time = Distance / Speed = 300 / 75 = 4 hours
+29,"If the probability of an event is 0.25, what is the probability it does not occur?",P(not occurring) = 1 - 0.25 = 0.75
+30,A store buys items for $50 and sells them for $80. What is the profit margin percentage?,Profit = 80 - 50 = $30 → Profit margin = (30/50) × 100 = 60%
+31,"If 15% of a number is 45, what is 30% of that number?",Number = 45/0.15 = 300 → 30% of 300 = 0.3 × 300 = 90
+32,A rectangular garden is 20 meters long and 15 meters wide. What is its perimeter?,Perimeter = 2(length + width) = 2(20 + 15) = 70 meters
+33,"If a subscription costs $10 per month, how much does it cost for 2 years?",Cost = 10 × 12 × 2 = $240
+34,The area of a square is 64 cm². What is its perimeter?,Side = √64 = 8 cm → Perimeter = 4 × 8 = 32 cm
+35,"If you save $50 per week, how much will you save in 1 year?","Annual savings = 50 × 52 = $2,600"
+36,"A ball is dropped from 100 meters. If it bounces to 80% of its previous height, how high is the first bounce?",First bounce height = 0.8 × 100 = 80 meters
+37,"If the tax rate is 8% and an item costs $50, what is the total cost including tax?",Tax = 0.08 × 50 = $4 → Total = 50 + 4 = $54
+38,"A class has 30 students. If 20% are absent, how many are present?",Absent = 0.2 × 30 = 6 → Present = 30 - 6 = 24
+39,"If 2x + 3 = 13, what is the value of x?",2x = 13 - 3 = 10 → x = 5
+40,"The ratio of apples to oranges in a basket is 5:3. If there are 15 apples, how many oranges are there?",5:3 = 15:x → 5x = 45 → x = 9 oranges
+41,"A book is on sale for 35% off. If the original price is $40, what is the sale price?",Discount = 0.35 × 40 = $14 → Sale price = 40 - 14 = $26
+42,"The volume of a rectangular prism is 120 cm³. If the length is 10 cm and width is 4 cm, what is the height?",Volume = length × width × height → 120 = 10 × 4 × h → h = 3 cm
+43,"If a bicycle costs $300 and you pay $75 upfront, how much is left to pay?",Remaining = 300 - 75 = $225
+44,The temperature increased by 8°C to reach 25°C. What was the original temperature?,Original = 25 - 8 = 17°C
+45,"If 60% of students pass a test and there are 150 students, how many fail?",Pass = 0.6 × 150 = 90 → Fail = 150 - 90 = 60 students
+46,A runner completes 5 km in 25 minutes. What is their speed in km/h?,Speed = (5 km / 25 min) × (60 min/hr) = 12 km/h
+47,"If a movie ticket costs $12 and you buy one for yourself and two for friends, how much do you spend?",Total = 12 × 3 = $36
+48,A cube has sides of 5 cm. What is its volume?,Volume = side³ = 5³ = 125 cm³
+49,"If the ratio of cats to dogs is 4:7 and there are 28 dogs, how many cats are there?",4:7 = x:28 → 7x = 112 → x = 16 cats
+50,A number is increased by 25% to become 100. What was the original number?,Let x be original: 1.25x = 100 → x = 80
+51,"If you divide 144 by 12, what is the quotient?",144 ÷ 12 = 12
+52,"A store offers buy-one-get-one-free on items priced at $20. If you take advantage of this offer twice, how much do you spend?",Cost = 2 × 20 = $40 (you get 4 items but pay for 2)
+53,"The perimeter of a rectangle is 50 cm. If the length is 15 cm, what is the width?",Perimeter = 2(l + w) → 50 = 2(15 + w) → w = 10 cm
+54,"If a phone costs $600 and you get a 12% discount, how much do you pay?",Discount = 0.12 × 600 = $72 → Price = 600 - 72 = $528
+55,"A bucket contains 20 liters of water. If 25% leaks out, how much water remains?",Leaked = 0.25 × 20 = 5 liters → Remaining = 20 - 5 = 15 liters
+56,"If you read 30 pages of a 300-page book, what percentage have you read?",Percentage = (30/300) × 100 = 10%
+57,"A parking lot charges $5 for the first hour and $2 for each additional hour. If you park for 4 hours, how much do you pay?",Cost = 5 + (2 × 3) = 5 + 6 = $11
+58,"If the mean of 5 numbers is 20, and 4 of them are 15, 20, 25, 30, what is the fifth number?",Sum = 20 × 5 = 100 → Fifth number = 100 - (15 + 20 + 25 + 30) = 10
+59,A plant grows 2 cm per week. How tall will it be after 10 weeks if it started at 5 cm?,Height = 5 + (2 × 10) = 25 cm
+60,"If the area of a circle is 78.5 cm² (π ≈ 3.14), what is its radius?",Area = πr² → 78.5 = 3.14r² → r² = 25 → r = 5 cm
+61,"A company gives a 10% bonus on salaries. If an employee earns $50,000, what is the new salary?","Bonus = 0.1 × 50,000 = $5,000 → New salary = 50,000 + 5,000 = $55,000"
+62,"If a triangle has sides 3, 4, and 5, is it a right triangle? (Use Pythagorean theorem)","3² + 4² = 9 + 16 = 25 = 5² → Yes, it is a right triangle"
+63,"A recipe calls for 1.5 cups of sugar. If you want to make half the recipe, how much sugar do you need?",Sugar needed = 1.5 ÷ 2 = 0.75 cups
+64,"If the population doubles every 10 years and is currently 1,000, what will it be in 30 years?","After 10 years: 2,000 → After 20 years: 4,000 → After 30 years: 8,000"
+65,"A student needs 70% to pass. If the test has 50 questions and each is worth 2 points, what is the passing score?",Total points = 50 × 2 = 100 → Passing score = 0.7 × 100 = 70 points
+66,"If a house is valued at $250,000 and increases by 5% per year, what will it be worth after 1 year?","Increase = 0.05 × 250,000 = $12,500 → New value = 250,000 + 12,500 = $262,500"
+67,A factory produces 500 items per day. How many items are produced in 30 days?,"Total = 500 × 30 = 15,000 items"
+68,"If you mix 3 cups of juice with 2 cups of water, what is the ratio of juice to total liquid?",Total liquid = 3 + 2 = 5 cups → Ratio = 3:5
+69,"A loan of $5,000 has a 6% annual interest rate. How much interest will you pay in 1 year?","Interest = 0.06 × 5,000 = $300"
+70,"If the slope of a line is 2 and it passes through (0, 3), what is the y-intercept?",y-intercept = 3 (the b in y = mx + b)
+71,A bag contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?,P(red) = 5/(5+3) = 5/8
+72,"If a job pays $25/hour and you work 8 hours a day, what do you earn in 5 days?","Daily earnings = 25 × 8 = $200 → 5 days = 200 × 5 = $1,000"
+73,"The sum of a number and its reciprocal is 5. If the number is positive, what is it?",Let x be the number: x + 1/x = 5 → x² - 5x + 1 = 0 → x = (5 + √21)/2 ≈ 4.79
+74,"If a chord is 12 cm long and the radius is 10 cm, how far is the chord from the center?",Using Pythagorean theorem: d² + 6² = 10² → d² = 64 → d = 8 cm
+75,"A person saves 15% of their income. If they earn $3,000 per month, how much do they save?","Savings = 0.15 × 3,000 = $450"
+76,"If the exterior angle of a regular polygon is 30°, how many sides does it have?",Sides = 360 / 30 = 12 sides
+77,A train leaves at 8 AM and travels at 60 km/h. A car leaves at 10 AM and travels at 80 km/h. When will the car catch up?,Train head start = 60 × 2 = 120 km → Time for car to catch up = 120 / (80 - 60) = 6 hours → 4 PM
+78,"If the product of two numbers is 24 and their sum is 10, what are the numbers?","Let x and y be numbers: xy = 24, x + y = 10 → x² - 10x + 24 = 0 → x = 6, y = 4"
+79,"A painting is 60 cm by 80 cm. If you frame it with a 5 cm border, what are the outer dimensions?","Outer length = 60 + 2(5) = 70 cm, Outer width = 80 + 2(5) = 90 cm"
+80,"If a quiz has 20 questions and you answer 18 correctly, what is your percentage score?",Percentage = (18/20) × 100 = 90%
+81,"A ball's bounce height decreases by 20% each time. If it starts at 200 cm, what is the height of the 3rd bounce?",1st bounce: 200 × 0.8 = 160 cm → 2nd bounce: 160 × 0.8 = 128 cm → 3rd bounce: 128 × 0.8 = 102.4 cm
+82,"If the least common multiple of two numbers is 60 and the greatest common divisor is 5, and one number is 15, what is the other?",LCM = (a × b) / GCD → 60 = (15 × b) / 5 → b = 20
+83,A cylindrical tank has a radius of 3 m and height of 10 m. What is its volume? (Use π ≈ 3.14),Volume = πr²h = 3.14 × 3² × 10 = 282.6 m³
+84,"If you buy an item for $100 and sell it for $150, what is the profit percentage?",Profit = 150 - 100 = $50 → Profit % = (50/100) × 100 = 50%
+85,"A class has a boy-to-girl ratio of 2:3. If there are 10 boys, how many girls are there?",2:3 = 10:x → 2x = 30 → x = 15 girls
+86,"If the median of 5 numbers is 30 and the numbers are 10, 20, x, 40, 50, what is x?","When ordered: 10, 20, x, 40, 50 → Median is the middle value = x = 30"
+87,"A rope is cut into 3 pieces in the ratio 2:3:4. If the total length is 36 m, what is the longest piece?",Ratio sum = 2 + 3 + 4 = 9 → Longest piece = (4/9) × 36 = 16 m
+88,"If a car uses 1 liter of fuel per 10 km and fuel costs $1.50 per liter, what is the cost per km?",Cost per km = (1/10) × 1.50 = $0.15
+89,The angles of a quadrilateral are in the ratio 1:2:3:4. What is the largest angle?,Angle sum = 360° → Largest angle = (4/10) × 360 = 144°
+90,"If the probability of rain is 40%, what is the probability it will not rain?",P(no rain) = 1 - 0.4 = 0.6 or 60%
+91,"A store marks up items by 60% from cost. If an item costs $25 to make, what is the selling price?",Markup = 0.6 × 25 = $15 → Selling price = 25 + 15 = $40
+92,"If the diagonal of a square is 10 cm, what is the area of the square?",Diagonal = side√2 → 10 = side√2 → side = 10/√2 ≈ 7.07 cm → Area = 50 cm²
+93,"A farmer has 120 acres. If 30% is planted with corn, 25% with wheat, and the rest with soybeans, how many acres have soybeans?",Soybeans = (100 - 30 - 25)% of 120 = 45% × 120 = 54 acres
+94,"If you invest $2,000 at 4% simple interest for 3 years, how much will you have?","Interest = 2,000 × 0.04 × 3 = $240 → Total = 2,000 + 240 = $2,240"
+95,"A recipe uses butter and sugar in the ratio 1:2. If you use 150g of butter, how much sugar is needed?",1:2 = 150:x → x = 300g sugar
+96,"If the temperature is -5°C and rises by 12°C, what is the new temperature?",New temperature = -5 + 12 = 7°C
+97,"A ladder is 10 m long and leans against a wall. If the base is 6 m from the wall, how high does the ladder reach?",Height² + 6² = 10² → Height² = 64 → Height = 8 m
+98,"If the average price of 4 items is $25, and three items cost $20, $30, and $15, what is the cost of the fourth item?",Total = 25 × 4 = $100 → Fourth item = 100 - (20 + 30 + 15) = $35
+99,"A store sells 500 items per week. If demand increases by 10% each week, how many items will be sold in week 2?",Week 2 sales = 500 × 1.1 = 550 items
+100,"If a triangle has angles of 60°, 60°, and 60°, what type of triangle is it?",It is an equilateral triangle (all angles equal and all sides equal)

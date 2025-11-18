@@ -1,0 +1,101 @@
+problem_id,clean_text,symbolic_fingerprint,problem_type,difficulty_level,equation_count,variable_count
+1,A car covers 150 km in 3 hours. What is its speed?,v1*v2**2*v3*v4 - 50,physics,Hard,1,4
+2,The sum of two numbers is 40 and their difference is 10. Find the numbers.,v1 + v2 - 40; v1 - v2 - 10,arithmetic,Medium,2,2
+3,"If a book costs $12 and you buy 5 books, how much do you spend?",v1*v2*v3*v4**2 - 60,algebra,Hard,1,4
+4,A rectangle has a length of 10 cm and width of 6 cm. What is its area?,v1*v2*v3*v4*v5*v6 - 10,geometry,Hard,1,6
+5,"If 40% of a number is 80, what is the number?",v1*v2*v3*v4 - 32,unknown,Hard,1,4
+6,A train travels at 60 km / h. How far does it travel in 2.5 hours?,v1*v2*v3*v4**2*v5*v6*v7 - 2,unknown,Hard,1,7
+7,The perimeter of a square is 36 cm. What is the length of each side?,v1**2*v3*v5 - 81; v2*v3*v4*v6 - 9,geometry,Hard,2,6
+8,"If 3 pens cost $6, how much do 8 pens cost?",v1*v3*v4*v5**2 - 48; v2 - 2,unknown,Hard,2,5
+9,The sum of three consecutive numbers is 51. Find the numbers.,v1 + v2 - 51,arithmetic,Easy,1,2
+10,A store offers a 25% discount on a $80 item. What is the sale price?,v1*v2*v3*v5 - 20; v4 - 60,finance,Hard,2,5
+11,"If the ratio of boys to girls is 3:2 and there are 15 boys, how many girls are there?",v1 + v2 - 15; v1/3 - v2/2,algebra,Medium,2,2
+12,A circle has a radius of 5 cm. What is its circumference? ( Use π ≈ 3.14 ),v1*v2*v3*v4*v5*v6 - 3,geometry,Hard,1,6
+13,"If a worker earns $15 per hour and works 40 hours a week, what is the weekly earnings?",v1*v2*v3*v4*v5*v6 - 15,algebra,Hard,1,6
+14,The area of a triangle is 30 cm² and its base is 10 cm. What is the height?,v1*v2*v3*v4*v5*v6 - 30,geometry,Hard,1,6
+15,"If you have $500 and spend 30% of it, how much is left?",v1*v2*v3*v4*v5*v6 - 500,algebra,Hard,1,6
+16,A recipe requires 2 cups of flour for 24 cookies. How much flour is needed for 36 cookies?,v1*v2*v3*v4**2*v5*v6*v7 - 36,unknown,Hard,1,7
+17,"If the average of 4 numbers is 25, what is their sum?",,arithmetic,Easy,0,0
+18,A tank holds 500 liters and is 60% full. How many liters are in the tank?,v1*v2*v3*v4*v5*v6 - 500,algebra,Hard,1,6
+19,"If x + 5 = 20, what is the value of x?",-15,algebra,Easy,1,0
+20,The cost of 6 notebooks is $18. What is the cost of 10 notebooks?,v1*v2*v3*v4*v5*v6 - 10,unknown,Hard,1,6
+21,"If a car depreciates by 15% each year and costs $20,000 now, what will it cost after 1 year?",v1*v2*v3*v4 - 3,algebra,Hard,1,4
+22,"The sum of angles in a triangle is 180°. If two angles are 50° and 70°, what is the third angle?",v1*v2*v3*v4*v5*v6 - 180,geometry,Hard,1,6
+23,"If you invest $1,000 at 5% annual interest, how much interest will you earn in 1 year?",v1*v2*v3*v4 - 1/20,algebra,Hard,1,4
+24,"A photo is 8 inches by 6 inches. If you enlarge it by a scale factor of 1.5, what are the new dimensions?",v1*v2*v3*v4*v5*v6 - 8,algebra,Hard,1,6
+25,"If the population of a city increases by 20% and was 100,000, what is the new population?",v1*v3*v4*v5 - 20; v2 - 120,algebra,Hard,2,5
+26,"A student scored 85, 90, and 88 on three tests. What is the average score?",v1*v2*v3*v4*v5*v6 - 85,arithmetic,Hard,1,6
+27,"If a recipe serves 4 people and uses 2 eggs, how many eggs are needed to serve 10 people?",v1**2*v2**3*v5 - 5; v1*v2**2*v3*v6*v7**2*v8 - 5; v4 - 5,algebra,Hard,3,8
+28,"The distance between two cities is 300 km. If a car travels at 75 km / h, how long does it take?",v1*v2*v3*v4*v5*v6 - 300,physics,Hard,1,6
+29,"If the probability of an event is 0.25, what is the probability it does not occur?",v1*v2*v3*v4*v5*v6,algebra,Hard,1,6
+30,A store buys items for $50 and sells them for $80. What is the profit margin percentage?,v1*v2*v3*v4*v5*v6 - 50,algebra,Hard,1,6
+31,"If 15% of a number is 45, what is 30% of that number?",v1*v2*v3*v4 - 27/4,unknown,Hard,1,4
+32,A rectangular garden is 20 meters long and 15 meters wide. What is its perimeter?,v1*v2*v3*v4*v5*v6 - 20,geometry,Hard,1,6
+33,"If a subscription costs $10 per month, how much does it cost for 2 years?",v1*v2*v3*v4**2 - 240,algebra,Hard,1,4
+34,The area of a square is 64 cm². What is its perimeter?,v1*v2*v3*v4*v5*v6 - 64,geometry,Hard,1,6
+35,"If you save $50 per week, how much will you save in 1 year?",v1**2*v2*v3**2*v4 - 2600,algebra,Hard,1,4
+36,"A ball is dropped from 100 meters. If it bounces to 80% of its previous height, how high is the first bounce?",v1*v2*v3*v4*v5*v6 - 100,geometry,Hard,1,6
+37,"If the tax rate is 8% and an item costs $50, what is the total cost including tax?",v1*v2*v3*v4 - 4,algebra,Hard,1,4
+38,"A class has 30 students. If 20% are absent, how many are present?",v1*v2*v3*v4*v5*v6 - 30,algebra,Hard,1,6
+39,"If 2x + 3 = 13, what is the value of x?",-10,algebra,Easy,1,0
+40,"The ratio of apples to oranges in a basket is 5:3. If there are 15 apples, how many oranges are there?",v1 + v2 - 15; v1/5 - v2/3,algebra,Medium,2,2
+41,"A book is on sale for 35% off. If the original price is $40, what is the sale price?",v1*v2*v3*v5 - 14; v4 - 26,unknown,Hard,2,5
+42,"The volume of a rectangular prism is 120 cm³. If the length is 10 cm and width is 4 cm, what is the height?",v1*v2*v3*v4*v5*v6 - 120,geometry,Hard,1,6
+43,"If a bicycle costs $300 and you pay $75 upfront, how much is left to pay?",v1*v2*v3*v4*v5*v6 - 300,algebra,Hard,1,6
+44,The temperature increased by 8°C to reach 25°C. What was the original temperature?,v1*v2*v3*v4*v5*v6 - 8,algebra,Hard,1,6
+45,"If 60% of students pass a test and there are 150 students, how many fail?",v1*v2*v3*v4 - 90,algebra,Hard,1,4
+46,A runner completes 5 km in 25 minutes. What is their speed in km / h?,v1*v2**2*v3*v4 - 12,physics,Hard,1,4
+47,"If a movie ticket costs $12 and you buy one for yourself and two for friends, how much do you spend?",v1*v2*v3*v4*v5*v6 - 12,algebra,Hard,1,6
+48,A cube has sides of 5 cm. What is its volume?,v1*v2*v3*v4*v5*v6 - 5,unknown,Hard,1,6
+49,"If the ratio of cats to dogs is 4:7 and there are 28 dogs, how many cats are there?",v1 + v2 - 28; v1/4 - v2/7,algebra,Medium,2,2
+50,A number is increased by 25% to become 100. What was the original number?,v1*v3*v4*v5 - 25; v2 - 125,algebra,Hard,2,5
+51,"If you divide 144 by 12, what is the quotient?",v1*v2*v3*v4*v5*v6 - 144,algebra,Hard,1,6
+52,"A store offers buy - one - get - one - free on items priced at $20. If you take advantage of this offer twice, how much do you spend?",v1*v2*v3*v4*v5*v6 - 20,algebra,Hard,1,6
+53,"The perimeter of a rectangle is 50 cm. If the length is 15 cm, what is the width?",v1*v2*v3*v4*v5*v6 - 50,geometry,Hard,1,6
+54,"If a phone costs $600 and you get a 12% discount, how much do you pay?",v1*v2*v3*v4*v5*v6 - 600,algebra,Hard,1,6
+55,"A bucket contains 20 liters of water. If 25% leaks out, how much water remains?",v1*v2*v3*v4*v5*v6 - 20,unknown,Hard,1,6
+56,"If you read 30 pages of a 300 - page book, what percentage have you read?",v1*v2*v3*v4*v5*v6 - 30,algebra,Hard,1,6
+57,"A parking lot charges $5 for the first hour and $2 for each additional hour. If you park for 4 hours, how much do you pay?",v1*v2*v3*v4*v5*v6 - 5,algebra,Hard,1,6
+58,"If the mean of 5 numbers is 20, and 4 of them are 15, 20, 25, 30, what is the fifth number?",,statistics,Easy,0,0
+59,A plant grows 2 cm per week. How tall will it be after 10 weeks if it started at 5 cm?,v1*v2*v3*v4**2*v5*v6*v7 - 10,unknown,Hard,1,7
+60,"If the area of a circle is 78.5 cm² ( π ≈ 3.14 ) , what is its radius?",v1*v2*v3*v4*v5*v6 - 78,geometry,Hard,1,6
+61,"A company gives a 10% bonus on salaries. If an employee earns $50,000, what is the new salary?",v1*v2*v3*v4 - 5,algebra,Hard,1,4
+62,"If a triangle has sides 3, 4, and 5, is it a right triangle? ( Use Pythagorean theorem )",v1*v2*v3*v4*v5*v6 - 3,geometry,Hard,1,6
+63,"A recipe calls for 1.5 cups of sugar. If you want to make half the recipe, how much sugar do you need?",v1*v2*v3*v4*v5*v6 - 1,algebra,Hard,1,6
+64,"If the population doubles every 10 years and is currently 1,000, what will it be in 30 years?",v1*v2*v3*v4*v5*v6 - 30,algebra,Hard,1,6
+65,"A student needs 70% to pass. If the test has 50 questions and each is worth 2 points, what is the passing score?",v1*v2*v3*v4 - 35,unknown,Hard,1,4
+66,"If a house is valued at $250,000 and increases by 5% per year, what will it be worth after 1 year?",v1*v3*v4*v5 - 1/20; v2 - 21/20,algebra,Hard,2,5
+67,A factory produces 500 items per day. How many items are produced in 30 days?,v1*v2*v3*v4**2*v5*v6*v7 - 30,algebra,Hard,1,7
+68,"If you mix 3 cups of juice with 2 cups of water, what is the ratio of juice to total liquid?",v1*v2*v3*v4*v5*v6 - 3,algebra,Hard,1,6
+69,"A loan of $5,000 has a 6% annual interest rate. How much interest will you pay in 1 year?",v1*v2*v3*v4 - 3/50,algebra,Hard,1,4
+70,"If the slope of a line is 2 and it passes through ( 0, 3 ) , what is the y - intercept?",v1*v2*v3*v4*v5*v6 - 2,algebra,Hard,1,6
+71,A bag contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?,v1*v2*v3*v4*v5*v6 - 5,algebra,Hard,1,6
+72,"If a job pays $25 / hour and you work 8 hours a day, what do you earn in 5 days?",v1*v2*v3*v4*v5*v6 - 5,algebra,Hard,1,6
+73,"The sum of a number and its reciprocal is 5. If the number is positive, what is it?",v1*v2*v3*v4*v5*v6 - 5,arithmetic,Hard,1,6
+74,"If a chord is 12 cm long and the radius is 10 cm, how far is the chord from the center?",v1*v2*v3*v4*v5*v6 - 12,geometry,Hard,1,6
+75,"A person saves 15% of their income. If they earn $3,000 per month, how much do they save?",v1*v2*v3*v4 - 9/20,algebra,Hard,1,4
+76,"If the exterior angle of a regular polygon is 30°, how many sides does it have?",v1*v2*v3*v4*v5*v6 - 30,algebra,Hard,1,6
+77,A train leaves at 8 AM and travels at 60 km / h. A car leaves at 10 AM and travels at 80 km / h. When will the car catch up?,v1*v2*v3*v4*v5*v6 - 8,unknown,Hard,1,6
+78,"If the product of two numbers is 24 and their sum is 10, what are the numbers?",v1*v2*v3*v4*v5*v6 - 24,arithmetic,Hard,1,6
+79,"A painting is 60 cm by 80 cm. If you frame it with a 5 cm border, what are the outer dimensions?",v1*v2*v3*v4*v5*v6 - 60,algebra,Hard,1,6
+80,"If a quiz has 20 questions and you answer 18 correctly, what is your percentage score?",v1*v2*v3*v4*v5*v6 - 20,algebra,Hard,1,6
+81,"A ball's bounce height decreases by 20% each time. If it starts at 200 cm, what is the height of the 3rd bounce?",v1*v3*v4*v5 - 40; v2 - 160,algebra,Hard,2,5
+82,"If the least common multiple of two numbers is 60 and the greatest common divisor is 5, and one number is 15, what is the other?",v1*v2*v3*v4*v5*v6 - 60,unknown,Hard,1,6
+83,A cylindrical tank has a radius of 3 m and height of 10 m. What is its volume? ( Use π ≈ 3.14 ),v1*v2*v3*v4*v5*v6 - 3,geometry,Hard,1,6
+84,"If you buy an item for $100 and sell it for $150, what is the profit percentage?",v1*v2*v3*v4*v5*v6 - 100,algebra,Hard,1,6
+85,"A class has a boy - to - girl ratio of 2:3. If there are 10 boys, how many girls are there?",v1 + v2 - 10; v1/2 - v2/3,algebra,Medium,2,2
+86,"If the median of 5 numbers is 30 and the numbers are 10, 20, x, 40, 50, what is x?",v1*v2*v3*v4*v5*v6 - 5,algebra,Hard,1,6
+87,"A rope is cut into 3 pieces in the ratio 2:3:4. If the total length is 36 m, what is the longest piece?",v1 + v2 - 4; v1/2 - v2/3,arithmetic,Medium,2,2
+88,"If a car uses 1 liter of fuel per 10 km and fuel costs $1.50 per liter, what is the cost per km?",v1*v2*v3*v4*v5*v6 - 1,unknown,Hard,1,6
+89,The angles of a quadrilateral are in the ratio 1:2:3:4. What is the largest angle?,v1 + v2 - 3; v1 - v2/2,geometry,Medium,2,2
+90,"If the probability of rain is 40%, what is the probability it will not rain?",v1*v2*v3*v4*v5*v6 - 40,algebra,Hard,1,6
+91,"A store marks up items by 60% from cost. If an item costs $25 to make, what is the selling price?",v1*v2*v3*v4 - 15,algebra,Hard,1,4
+92,"If the diagonal of a square is 10 cm, what is the area of the square?",v1*v2*v3*v4*v5*v6 - 10,geometry,Hard,1,6
+93,"A farmer has 120 acres. If 30% is planted with corn, 25% with wheat, and the rest with soybeans, how many acres have soybeans?",v1*v2*v3*v4 - 15/2,algebra,Hard,1,4
+94,"If you invest $2,000 at 4% simple interest for 3 years, how much will you have?",v1*v2*v3*v4 - 3/25,algebra,Hard,1,4
+95,"A recipe uses butter and sugar in the ratio 1:2. If you use 150g of butter, how much sugar is needed?",v1 + v2 - 150; v1 - v2/2,algebra,Medium,2,2
+96,"If the temperature is - 5°C and rises by 12°C, what is the new temperature?",v1*v2*v3*v4*v5*v6 - 5,algebra,Hard,1,6
+97,"A ladder is 10 m long and leans against a wall. If the base is 6 m from the wall, how high does the ladder reach?",v1*v2*v3*v4*v5*v6 - 10,geometry,Hard,1,6
+98,"If the average price of 4 items is $25, and three items cost $20, $30, and $15, what is the cost of the fourth item?",v1*v2*v3*v4*v5*v6 - 4,arithmetic,Hard,1,6
+99,"A store sells 500 items per week. If demand increases by 10% each week, how many items will be sold in week 2?",v1*v3*v4*v5 - 1/5; v2 - 11/5,algebra,Hard,2,5
+100,"If a triangle has angles of 60°, 60°, and 60°, what type of triangle is it?",v1*v2*v3*v4*v5*v6 - 60,geometry,Hard,1,6

@@ -1,0 +1,2130 @@
+problem,reasoning,
+"P and Q each have a certain number of apples. A says to B,If you give me 10 of your apples, I will have twice the number of apples left with you.B replies,If you give me 10 of your apples, I will have the same number of apples as left with you.Find the number of apples with P and Q separately.","
+        1. Let x be the number of apples with P and y be the number of apples with Q.
+        2. If B gives A 10 apples, then A has x + 10 and B has y - 10.
+        3. According to A's statement, x + 10 = 2(y - 10).
+        4. If A gives B 10 apples, then A has x - 10 and B has y + 10.
+        5. According to B's statement, x - 10 = y + 10.
+        Final Equations: 
+        x + 10 = 2(y - 10) and x - 10 = y + 10
+        ",
+"On selling a T.V. at 5% gain and a fridge at 10% gain, Reliance Digital gains Rs 2000. But if it sells the T.V. at 10% gain and the fridge at 5% loss, he gains Rs 1500 on the transaction. Find the actual prices of T.V. and fridge.","
+        1. Let x be the cost price of the T.V. and y be the cost price of the fridge.
+        2. Selling the T.V. at 5% gain gives 0.05x, and selling the fridge at 10% gain gives 0.10y.
+        3. The total gain from selling at these rates is 0.05x + 0.10y = 2000.
+        4. In the second scenario, the gain from selling the T.V. at 10% is 0.10x, and the loss from the fridge at 5% loss is -0.05y.
+        5. The total gain in this case is 0.10x - 0.05y = 1500.
+        Final Equations: 
+        0.05x + 0.10y = 2000 and 0.10x - 0.05y = 1500
+        ",
+A and B are friends and their ages differ by 2 years. A's father D is twice as old as A and B is twice as old as his sister C. The age of D and C differ by 40 years. Find the ages of A and B.,"
+        1. Let x be the age of A and y be the age of B.
+        2. The difference in their ages gives x - y = 2.
+        3. Since D is twice as old as A, we have D = 2x.
+        4. If B is twice as old as his sister C, we express C's age as C = y / 2.
+        5. The age difference between D and C gives 2x - (y / 2) = 40.
+        Final Equations: 
+        x - y = 2 and 2x - (y / 2) = 40
+        ",
+"Five years hence, father's age will be three times the age of his son. Five years ago, the father was seven times as old as his son. Find their present ages.","
+        1. Let x be the father's age and y be the son's age.
+        2. In 5 years, the father's age will be x + 5 and the son's age will be y + 5.
+        3. Setting up the equation from the first condition, x + 5 = 3(y + 5).
+        4. Five years ago, the father's age was x - 5 and the son's age was y - 5.
+        5. From this condition, we have x - 5 = 7(y - 5).
+        Final Equations: 
+        x + 5 = 3(y + 5) and x - 5 = 7(y - 5)
+        ",
+The ages of two friends Manjit and Ranjit differ by 3 years. Manjit's father Dharam is twice as old as Manjit and Ranjit is twice as old as his sister Jaspreet. The ages of Jaspreet and Dharam differ by 30 years. Find the ages of Manjit and Ranjit.,"
+        1. Let x be the age of Manjit and y be the age of Ranjit.
+        2. The age difference gives x - y = 3.
+        3. Dharam's age is 2x, and Ranjit's sister's age is C = y / 2.
+        4. The difference in ages between Dharam and Jaspreet gives 2x - (y / 2) = 30.
+        Final Equations: 
+        x - y = 3 and 2x - (y / 2) = 30
+        ",
+"A takes 3 hours more than B to walk 30 km. But if A doubles his pace, he is ahead of B by one and a half hours. Find their speed of walking.","
+        1. Let x be the speed of A and y be the speed of B.
+        2. The time taken by A to walk 30 km is 30/x and by B is 30/y.
+        3. From the problem statement, (30/x) - (30/y) = 3.
+        4. If A doubles his speed, he travels at 2x, leading to (30/y) - (30/(2x)) = 1.5.
+        Final Equations: 
+        (30/x) - (30/y) = 3 and (30/y) - (30/(2x)) = 1.5
+        ",
+"The boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of stream and that of the boat in still water.","
+        1. Let x be the speed of the boat in still water and y be the speed of the stream.
+        2. The effective speed upstream is (x - y) and downstream is (x + y).
+        3. From the first scenario: (30/(x - y)) + (44/(x + y)) = 10.
+        4. From the second scenario: (40/(x - y)) + (55/(x + y)) = 13.
+        Final Equations: 
+        (30/(x - y)) + (44/(x + y)) = 10 and (40/(x - y)) + (55/(x + y)) = 13
+        ",
+A boat goes 24 km upstream and 28 km downstream in 6 hours. It goes 30 km upstream and 21 km downstream in 6 hours and 30 minutes. Find the speed of the boat in still water and also speed of the stream.,"
+        1. Let x be the speed of the boat in still water and y be the speed of the stream.
+        2. The equations can be set up as: (24/(x - y)) + (28/(x + y)) = 6.
+        3. From the second scenario: (30/(x - y)) + (21/(x + y)) = 6.5.
+        Final Equations: 
+        (24/(x - y)) + (28/(x + y)) = 6 and (30/(x - y)) + (21/(x + y)) = 6.5
+        ",
+"A man walks a certain distance with a certain speed. If he walks 1/2 km an hour faster, he takes 1 hour less. But, if he walks 1 km an hour slower, he takes 3 more hours. Find the distance covered by the man and his original rate of walking.","
+        1. Let v be the original speed, t be the time taken, and d be the distance.
+        2. For the faster case: vt = (v + 0.5)(t - 1).
+        3. For the slower case: vt = (v - 1)(t + 3).
+        Final Equations: 
+        vt = (v + 0.5)(t - 1) and vt = (v - 1)(t + 3)
+        ",
+"Anuj travels 600 km partly by train and partly by car. If he covers 400 km by train and the rest by car, it takes him 6 hours and 30 minutes. But, if he travels 200 km by train and the rest by car, he takes half an hour longer. Find the speed of the train and that of the car.","
+        1. Let x be the speed of the train and y be the speed of the car.
+        2. From the first scenario: (400/x) + (200/y) = 6.5.
+        3. From the second scenario: (200/x) + (400/y) = 7.
+        Final Equations: 
+        (400/x) + (200/y) = 6.5 and (200/x) + (400/y) = 7
+        ",
+"A man has a certain number of apples. If he gives 15 apples to his friend, he will have 5 times the number of apples his friend has. If he takes 15 apples from his friend, he will have 3 times the number of apples his friend has. Find the number of apples with the man and his friend.","
+        1. Let x be the number of apples the man has and y be the number of apples the friend has.
+        2. After giving 15 apples, the equation becomes: x - 15 = 5(y + 15).
+        3. After taking 15 apples, the equation becomes: x + 15 = 3(y - 15).
+        Final Equations: 
+        x - 15 = 5(y + 15) and x + 15 = 3(y - 15)
+        ",
+"The sum of the ages of three brothers is 45 years. If the age of the youngest brother is x, the middle brother is y, and the oldest brother is z. The oldest brother is 5 years older than the middle brother, and the middle brother is 3 years older than the youngest. Find the ages of the three brothers.","
+        1. The equation for the sum of their ages is: x + y + z = 45.
+        2. From the age relationships: z = y + 5 and y = x + 3.
+        Final Equations: 
+        x + y + z = 45, z = y + 5, y = x + 3
+        ",
+"A sum of money is invested at 10% per annum simple interest. If it were invested at 12% per annum, it would have earned Rs. 100 more in 2 years. Find the principal amount.","
+        1. Let P be the principal amount.
+        2. The interest at 10% for 2 years is: I1 = (10/100) * P * 2.
+        3. The interest at 12% for 2 years is: I2 = (12/100) * P * 2.
+        4. The difference between the two interests gives: I2 - I1 = 100.
+        Final Equations: 
+        I1 = (10/100) * P * 2, I2 = (12/100) * P * 2, I2 - I1 = 100
+        ",
+"The perimeter of a rectangle is 50 meters. If the length is 5 meters more than the breadth, find the dimensions of the rectangle.","
+        1. Let l be the length and b be the breadth.
+        2. The equation for the perimeter is: 2(l + b) = 50.
+        3. The relationship between length and breadth is: l = b + 5.
+        Final Equations: 
+        2(l + b) = 50, l = b + 5
+        ",
+"In a class, the average age of students is 18 years. If the teacher's age is included, the average age becomes 19 years. If the number of students is n, find the teacher's age.","
+        1. The total age of students is: 18n.
+        2. With the teacher included, the total age becomes: 18n + T.
+        3. The average age with the teacher is: (18n + T)/(n + 1) = 19.
+        Final Equations: 
+        18n + T = 19(n + 1)
+        ",
+"The difference between two numbers is 20, and when one number is divided by the other, the quotient is 3. Find the numbers.","
+        1. Let x and y be the two numbers.
+        2. The difference gives: x - y = 20.
+        3. The quotient gives: x/y = 3.
+        Final Equations: 
+        x - y = 20, x/y = 3
+        ",
+A chemist has 30 liters of a solution that is 40% acid. He wants to dilute it to create a solution that is 25% acid. How much water should he add?,"
+        1. The amount of acid in the original solution is: 0.4 * 30.
+        2. Let w be the liters of water to be added. The new concentration can be expressed as: 0.4 * 30 / (30 + w) = 0.25.
+        Final Equations: 
+        0.4 * 30 / (30 + w) = 0.25
+        ",
+"A rectangular plot has a length that is twice its width. If the perimeter of the plot is 60 meters, what are the dimensions of the plot?","
+        1. Let w be the width and l be the length.
+        2. The length can be expressed as: l = 2w.
+        3. The perimeter gives: 2(l + w) = 60.
+        Final Equations: 
+        2(l + w) = 60, l = 2w
+        ",
+"A sum of Rs. 5000 is divided into two parts such that the first part earns 8% per annum and the second part earns 6% per annum. If the total interest earned in one year is Rs. 360, find the amount in each part.","
+        1. Let x be the amount in the first part and y be the amount in the second part.
+        2. The total amount gives: x + y = 5000.
+        3. The interest gives: 0.08x + 0.06y = 360.
+        Final Equations: 
+        x + y = 5000, 0.08x + 0.06y = 360
+        ",
+"Two trains start from the same station at the same time, one travelling north and the other south. If the first train travels at 60 km/h and the second at 90 km/h, how far apart will they be after 2 hours?","
+        1. The distance traveled by the first train in 2 hours is: d1 = 60 * 2.
+        2. The distance traveled by the second train in 2 hours is: d2 = 90 * 2.
+        3. The total distance apart is: d1 + d2.
+        Final Equations: 
+        d1 = 60 * 2, d2 = 90 * 2, total distance = d1 + d2
+        ",
+"A two-digit number is such that the sum of the number and the number obtained by reversing its digits is 121. If the difference between the digits of the number is 3, find the number.","
+        1. Let the two-digit number be represented as 10a + b, where a is the tens digit and b is the units digit.
+        2. The reverse of the number is 10b + a.
+        3. According to the problem, we have the equation: (10a + b) + (10b + a) = 121.
+        4. This simplifies to: 11a + 11b = 121.
+        5. Dividing by 11 gives: a + b = 11. (Equation 1)
+        6. The problem states that the difference between the digits is 3, leading to: a - b = 3. (Equation 2)
+        7. From Equation 1: b = 11 - a.
+        8. Substitute into Equation 2: a - (11 - a) = 3.
+        Final Equations: 
+        a + b = 11, a - b = 3
+        ",
+"n selling a T.V. at 5% gain and a fridge at 10% gain, Reliance Digital gains Rs 2000. But if it sells the T.V. at 10% gain and the fridge at 5% loss, he gains Rs 1500 on the transaction. Find the actual prices of T.V. and fridge.","
+        1. Let x be the cost price of the T.V. and y be the cost price of the fridge.
+        2. Selling the T.V. at 5% gain gives 0.05x, and selling the fridge at 10% gain gives 0.10y.
+        3. The total gain from selling at these rates is 0.05x + 0.10y = 2000.
+        4. In the second scenario, the gain from selling the T.V. at 10% is 0.10x, and the loss from the fridge at 5% loss is -0.05y.
+        5. The total gain in this case is 0.10x - 0.05y = 1500.
+        Final Equations: 
+        0.05x + 0.10y = 2000 and 0.10x - 0.05y = 1500",
+"Jane is organizing a fundraiser. The total number of adults and children attending is 80. The entrance fee for adults is $10, and for children, it is $5. The total amount collected is $600. Write a system of linear equations to represent this information and find the number of adults and children.","
+        1. Let a be the number of adults and c be the number of children attending.
+        2. The total number of adults and children attending is given by the equation:
+           a + c = 80
+        3. The entrance fee for adults is $10, and for children, it is $5. The total amount collected is:
+           10a + 5c = 600
+        Final Equations: 
+           a + c = 80 and 10a + 5c = 600
+        ",
+Alice has $50 and decides to save $5 each week. Bob has no savings initially but saves $8 each week. After how many weeks will Alice and Bob have the same amount of money saved?,"
+        1. Let w represent the number of weeks.
+        2. Alice has $50 and saves $5 each week, giving her total savings as:
+           50 + 5w
+        3. Bob has no savings initially but saves $8 each week, giving his total savings as:
+           8w
+        4. To find out after how many weeks they will have the same amount of money saved:
+           50 + 5w = 8w
+        Final Equations: 
+           50 + 5w = 8w
+        ",
+The sum of two numbers is 15. Twice the first number added to three times the second number is 36. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 15
+        3. Twice the first number added to three times the second number is:
+           2x + 3y = 36
+        Final Equations: 
+           x + y = 15 and 2x + 3y = 36
+        ",
+"The present ages of two friends are such that the sum of their ages is 50. Six years ago, one friend's age was twice the age of the other. Determine their present ages.","
+        1. Let x be the present age of the first friend and y be the present age of the second friend.
+        2. The sum of their ages is:
+           x + y = 50
+        3. Six years ago, one friend's age was twice the age of the other:
+           x - 6 = 2(y - 6)
+        Final Equations: 
+           x + y = 50 and x - 6 = 2(y - 6)
+        ",
+"A and B can complete a work together in 15 days. If A works alone for 5 days, and then B finishes the remaining work in 10 days. How long will A take to complete the work alone?","
+        1. Let t be the time taken by A to complete the work alone.
+        
+        2. The work done by A in one day is:
+           Rate of A = 1/t (work/day).
+           
+        3. The work done by B in one day is:
+           Rate of B = 1/15 - 1/t (work/day).
+           
+        4. In 5 days, A completes:
+           Work done by A = 5 * (1/t).
+           
+        5. The remaining work is completed by B in 10 days:
+           Work done by B = 10 * (1/t - 1/15).
+           
+        Final Equations:
+           5*(1/t) + 10*(1/t - 1/15) = 1
+        ",
+"X can complete a work in 12 days, Y can complete it in 15 days, and Z can complete it in 10 days. If X works for 3 days, then Y takes over and works for 2 days, and finally, Z finishes the work. How long does Z take to finish the work?","
+        1. Let the total work be represented as 1 unit.
+        
+        2. The rate of work done by X is:
+           Rate of X = 1/12 (work/day).
+
+        3. The rate of work done by Y is:
+           Rate of Y = 1/15 (work/day).
+
+        4. The rate of work done by Z is:
+           Rate of Z = 1/10 (work/day).
+
+        5. In 3 days, X completes:
+           Work done by X = 3 * (1/12).
+
+        6. In 2 days, Y completes:
+           Work done by Y = 2 * (1/15).
+
+        7. The total work done by X and Y combined is:
+           Total Work Done = Work done by X + Work done by Y.
+
+        8. The remaining work for Z to finish is:
+           Remaining Work = 1 - Total Work Done.
+
+        9. Let t be the time taken by Z to finish the remaining work:
+           Remaining Work = t * (1/10).
+
+        Final Equations:
+           1 - (3*(1/12) + 2*(1/15)) = t*(1/10).
+        ",
+The sum of two numbers is 24. The first number is 4 more than twice the second number. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 24
+        3. The first number is 4 more than twice the second number:
+           x = 2y + 4
+        Final Equations: 
+           x + y = 24 and x = 2y + 4
+        ",
+A father is 4 times as old as his son. The sum of their ages is 60 years. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the father's age and y be the son's age.
+        2. The father is 4 times as old as his son:
+           x = 4y
+        3. The sum of their ages is 60:
+           x + y = 60
+        Final Equations: 
+           x = 4y and x + y = 60
+        ",
+A boat travels downstream for 4 hours and covers 32 miles. It travels upstream for 4 hours and covers 24 miles. Write a system of linear equations to represent this information and find the speed of the boat in still water and the speed of the current.,"
+        1. Let x be the speed of the boat in still water and y be the speed of the current.
+        2. The boat travels downstream, so its effective speed is (x + y):
+           4(x + y) = 32
+        3. The boat travels upstream, so its effective speed is (x - y):
+           4(x - y) = 24
+        Final Equations: 
+           4(x + y) = 32 and 4(x - y) = 24
+        ",
+"A man can complete a task in 6 hours working alone, but if he works with a colleague, they can complete the task in 4 hours. Write a system of linear equations to represent this information and find the time it would take for his colleague to complete the task alone.","
+        1. Let x be the time it takes the man to complete the task alone, and y be the time it takes his colleague.
+        2. The man's rate of work is 1/6 (since he finishes in 6 hours):
+           1/x = 1/6
+        3. Working together, their combined rate is 1/4 (since they finish in 4 hours):
+           1/x + 1/y = 1/4
+        Final Equations: 
+           1/x = 1/6 and 1/x + 1/y = 1/4
+        ",
+A train travels 120 miles downstream in 2 hours and 80 miles upstream in 2 hours. Write a system of linear equations to represent this information and find the speed of the train in still water and the speed of the current.,"
+        1. Let x be the speed of the train in still water and y be the speed of the current.
+        2. The effective speed downstream is (x + y):
+           2(x + y) = 120
+        3. The effective speed upstream is (x - y):
+           2(x - y) = 80
+        Final Equations: 
+           2(x + y) = 120 and 2(x - y) = 80
+        ",
+The sum of two numbers is 18. The first number is 2 more than three times the second number. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 18
+        3. The first number is 2 more than three times the second number:
+           x = 3y + 2
+        Final Equations: 
+           x + y = 18 and x = 3y + 2
+        ",
+A man?s age is three years less than twice his son's age. The sum of their ages is 51. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the man's age and y be the son's age.
+        2. The man's age is three years less than twice his son's age:
+           x = 2y - 3
+        3. The sum of their ages is 51:
+           x + y = 51
+        Final Equations: 
+           x = 2y - 3 and x + y = 51
+        ",
+The sum of two numbers is 70. The first number is 5 more than twice the second number. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 70
+        3. The first number is 5 more than twice the second number:
+           x = 2y + 5
+        Final Equations: 
+           x + y = 70 and x = 2y + 5
+        ",
+A father is 6 years older than three times the age of his son. The sum of their ages is 72 years. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the father's age and y be the son's age.
+        2. The father is 6 years older than three times the age of his son:
+           x = 3y + 6
+        3. The sum of their ages is 72:
+           x + y = 72
+        Final Equations: 
+           x = 3y + 6 and x + y = 72
+        ",
+A car travels 180 miles downstream in 3 hours and 120 miles upstream in 3 hours. Write a system of linear equations to represent this information and find the speed of the car in still water and the speed of the current.,"
+        1. Let x be the speed of the car in still water and y be the speed of the current.
+        2. The effective speed downstream is (x + y):
+           3(x + y) = 180
+        3. The effective speed upstream is (x - y):
+           3(x - y) = 120
+        Final Equations: 
+           3(x + y) = 180 and 3(x - y) = 120
+        ",
+A boat covers a distance of 30 miles downstream in 2 hours and 20 miles upstream in 2 hours. Write a system of linear equations to represent this information and find the speed of the boat in still water and the speed of the current.,"
+        1. Let x be the speed of the boat in still water and y be the speed of the current.
+        2. The effective speed downstream is (x + y):
+           2(x + y) = 30
+        3. The effective speed upstream is (x - y):
+           2(x - y) = 20
+        Final Equations: 
+           2(x + y) = 30 and 2(x - y) = 20
+        ",
+The sum of two numbers is 25. The difference between five times the first number and three times the second number is 50. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 25
+        3. The difference between five times the first number and three times the second number is:
+           5x - 3y = 50
+        Final Equations: 
+           x + y = 25 and 5x - 3y = 50
+        ",
+A mother is 8 years older than three times the age of her daughter. The sum of their ages is 68 years. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the mother's age and y be the daughter's age.
+        2. The mother is 8 years older than three times the age of her daughter:
+           x = 3y + 8
+        3. The sum of their ages is 68:
+           x + y = 68
+        Final Equations: 
+           x = 3y + 8 and x + y = 68
+        ",
+A train travels 150 miles downstream in 3 hours and 100 miles upstream in 4 hours. Write a system of linear equations to represent this information and find the speed of the train in still water and the speed of the current.,"
+        1. Let x be the speed of the train in still water and y be the speed of the current.
+        2. The effective speed downstream is (x + y):
+           3(x + y) = 150
+        3. The effective speed upstream is (x - y):
+           4(x - y) = 100
+        Final Equations: 
+           3(x + y) = 150 and 4(x - y) = 100
+        ",
+A father?s age is 5 years more than four times his daughter's age. The sum of their ages is 65. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the father's age and y be the daughter's age.
+        2. The father's age is 5 years more than four times the daughter's age:
+           x = 4y + 5
+        3. The sum of their ages is 65:
+           x + y = 65
+        Final Equations: 
+           x = 4y + 5 and x + y = 65
+        ",
+A woman is 3 times as old as her son. The sum of their ages is 48. Write a system of linear equations to represent this information and find their ages.,"
+        1. Let x be the woman's age and y be the son's age.
+        2. The woman is 3 times as old as her son:
+           x = 3y
+        3. The sum of their ages is 48:
+           x + y = 48
+        Final Equations: 
+           x = 3y and x + y = 48
+        ",
+The sum of two numbers is 12. The first number is 3 more than twice the second number. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 12
+        3. The first number is 3 more than twice the second number:
+           x = 2y + 3
+        Final Equations: 
+           x + y = 12 and x = 2y + 3
+        ",
+The sum of two numbers is 22. The second number is 4 less than the first number. Write a system of linear equations to represent this information and find the values of the two numbers.,"
+        1. Let x be the first number and y be the second number.
+        2. The sum of the two numbers is:
+           x + y = 22
+        3. The second number is 4 less than the first number:
+           y = x - 4
+        Final Equations: 
+           x + y = 22 and y = x - 4
+        ",
+A train travels 100 miles downstream in 2 hours and 60 miles upstream in 3 hours. Write a system of linear equations to represent this information and find the speed of the train in still water and the speed of the current.,"
+        1. Let x be the speed of the train in still water and y be the speed of the current.
+        2. The effective speed downstream is (x + y):
+           2(x + y) = 100
+        3. The effective speed upstream is (x - y):
+           3(x - y) = 60
+        Final Equations: 
+           2(x + y) = 100 and 3(x - y) = 60
+        ",
+A person works at a rate of 1/5 of the job per day. Another person works at a rate of 1/4 of the job per day. Write a system of linear equations to represent the time it takes for them to finish the job together.,"
+        1. Let x be the number of days for the first person to finish the job alone, and y be the number of days for the second person.
+        2. The rate of work is 1/5 per day for the first person:
+           1/x = 1/5
+        3. The rate of work is 1/4 per day for the second person:
+           1/y = 1/4
+        Final Equations: 
+           1/x = 1/5 and 1/y = 1/4
+        ",
+"The sum of three numbers is 30. The first number is 4 more than the second number, and the third number is 5 less than the first number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 30
+        3. The first number is 4 more than the second number:
+           x = y + 4
+        4. The third number is 5 less than the first number:
+           z = x - 5
+        Final Equations: 
+           x + y + z = 30, x = y + 4, and z = x - 5
+        ",
+"The sum of three numbers is 50. The first number is twice the second number, and the third number is 3 less than the first number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 50
+        3. The first number is twice the second number:
+           x = 2y
+        4. The third number is 3 less than the first number:
+           z = x - 3
+        Final Equations: 
+           x + y + z = 50, x = 2y, and z = x - 3
+        ",
+"A company sells three types of products: A, B, and C. The total revenue from selling 2 units of A, 3 units of B, and 5 units of C is $40. The total revenue from selling 3 units of A, 4 units of B, and 7 units of C is $50. The total revenue from selling 4 units of A, 5 units of B, and 8 units of C is $60. Write a system of linear equations to represent this information and find the price of each product.","
+        1. Let x be the price of product A, y be the price of product B, and z be the price of product C.
+        2. The first revenue equation is:
+           2x + 3y + 5z = 40
+        3. The second revenue equation is:
+           3x + 4y + 7z = 50
+        4. The third revenue equation is:
+           4x + 5y + 8z = 60
+        Final Equations: 
+           2x + 3y + 5z = 40, 3x + 4y + 7z = 50, and 4x + 5y + 8z = 60
+        ",
+"A person invests $1000 in three different accounts. The first account earns 5% interest, the second earns 6%, and the third earns 7%. The total interest earned in one year is $55. Write a system of linear equations to represent this information and find the amount invested in each account.","
+        1. Let x be the amount invested in the first account, y be the amount invested in the second account, and z be the amount invested in the third account.
+        2. The total amount invested is:
+           x + y + z = 1000
+        3. The total interest earned from the investments is:
+           0.05x + 0.06y + 0.07z = 55
+        Final Equations: 
+           x + y + z = 1000 and 0.05x + 0.06y + 0.07z = 55
+        ",
+"The sum of three numbers is 72. The first number is 3 times the second number, and the third number is 4 less than the first number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 72
+        3. The first number is 3 times the second number:
+           x = 3y
+        4. The third number is 4 less than the first number:
+           z = x - 4
+        Final Equations: 
+           x + y + z = 72, x = 3y, and z = x - 4
+        ",
+"A total of 100 animals are in a zoo, consisting of birds, lions, and tigers. The number of birds is 20 more than the number of lions. The number of tigers is twice the number of lions. Write a system of linear equations to represent this information and find the number of each animal.","
+        1. Let x be the number of birds, y be the number of lions, and z be the number of tigers.
+        2. The total number of animals is:
+           x + y + z = 100
+        3. The number of birds is 20 more than the number of lions:
+           x = y + 20
+        4. The number of tigers is twice the number of lions:
+           z = 2y
+        Final Equations: 
+           x + y + z = 100, x = y + 20, and z = 2y
+        ",
+"Three numbers add up to 48. The first number is twice the second number, and the second number is 3 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 48
+        3. The first number is twice the second number:
+           x = 2y
+        4. The second number is 3 less than the third number:
+           y = z - 3
+        Final Equations: 
+           x + y + z = 48, x = 2y, and y = z - 3
+        ",
+"A company produces three types of shirts: red, blue, and green. The total number of shirts produced is 500. The number of red shirts is twice the number of blue shirts, and the number of green shirts is 50 more than the number of blue shirts. Write a system of linear equations to represent this information and find the number of each type of shirt produced.","
+        1. Let x be the number of red shirts, y be the number of blue shirts, and z be the number of green shirts.
+        2. The total number of shirts is:
+           x + y + z = 500
+        3. The number of red shirts is twice the number of blue shirts:
+           x = 2y
+        4. The number of green shirts is 50 more than the number of blue shirts:
+           z = y + 50
+        Final Equations: 
+           x + y + z = 500, x = 2y, and z = y + 50
+        ",
+"The sum of three numbers is 80. The first number is 10 more than twice the second number, and the third number is 5 less than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 80
+        3. The first number is 10 more than twice the second number:
+           x = 2y + 10
+        4. The third number is 5 less than the second number:
+           z = y - 5
+        Final Equations: 
+           x + y + z = 80, x = 2y + 10, and z = y - 5
+        ",
+"A store sells 3 types of fruits: apples, bananas, and cherries. The total number of fruits sold is 120. The number of apples is twice the number of bananas, and the number of cherries is 10 less than the number of apples. Write a system of linear equations to represent this information and find the number of each type of fruit sold.","
+        1. Let x be the number of apples, y be the number of bananas, and z be the number of cherries.
+        2. The total number of fruits sold is:
+           x + y + z = 120
+        3. The number of apples is twice the number of bananas:
+           x = 2y
+        4. The number of cherries is 10 less than the number of apples:
+           z = x - 10
+        Final Equations: 
+           x + y + z = 120, x = 2y, and z = x - 10
+        ",
+"Three friends decided to pool their money together for a trip. The first friend contributed $50 more than the second friend, and the second friend contributed $30 more than the third friend. The total amount of money contributed is $330. Write a system of linear equations to represent this information and find the amount each friend contributed.","
+        1. Let x be the amount contributed by the first friend, y be the amount contributed by the second friend, and z be the amount contributed by the third friend.
+        2. The total amount contributed is:
+           x + y + z = 330
+        3. The first friend contributed $50 more than the second friend:
+           x = y + 50
+        4. The second friend contributed $30 more than the third friend:
+           y = z + 30
+        Final Equations: 
+           x + y + z = 330, x = y + 50, and y = z + 30
+        ",
+"The sum of three numbers is 72. The first number is 2 times the second number, and the third number is 8 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 72
+        3. The first number is 2 times the second number:
+           x = 2y
+        4. The third number is 8 more than the second number:
+           z = y + 8
+        Final Equations: 
+           x + y + z = 72, x = 2y, and z = y + 8
+        ",
+"Three numbers add up to 90. The first number is 4 times the second number, and the second number is 5 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 90
+        3. The first number is 4 times the second number:
+           x = 4y
+        4. The second number is 5 less than the third number:
+           y = z - 5
+        Final Equations: 
+           x + y + z = 90, x = 4y, and y = z - 5
+        ",
+"A class has 40 students. The number of boys is twice the number of girls, and the number of girls is 10 less than the number of boys. Write a system of linear equations to represent this information and find the number of boys and girls in the class.","
+        1. Let x be the number of boys and y be the number of girls.
+        2. The total number of students is:
+           x + y = 40
+        3. The number of boys is twice the number of girls:
+           x = 2y
+        4. The number of girls is 10 less than the number of boys:
+           y = x - 10
+        Final Equations: 
+           x + y = 40, x = 2y, and y = x - 10
+        ",
+"Three types of fruit are sold: apples, bananas, and oranges. The total number of fruits sold is 160. The number of apples is twice the number of bananas, and the number of bananas is 10 less than the number of oranges. Write a system of linear equations to represent this information and find the number of each type of fruit sold.","
+        1. Let x be the number of apples, y be the number of bananas, and z be the number of oranges.
+        2. The total number of fruits sold is:
+           x + y + z = 160
+        3. The number of apples is twice the number of bananas:
+           x = 2y
+        4. The number of bananas is 10 less than the number of oranges:
+           y = z - 10
+        Final Equations: 
+           x + y + z = 160, x = 2y, and y = z - 10
+        ",
+"The sum of three numbers is 120. The first number is 5 more than the second number, and the third number is twice the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 120
+        3. The first number is 5 more than the second number:
+           x = y + 5
+        4. The third number is twice the second number:
+           z = 2y
+        Final Equations: 
+           x + y + z = 120, x = y + 5, and z = 2y
+        ",
+"The sum of three numbers is 60. The first number is 5 more than the second number, and the second number is 5 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 60
+        3. The first number is 5 more than the second number:
+           x = y + 5
+        4. The second number is 5 less than the third number:
+           y = z - 5
+        Final Equations: 
+           x + y + z = 60, x = y + 5, and y = z - 5
+        ",
+"The sum of three numbers is 100. The first number is 3 times the second number, and the second number is 5 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 100
+        3. The first number is 3 times the second number:
+           x = 3y
+        4. The second number is 5 less than the third number:
+           y = z - 5
+        Final Equations: 
+           x + y + z = 100, x = 3y, and y = z - 5
+        ",
+"The sum of three numbers is 150. The first number is 4 times the second number, and the third number is 15 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 150
+        3. The first number is 4 times the second number:
+           x = 4y
+        4. The third number is 15 more than the second number:
+           z = y + 15
+        Final Equations: 
+           x + y + z = 150, x = 4y, and z = y + 15
+        ",
+"The total number of students in a school is 300. The number of boys is 100 more than the number of girls, and the number of girls is 50 less than the number of teachers. Write a system of linear equations to represent this information and find the number of boys, girls, and teachers.","
+        1. Let x be the number of boys, y be the number of girls, and z be the number of teachers.
+        2. The total number of students is:
+           x + y = 300
+        3. The number of boys is 100 more than the number of girls:
+           x = y + 100
+        4. The number of girls is 50 less than the number of teachers:
+           y = z - 50
+        Final Equations: 
+           x + y = 300, x = y + 100, and y = z - 50
+        ",
+"The sum of three numbers is 45. The first number is 3 times the second number, and the third number is 10 less than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 45
+        3. The first number is 3 times the second number:
+           x = 3y
+        4. The third number is 10 less than the second number:
+           z = y - 10
+        Final Equations: 
+           x + y + z = 45, x = 3y, and z = y - 10
+        ",
+"The total of three numbers is 200. The first number is twice the second number, and the second number is 30 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The total of the three numbers is:
+           x + y + z = 200
+        3. The first number is twice the second number:
+           x = 2y
+        4. The second number is 30 less than the third number:
+           y = z - 30
+        Final Equations: 
+           x + y + z = 200, x = 2y, and y = z - 30
+        ",
+"A box contains apples, bananas, and oranges. The total number of fruits is 180. The number of apples is 50 more than the number of bananas, and the number of bananas is 20 less than the number of oranges. Write a system of linear equations to represent this information and find the number of each type of fruit.","
+        1. Let x be the number of apples, y be the number of bananas, and z be the number of oranges.
+        2. The total number of fruits is:
+           x + y + z = 180
+        3. The number of apples is 50 more than the number of bananas:
+           x = y + 50
+        4. The number of bananas is 20 less than the number of oranges:
+           y = z - 20
+        Final Equations: 
+           x + y + z = 180, x = y + 50, and y = z - 20
+        ",
+"The sum of three numbers is 50. The first number is 4 times the second number, and the third number is 10 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 50
+        3. The first number is 4 times the second number:
+           x = 4y
+        4. The third number is 10 more than the second number:
+           z = y + 10
+        Final Equations: 
+           x + y + z = 50, x = 4y, and z = y + 10
+        ",
+"A farm has cows, chickens, and goats. The total number of animals is 120. The number of cows is 10 more than twice the number of chickens, and the number of goats is 20 more than the number of chickens. Write a system of linear equations to represent this information and find the number of each type of animal.","
+        1. Let x be the number of cows, y be the number of chickens, and z be the number of goats.
+        2. The total number of animals is:
+           x + y + z = 120
+        3. The number of cows is 10 more than twice the number of chickens:
+           x = 2y + 10
+        4. The number of goats is 20 more than the number of chickens:
+           z = y + 20
+        Final Equations: 
+           x + y + z = 120, x = 2y + 10, and z = y + 20
+        ",
+"A family has 1500 dollars. The father has 3 times as much as the mother, and the mother has 200 dollars more than the son. Write a system of linear equations to represent this information and find the amount of money each family member has.","
+        1. Let x be the amount of money the father has, y be the amount of money the mother has, and z be the amount of money the son has.
+        2. The total amount of money is:
+           x + y + z = 1500
+        3. The father has 3 times as much as the mother:
+           x = 3y
+        4. The mother has 200 dollars more than the son:
+           y = z + 200
+        Final Equations: 
+           x + y + z = 1500, x = 3y, and y = z + 200
+        ",
+"Three students decided to contribute to a class fund. The first student contributed $20 more than the second student, and the second student contributed $10 more than the third student. The total contribution was $90. Write a system of linear equations to represent this information and find the amount each student contributed.","
+        1. Let x be the amount the first student contributed, y be the amount the second student contributed, and z be the amount the third student contributed.
+        2. The total contribution is:
+           x + y + z = 90
+        3. The first student contributed $20 more than the second student:
+           x = y + 20
+        4. The second student contributed $10 more than the third student:
+           y = z + 10
+        Final Equations: 
+           x + y + z = 90, x = y + 20, and y = z + 10
+        ",
+"The sum of three numbers is 120. The first number is 5 times the second number, and the second number is 10 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 120
+        3. The first number is 5 times the second number:
+           x = 5y
+        4. The second number is 10 less than the third number:
+           y = z - 10
+        Final Equations: 
+           x + y + z = 120, x = 5y, and y = z - 10
+        ",
+"The sum of three numbers is 240. The first number is 6 times the second number, and the second number is 15 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 240
+        3. The first number is 6 times the second number:
+           x = 6y
+        4. The second number is 15 less than the third number:
+           y = z - 15
+        Final Equations: 
+           x + y + z = 240, x = 6y, and y = z - 15
+        ",
+"A factory produces pencils, pens, and erasers. The total number of items produced is 1000. The number of pencils is 3 times the number of pens, and the number of pens is 100 more than the number of erasers. Write a system of linear equations to represent this information and find the number of each item produced.","
+        1. Let x be the number of pencils, y be the number of pens, and z be the number of erasers.
+        2. The total number of items produced is:
+           x + y + z = 1000
+        3. The number of pencils is 3 times the number of pens:
+           x = 3y
+        4. The number of pens is 100 more than the number of erasers:
+           y = z + 100
+        Final Equations: 
+           x + y + z = 1000, x = 3y, and y = z + 100
+        ",
+"Three people contributed money to a charity. The first person contributed $10 more than the second person, and the second person contributed $5 more than the third person. The total contribution was $80. Write a system of linear equations to represent this information and find the amount each person contributed.","
+        1. Let x be the amount the first person contributed, y be the amount the second person contributed, and z be the amount the third person contributed.
+        2. The total contribution is:
+           x + y + z = 80
+        3. The first person contributed $10 more than the second person:
+           x = y + 10
+        4. The second person contributed $5 more than the third person:
+           y = z + 5
+        Final Equations: 
+           x + y + z = 80, x = y + 10, and y = z + 5
+        ",
+"The sum of three numbers is 50. The first number is twice the second number, and the second number is 5 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 50
+        3. The first number is twice the second number:
+           x = 2y
+        4. The second number is 5 less than the third number:
+           y = z - 5
+        Final Equations: 
+           x + y + z = 50, x = 2y, and y = z - 5
+        ",
+"The sum of three numbers is 120. The first number is 3 times the second number, and the third number is 10 less than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 120
+        3. The first number is 3 times the second number:
+           x = 3y
+        4. The third number is 10 less than the second number:
+           z = y - 10
+        Final Equations: 
+           x + y + z = 120, x = 3y, and z = y - 10
+        ",
+"A person has a total of 500 dollars. The amount of money they have is split between three accounts. The first account contains 3 times the amount of the second account, and the second account contains 50 dollars more than the third account. Write a system of linear equations to represent this information and find the amount in each account.","
+        1. Let x be the amount in the first account, y be the amount in the second account, and z be the amount in the third account.
+        2. The total amount is:
+           x + y + z = 500
+        3. The first account contains 3 times the amount of the second account:
+           x = 3y
+        4. The second account contains 50 dollars more than the third account:
+           y = z + 50
+        Final Equations: 
+           x + y + z = 500, x = 3y, and y = z + 50
+        ",
+"The sum of three numbers is 150. The first number is 4 times the second number, and the third number is 20 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 150
+        3. The first number is 4 times the second number:
+           x = 4y
+        4. The third number is 20 more than the second number:
+           z = y + 20
+        Final Equations: 
+           x + y + z = 150, x = 4y, and z = y + 20
+        ",
+"The sum of three numbers is 300. The first number is twice the second number, and the third number is 50 less than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 300
+        3. The first number is twice the second number:
+           x = 2y
+        4. The third number is 50 less than the second number:
+           z = y - 50
+        Final Equations: 
+           x + y + z = 300, x = 2y, and z = y - 50
+        ",
+"The total number of books in a library is 180. The number of fiction books is twice the number of non-fiction books, and the number of non-fiction books is 20 less than the number of reference books. Write a system of linear equations to represent this information and find the number of each type of book.","
+        1. Let x be the number of fiction books, y be the number of non-fiction books, and z be the number of reference books.
+        2. The total number of books is:
+           x + y + z = 180
+        3. The number of fiction books is twice the number of non-fiction books:
+           x = 2y
+        4. The number of non-fiction books is 20 less than the number of reference books:
+           y = z - 20
+        Final Equations: 
+           x + y + z = 180, x = 2y, and y = z - 20
+        ",
+"The sum of three numbers is 500. The first number is 5 times the second number, and the third number is 20 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 500
+        3. The first number is 5 times the second number:
+           x = 5y
+        4. The third number is 20 more than the second number:
+           z = y + 20
+        Final Equations: 
+           x + y + z = 500, x = 5y, and z = y + 20
+        ",
+"The sum of three numbers is 250. The first number is 8 times the second number, and the second number is 30 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 250
+        3. The first number is 8 times the second number:
+           x = 8y
+        4. The second number is 30 less than the third number:
+           y = z - 30
+        Final Equations: 
+           x + y + z = 250, x = 8y, and y = z - 30
+        ",
+"A company has three types of products: A, B, and C. The total number of products produced is 600. The number of product A is 4 times the number of product B, and the number of product B is 50 more than the number of product C. Write a system of linear equations to represent this information and find the number of each product produced.","
+        1. Let x be the number of product A, y be the number of product B, and z be the number of product C.
+        2. The total number of products is:
+           x + y + z = 600
+        3. The number of product A is 4 times the number of product B:
+           x = 4y
+        4. The number of product B is 50 more than the number of product C:
+           y = z + 50
+        Final Equations: 
+           x + y + z = 600, x = 4y, and y = z + 50
+        ",
+"The sum of three numbers is 150. The first number is 3 times the second number, and the third number is 15 more than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 150
+        3. The first number is 3 times the second number:
+           x = 3y
+        4. The third number is 15 more than the second number:
+           z = y + 15
+        Final Equations: 
+           x + y + z = 150, x = 3y, and z = y + 15
+        ",
+"The sum of three numbers is 400. The first number is 7 times the second number, and the second number is 40 less than the third number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 400
+        3. The first number is 7 times the second number:
+           x = 7y
+        4. The second number is 40 less than the third number:
+           y = z - 40
+        Final Equations: 
+           x + y + z = 400, x = 7y, and y = z - 40
+        ",
+"A store sells three types of fruits: apples, bananas, and cherries. The total number of fruits sold is 200. The number of apples is twice the number of bananas, and the number of bananas is 30 more than the number of cherries. Write a system of linear equations to represent this information and find the number of each type of fruit sold.","
+        1. Let x be the number of apples, y be the number of bananas, and z be the number of cherries.
+        2. The total number of fruits sold is:
+           x + y + z = 200
+        3. The number of apples is twice the number of bananas:
+           x = 2y
+        4. The number of bananas is 30 more than the number of cherries:
+           y = z + 30
+        Final Equations: 
+           x + y + z = 200, x = 2y, and y = z + 30
+        ",
+"The total number of seats in a theater is 800. The number of front-row seats is 5 times the number of middle-row seats, and the number of middle-row seats is 100 more than the number of back-row seats. Write a system of linear equations to represent this information and find the number of seats in each row.","
+        1. Let x be the number of front-row seats, y be the number of middle-row seats, and z be the number of back-row seats.
+        2. The total number of seats is:
+           x + y + z = 800
+        3. The number of front-row seats is 5 times the number of middle-row seats:
+           x = 5y
+        4. The number of middle-row seats is 100 more than the number of back-row seats:
+           y = z + 100
+        Final Equations: 
+           x + y + z = 800, x = 5y, and y = z + 100
+        ",
+"The sum of three numbers is 360. The first number is 6 times the second number, and the third number is 30 less than the second number. Write a system of linear equations to represent this information and find the values of the three numbers.","
+        1. Let x be the first number, y be the second number, and z be the third number.
+        2. The sum of the three numbers is:
+           x + y + z = 360
+        3. The first number is 6 times the second number:
+           x = 6y
+        4. The third number is 30 less than the second number:
+           z = y - 30
+        Final Equations: 
+           x + y + z = 360, x = 6y, and z = y - 30
+        ",
+"The total number of chairs in a conference room is 250. The number of chairs in the front row is twice the number of chairs in the middle row, and the number of chairs in the middle row is 30 more than the number of chairs in the back row. Write a system of linear equations to represent this information and find the number of chairs in each row.","
+        1. Let x be the number of chairs in the front row, y be the number of chairs in the middle row, and z be the number of chairs in the back row.
+        2. The total number of chairs is:
+           x + y + z = 250
+        3. The number of chairs in the front row is twice the number of chairs in the middle row:
+           x = 2y
+        4. The number of chairs in the middle row is 30 more than the number of chairs in the back row:
+           y = z + 30
+        Final Equations: 
+           x + y + z = 250, x = 2y, and y = z + 30
+        ",
+"A person invested in two schemes, one offering 6% annual interest and the other offering 8% annual interest. The total investment was $10,000, and the total interest earned from both schemes after one year was $720. Write a system of linear equations to represent this information and find how much was invested in each scheme.","
+        1. Let x be the amount invested at 6% interest, and y be the amount invested at 8% interest.
+        2. The total investment is:
+           x + y = 10000
+        3. The total interest is $720:
+           0.06x + 0.08y = 720
+        Final Equations:
+           x + y = 10000 and 0.06x + 0.08y = 720
+        ",
+"A car rental company offers two types of cars. One type rents for $30 per day, and the other rents for $45 per day. If a customer rents the cars for a total of 6 days and the total cost is $240, write a system of linear equations to represent this information and find how many days the customer rented each type of car.","
+        1. Let x be the number of days the customer rented the $30 per day car, and y be the number of days they rented the $45 per day car.
+        2. The total days rented is:
+           x + y = 6
+        3. The total cost is $240:
+           30x + 45y = 240
+        Final Equations:
+           x + y = 6 and 30x + 45y = 240
+        ",
+A farmer has a total of 1000 meters of fencing. She wants to use the fencing to enclose a rectangular area for grazing. The length of the enclosure is 3 meters longer than twice the width. Write a system of linear equations to represent this information and find the dimensions of the enclosure.,"
+        1. Let x be the width of the enclosure, and y be the length of the enclosure.
+        2. The total fencing is used for the perimeter:
+           2x + 2y = 1000
+        3. The length is 3 meters longer than twice the width:
+           y = 2x + 3
+        Final Equations:
+           2x + 2y = 1000 and y = 2x + 3
+        ",
+"Two types of tickets are sold for a concert: adult tickets and child tickets. The price of an adult ticket is $25, and the price of a child ticket is $10. If 100 tickets are sold and the total revenue is $2,000, write a system of linear equations to represent this information and find how many adult and child tickets were sold.","
+        1. Let x be the number of adult tickets sold, and y be the number of child tickets sold.
+        2. The total number of tickets sold is:
+           x + y = 100
+        3. The total revenue is $2,000:
+           25x + 10y = 2000
+        Final Equations:
+           x + y = 100 and 25x + 10y = 2000
+        ",
+A train travels from city A to city B and then returns. The time it takes to travel from A to B is 2 hours less than the time it takes to travel from B to A. The total travel time for the round trip is 8 hours. Write a system of linear equations to represent this information and find the time taken for each leg of the journey.,"
+        1. Let x be the time taken to travel from A to B, and y be the time taken to travel from B to A.
+        2. The total travel time is:
+           x + y = 8
+        3. The time from A to B is 2 hours less than the time from B to A:
+           x = y - 2
+        Final Equations:
+           x + y = 8 and x = y - 2
+        ",
+A boat travels 120 kilometers downstream in 3 hours and returns upstream in 4 hours. The speed of the current is 2 km/h. Write a system of linear equations to represent this information and find the speed of the boat in still water.,"
+        1. Let x be the speed of the boat in still water (in km/h), and y be the speed of the current (which is given as 2 km/h).
+        2. The speed of the boat downstream is (x + y), and it takes 3 hours to travel 120 km:
+           120 = 3(x + 2)
+        3. The speed of the boat upstream is (x - y), and it takes 4 hours to travel 120 km:
+           120 = 4(x - 2)
+        Final Equations:
+           120 = 3(x + 2) and 120 = 4(x - 2)
+        ",
+"The sum of two numbers is 18, and the product of these two numbers is 56. What are the numbers?","
+         1. Let x and y be the two numbers.
+         2. The sum of the two numbers:
+            x + y = 18
+         3. The product of the two numbers:
+            xy = 56
+         Final Equations:
+            x + y = 18, xy = 56
+         ",
+The difference of the squares of two consecutive even integers is 68. What are these numbers?,"
+         1. Let x be the smaller even integer and x + 2 be the larger even integer.
+         2. The difference of their squares:
+            (x + 2)^2 - x^2 = 68
+         Final Equations:
+            (x + 2)^2 - x^2 = 68
+         ",
+"The product of the ages of Sally and Joey now is 175 more than the product of their ages 5 years prior. If Sally is 20 years older than Joey, what are their current ages?","
+         1. Let x be Joey�s current age and x + 20 be Sally�s current age.
+         2. Their product now:
+            x(x + 20)
+         3. Their product 5 years ago:
+            (x - 5)(x + 15)
+         4. The difference in the products:
+            x(x + 20) = (x - 5)(x + 15) + 175
+         Final Equation:
+            x(x + 20) = (x - 5)(x + 15) + 175
+         ",
+"The sum of two numbers is 22, and the product of these two numbers is 120. What are the numbers?","
+         1. Let x and y be the two numbers.
+         2. The sum of the two numbers:
+            x + y = 22
+         3. The product of the two numbers:
+            xy = 120
+         Final Equations:
+            x + y = 22, xy = 120
+",
+"The difference of two numbers is 4, and the product of these two numbers is 140. What are the numbers?","
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 4
+??3. The product of the two numbers:
+??????xy = 140
+
+??Final Equations:
+??????x - y = 4, xy = 140
+",
+"The difference of two numbers is 8, and the sum of the squares of these two numbers is 320. What are the numbers?","
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 8
+??3. The sum of the squares of the two numbers:
+??????x^2 + y^2 = 320
+
+??Final Equations:
+??????x - y = 8, x^2 + y^2 = 320
+",
+The sum of the squares of two consecutive even integers is 244. What are these numbers?,"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 244
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 244
+",
+The difference of the squares of two consecutive even integers is 60. What are these numbers?,"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The difference of their squares:
+??????(x + 2)^2 - x^2 = 60
+
+??Final Equation:
+??????(x + 2)^2 - x^2 = 60
+",
+The sum of the squares of two consecutive even integers is 452. What are these numbers?,"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 452
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 452
+",
+Find three consecutive even integers such that the product of the first two is 38 more than the third integer.,"
+??1. Let x, x + 2, and x + 4 be the three consecutive even integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 38
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 38
+",
+Find three consecutive odd integers such that the product of the first two is 52 more than the third integer.,"
+??1. Let x, x + 2, and x + 4 be the three consecutive odd integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 52
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 52
+",
+,,
+Here is your formatted text as per your exact specifications:,,
+,,
+"The sum of two numbers is 22, and the product of these two numbers is 120. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The sum of the two numbers:
+??????x + y = 22
+??3. The product of the two numbers:
+??????xy = 120
+
+??Final Equations:
+??????x + y = 22, xy = 120
+",,
+,,
+"The difference of two numbers is 4, and the product of these two numbers is 140. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 4
+??3. The product of the two numbers:
+??????xy = 140
+
+??Final Equations:
+??????x - y = 4, xy = 140
+",,
+,,
+"The difference of two numbers is 8, and the sum of the squares of these two numbers is 320. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 8
+??3. The sum of the squares of the two numbers:
+??????x^2 + y^2 = 320
+
+??Final Equations:
+??????x - y = 8, x^2 + y^2 = 320
+",,
+,,
+The sum of the squares of two consecutive even integers is 244. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 244
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 244
+",,
+,,
+The difference of the squares of two consecutive even integers is 60. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The difference of their squares:
+??????(x + 2)^2 - x^2 = 60
+
+??Final Equation:
+??????(x + 2)^2 - x^2 = 60
+",,
+,,
+The sum of the squares of two consecutive even integers is 452. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 452
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 452
+",,
+,,
+Find three consecutive even integers such that the product of the first two is 38 more than the third integer.,,
+"
+??1. Let x, x + 2, and x + 4 be the three consecutive even integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 38
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 38
+",,
+,,
+Find three consecutive odd integers such that the product of the first two is 52 more than the third integer.,,
+"
+??1. Let x, x + 2, and x + 4 be the three consecutive odd integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 52
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 52
+",,
+,,
+"The product of the ages of Alan and Terry is 80 more than the product of their ages 4 years prior. If Alan is 4 years older than Terry, what are their current ages?","
+??1. Let x be Terry�s current age and x + 4 be Alan�s current age.
+??2. Their product now:
+??????x(x + 4)
+??3. Their product 4 years ago:
+??????(x - 4)(x)
+??4. The difference in the products:
+??????x(x + 4) = (x - 4)(x) + 80
+
+??Final Equation:
+??????x(x + 4) = (x - 4)(x) + 80
+",
+Here is your formatted text as per your exact specifications:,,
+,,
+"The sum of two numbers is 22, and the product of these two numbers is 120. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The sum of the two numbers:
+??????x + y = 22
+??3. The product of the two numbers:
+??????xy = 120
+
+??Final Equations:
+??????x + y = 22, xy = 120
+",,
+,,
+"The difference of two numbers is 4, and the product of these two numbers is 140. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 4
+??3. The product of the two numbers:
+??????xy = 140
+
+??Final Equations:
+??????x - y = 4, xy = 140
+",,
+,,
+"The difference of two numbers is 8, and the sum of the squares of these two numbers is 320. What are the numbers?",,
+"
+??1. Let x and y be the two numbers.
+??2. The difference of the two numbers:
+??????x - y = 8
+??3. The sum of the squares of the two numbers:
+??????x^2 + y^2 = 320
+
+??Final Equations:
+??????x - y = 8, x^2 + y^2 = 320
+",,
+,,
+The sum of the squares of two consecutive even integers is 244. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 244
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 244
+",,
+,,
+The difference of the squares of two consecutive even integers is 60. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The difference of their squares:
+??????(x + 2)^2 - x^2 = 60
+
+??Final Equation:
+??????(x + 2)^2 - x^2 = 60
+",,
+,,
+The sum of the squares of two consecutive even integers is 452. What are these numbers?,,
+"
+??1. Let x be the smaller even integer and x + 2 be the larger even integer.
+??2. The sum of the squares:
+??????x^2 + (x + 2)^2 = 452
+
+??Final Equation:
+??????x^2 + (x + 2)^2 = 452
+",,
+,,
+Find three consecutive even integers such that the product of the first two is 38 more than the third integer.,,
+"
+??1. Let x, x + 2, and x + 4 be the three consecutive even integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 38
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 38
+",,
+,,
+Find three consecutive odd integers such that the product of the first two is 52 more than the third integer.,,
+"
+??1. Let x, x + 2, and x + 4 be the three consecutive odd integers.
+??2. The product of the first two is:
+??????x(x + 2) = (x + 4) + 52
+
+??Final Equation:
+??????x(x + 2) = (x + 4) + 52
+",,
+,,
+"The product of the ages of Alan and Terry is 80 more than the product of their ages 4 years prior. If Alan is 4 years older than Terry, what are their current ages?",,
+"
+??1. Let x be Terry�s current age and x + 4 be Alan�s current age.
+??2. Their product now:
+??????x(x + 4)
+??3. Their product 4 years ago:
+??????(x - 4)(x)
+??4. The difference in the products:
+??????x(x + 4) = (x - 4)(x) + 80
+
+??Final Equation:
+??????x(x + 4) = (x - 4)(x) + 80
+",,
+,,
+"The product of the ages of Cally and Katy is 130 less than the product of their ages in 5 years. If Cally is 3 years older than Katy, what are their current ages?","
+??1. Let x be Katy�s current age and x + 3 be Cally�s current age.
+??2. Their product now:
+??????x(x + 3)
+??3. Their product in 5 years:
+??????(x + 5)(x + 8)
+??4. The difference in the products:
+??????(x + 5)(x + 8) = x(x + 3) + 130
+
+??Final Equation:
+??????(x + 5)(x + 8) = x(x + 3) + 130
+""The product of the ages of James and Susan in 5 years is 230 more than the product of their ages today. What are their ages if James is one year older than Susan?","
+      1. Let x be James' current age, and y be Susan's current age.  
+      2. In 5 years, their ages will be (x + 5) and (y + 5).  
+      3. The product of their future ages is 230 more than the product of their current ages:  
+           (x + 5)(y + 5) = xy + 230  
+      4. James is one year older than Susan:  
+           x = y + 1  
+      Final Equations:  
+           (x + 5)(y + 5) = xy + 230 and x = y + 1  
+     "
+,,
+The product of the ages (in days) of two newborn babies Simran and Jessie in two days will be 48 more than the product of their ages today. How old are the babies if Jessie is 2 days older than Simran?,"
+      1. Let x be Simran's current age in days, and y be Jessie's current age in days.  
+      2. In two days, their ages will be (x + 2) and (y + 2).  
+      3. The product of their future ages is 48 more than the product of their current ages:  
+           (x + 2)(y + 2) = xy + 48  
+      4. Jessie is 2 days older than Simran:  
+           y = x + 2  
+      Final Equations:  
+           (x + 2)(y + 2) = xy + 48 and y = x + 2  
+     ",
+"Doug went to a conference in a city 120 km away. On the way back, due to road construction, he had to drive 10 km/h slower, which resulted in the return trip taking 2 hours longer. How fast did he drive on the way to the conference?","
+      1. Let x be Doug's speed on the way to the conference.  
+      2. The time for the trip to the conference is 120/x.  
+      3. The return trip speed is (x - 10), and the time for the return trip is 120/(x - 10).  
+      4. The return trip took 2 hours longer:  
+           120/(x - 10) = 120/x + 2  
+      Final Equations:  
+           120/(x - 10) = 120/x + 2  
+     ",
+,,
+"Mark rows downstream for 30 km, then turns around and returns to his original location. The total trip took 8 hr. If the current flows at 2 km/h, how fast would Mark row in still water?"," 
+      1. Let x be Mark's rowing speed in still water.  
+      2. The speed downstream is (x + 2), and the speed upstream is (x - 2).  
+      3. The time for the downstream trip is 30/(x + 2), and the time for the upstream trip is 30/(x - 2).  
+      4. The total time for the trip is 8 hours:  
+           30/(x + 2) + 30/(x - 2) = 8  
+      Final Equations:  
+           30/(x + 2) + 30/(x - 2) = 8  
+     ",
+,,
+"A train travelled 240 km at a certain speed. When the engine was replaced by an improved model, the speed was increased by 20 km/hr and the travel time for the trip was decreased by 1 hr. What was the rate of each engine?","
+      1. Let x be the speed of the original engine.  
+      2. The time for the trip with the original engine is 240/x.  
+      3. The time for the trip with the improved engine is 240/(x + 20).  
+      4. The improved engine takes 1 hour less:  
+           240/(x + 20) = 240/x - 1  
+      Final Equations:  
+           240/(x + 20) = 240/x - 1  
+     ",
+,,
+"Mr. Jones visits his grandmother, who lives 100 km away, on a regular basis. Recently, a new freeway has opened up, and although the freeway route is 120 km, he can drive 20 km/h faster on average and takes 30 minutes less time to make the trip. What is Mr. Jones�s rate on both the old route and on the freeway?","
+      1. Let x be Mr. Jones�s speed on the old route.  
+      2. The time for the old route trip is 100/x.  
+      3. The time for the freeway trip is 120/(x + 20).  
+      4. The freeway trip takes 30 minutes less:  
+           120/(x + 20) = 100/x - 0.5  
+      Final Equations:  
+           120/(x + 20) = 100/x - 0.5  
+     ",
+,,
+"If a cyclist had travelled 5 km/h faster, she would have needed 1.5 hr less time to travel 150 km. Find the speed of the cyclist.","
+      1. Let x be the cyclist's speed.  
+      2. The time for the trip at speed x is 150/x.  
+      3. The time for the trip at speed (x + 5) is 150/(x + 5).  
+      4. The difference in time is 1.5 hours:  
+           150/x - 150/(x + 5) = 1.5  
+      Final Equations:  
+           150/x - 150/(x + 5) = 1.5  
+     ",
+,,
+"By going 15 km per hr faster, a transit bus would have required 1 hr less to travel 180 km. What was the average speed of this bus?","
+      1. Let x be the bus's speed.  
+      2. The time for the trip at speed x is 180/x.  
+      3. The time for the trip at speed (x + 15) is 180/(x + 15).  
+      4. The difference in time is 1 hour:  
+           180/x - 180/(x + 15) = 1  
+      Final Equations:  
+           180/x - 180/(x + 15) = 1  
+     ",
+,,
+A cyclist rides to a cabin 72 km away up the valley and then returns in 9 hr. His speed returning is 12 km/h faster than his speed in going. Find his speed both going and returning.,"
+      1. Let x be the cyclist's speed going to the cabin.  
+      2. The speed returning is (x + 12).  
+      3. The time for the trip to the cabin is 72/x, and the time for the return trip is 72/(x + 12).  
+      4. The total time for the trip is 9 hours:  
+           72/x + 72/(x + 12) = 9  
+      Final Equations:  
+           72/x + 72/(x + 12) = 9  
+     ",
+,,
+"A cyclist made a trip of 120 km and then returned in 7 hr. Returning, the rate increased 10 km/h. Find the speed of this cyclist travelling each way.","
+      1. Let x be the cyclist's speed going.  
+      2. The speed returning is (x + 10).  
+      3. The time for the trip going is 120/x, and the time for the return trip is 120/(x + 10).  
+      4. The total time for the trip is 7 hours:  
+           120/x + 120/(x + 10) = 7  
+      Final Equations:  
+           120/x + 120/(x + 10) = 7  
+     ",
+"The distance between two bus stations is 240 km. If the speed of a bus increases by 36 km/h, the trip would take 1.5 hours less. What is the usual speed of the bus?","
+   1. Let x be the usual speed of the bus.  
+   2. The time for the trip at speed x is 240/x.  
+   3. The time for the trip at speed (x + 36) is 240/(x + 36).  
+   4. The difference in time is 1.5 hours:  
+       240/x - 240/(x + 36) = 1.5  
+   Final Equation:  
+       240/x - 240/(x + 36) = 1.5  
+",
+,,
+"The pilot flew at a constant speed for 600 km. Returning the next day, the pilot flew against a headwind of 50 km/h to return to his starting point. If the plane was in the air for a total of 7 hours, what was the average speed of this plane?","
+   1. Let x be the plane's speed in still air.  
+   2. The time for the trip with the tailwind is 600/(x + 50).  
+   3. The time for the return trip with the headwind is 600/(x - 50).  
+   4. The total time for both trips is 7 hours:  
+       600/(x + 50) + 600/(x - 50) = 7  
+   Final Equation:  
+       600/(x + 50) + 600/(x - 50) = 7  
+",
+,,
+Find the length and width of a rectangle whose length is 5 cm longer than its width and whose area is 50 cm�.,"
+   1. Let x be the width of the rectangle.  
+   2. The length of the rectangle is (x + 5).  
+   3. The area of the rectangle is given by length * width:  
+       (x + 5) * x = 50  
+   Final Equation:  
+       (x + 5) * x = 50  
+",
+,,
+"If the length of each side of a square is increased by 6, the area is multiplied by 16. Find the length of one side of the original square.","
+   1. Let x be the length of one side of the original square.  
+   2. The area of the original square is x�.  
+   3. The area of the new square is (x + 6)�.  
+   4. The new area is 16 times the original area:  
+       (x + 6)� = 16 * x�  
+   Final Equation:  
+       (x + 6)� = 16 * x�  
+",
+Nick and Chloe want to surround their 60 by 80 cm wedding photo with matting of equal width. The resulting photo and matting is to be covered by a 1 m2 sheet of expensive archival glass. Find the width of the matting.,"  
+      1. Let x be the width of the matting.  
+      2. The dimensions of the photo with the matting are (60 + 2x) by (80 + 2x).  
+      3. The area of the photo and matting is (60 + 2x)(80 + 2x).  
+      4. The area is 1 m�, or 10000 cm�:  
+           (60 + 2x)(80 + 2x) = 10000  
+      Final Equations:  
+           (60 + 2x)(80 + 2x) = 10000  
+     ",
+,,
+Find the length and width of a rectangle whose length is 4 cm longer than its width and whose area is 60 cm�.,"  
+      1. Let x be the width of the rectangle.  
+      2. The length is x + 4.  
+      3. The area of the rectangle is length � width:  
+           x(x + 4) = 60  
+      Final Equations:  
+           x(x + 4) = 60  
+     ",
+,,
+Find the length and width of a rectangle whose width is 10 cm shorter than its length and whose area is 200 cm�.,"
+      1. Let x be the length of the rectangle.  
+      2. The width is x - 10.  
+      3. The area of the rectangle is length � width:  
+           x(x - 10) = 200  
+      Final Equations:  
+           x(x - 10) = 200  
+     ",
+,,
+"A large rectangular garden in a park is 120 m wide and 150 m long. A contractor is called in to add a brick walkway to surround this garden. If the area of the walkway is 2800 m�, how wide is the walkway?","
+      1. Let x be the width of the walkway.  
+      2. The dimensions of the garden plus the walkway are (120 + 2x) by (150 + 2x).  
+      3. The area of the garden plus the walkway is (120 + 2x)(150 + 2x).  
+      4. The area of the walkway is the total area minus the garden area:  
+           (120 + 2x)(150 + 2x) - 120 * 150 = 2800  
+      Final Equations:  
+           (120 + 2x)(150 + 2x) - 120 * 150 = 2800  
+     ",
+,,
+"A park swimming pool is 10 m wide and 25 m long. A pool cover is purchased to cover the pool, overlapping all 4 sides by the same width. If the covered area outside the pool is 74 m�, how wide is the overlap area?","
+      1. Let x be the width of the overlap.  
+      2. The dimensions of the pool cover are (10 + 2x) by (25 + 2x).  
+      3. The area of the pool cover is (10 + 2x)(25 + 2x).  
+      4. The area outside the pool is the pool cover area minus the pool area:  
+           (10 + 2x)(25 + 2x) - 10 * 25 = 74  
+      Final Equations:  
+           (10 + 2x)(25 + 2x) - 10 * 25 = 74  
+     ",
+,,
+"In a landscape plan, a rectangular flowerbed is designed to be 4 m longer than it is wide. If 60 m� are needed for the plants in the bed, what should the dimensions of the rectangular bed be?","
+      1. Let x be the width of the flowerbed.  
+      2. The length is x + 4.  
+      3. The area of the flowerbed is length � width:  
+           x(x + 4) = 60  
+      Final Equations:  
+           x(x + 4) = 60  
+     ",
+,,
+"If the side of a square is increased by 5 units, the area is increased by 4 square units. Find the length of the sides of the original square.","
+      1. Let x be the side length of the original square.  
+      2. The area of the original square is x�.  
+      3. The area of the square with an increased side length is (x + 5)�.  
+      4. The increase in area is 4 square units:  
+           (x + 5)� - x� = 4  
+      Final Equations:  
+           (x + 5)� - x� = 4  
+     ",
+,,
+A rectangular lot is 20 m longer than it is wide and its area is 2400 m�. Find the dimensions of the lot.,"  
+      1. Let x be the width of the lot.  
+      2. The length is x + 20.  
+      3. The area of the lot is length � width:  
+           x(x + 20) = 2400  
+      Final Equations:  
+           x(x + 20) = 2400  
+     ",
+,,
+"The length of a room is 8 m greater than its width. If both the length and the width are increased by 2 m, the area increases by 60 m�. Find the dimensions of the room.","
+      1. Let x be the width of the room.  
+      2. The length is x + 8.  
+      3. The area of the room before the increase is (x)(x + 8).  
+      4. After increasing both dimensions by 2 m, the area is (x + 2)(x + 10).  
+      5. The increase in area is 60 m�:  
+           (x + 2)(x + 10) - x(x + 8) = 60  
+      Final Equations:  
+           (x + 2)(x + 10) - x(x + 8) = 60  
+     ",
+"The product of two consecutive positive integers is 306. Form the quadratic equation to find the integers, if x denotes the smaller integer.","
+      1. Let x be the smaller integer.  
+      2. The next integer is x + 1.  
+      3. Their product is given as:  
+           x(x + 1) = 306  
+      Final Equations:  
+           x(x + 1) = 306  
+     ",
+,,
+"John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 128. Form the quadratic equation to find how many marbles they had to start with, if John had x marbles.","
+      1. Let x be the number of marbles John originally had.  
+      2. Jivanti originally had (45 - x) marbles.  
+      3. After losing 5 marbles each, John has (x - 5) and Jivanti has (45 - x - 5).  
+      4. The product of their remaining marbles is:  
+           (x - 5)(40 - x) = 128  
+      Final Equations:  
+           (x - 5)(40 - x) = 128  
+     ",
+,,
+"A cottage industry produces a certain number of toys in a day. The cost of production of each toy (in rupees) was found to be 55 minus the number of articles produced in a day. On a particular day, the total cost of production was Rs. 750. If x denotes the number of toys produced that day, form the quadratic equation to find x.","
+      1. Let x be the number of toys produced in a day.  
+      2. The cost per toy is (55 - x) rupees.  
+      3. The total cost of production is given by:  
+           x(55 - x) = 750  
+      Final Equations:  
+           x(55 - x) = 750  
+     ",
+,,
+"The height of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, form the quadratic equation to find the base of the triangle.","
+      1. Let x be the base of the right triangle.  
+      2. The height is (x - 7).  
+      3. Using the Pythagorean theorem:  
+           x� + (x - 7)� = 13�  
+      Final Equations:  
+           x� + (x - 7)� = 169  
+     ",
+,,
+"An express train takes 1 hour less than a passenger train to travel 132 km between Mysore and Bangalore. If the average speed of the express train is 11 km/h more than that of the passenger train, form the quadratic equation to find the average speed of the express train.","
+      1. Let x be the speed of the passenger train in km/h.  
+      2. The speed of the express train is (x + 11) km/h.  
+      3. The time taken by the passenger train is (132 / x) hours.  
+      4. The time taken by the express train is (132 / (x + 11)) hours.  
+      5. Given that the express train takes 1 hour less:  
+           (132 / x) - (132 / (x + 11)) = 1  
+      Final Equations:  
+           (132 / x) - (132 / (x + 11)) = 1  
+     ",
+,,
+"A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.","
+      1. Let x be the speed of the train in km/h.  
+      2. The time taken to travel 360 km is (360 / x) hours.  
+      3. If the speed were (x + 5) km/h, the time taken would be (360 / (x + 5)) hours.  
+      4. Given that the faster train takes 1 hour less:  
+           (360 / x) - (360 / (x + 5)) = 1  
+      Final Equations:  
+           (360 / x) - (360 / (x + 5)) = 1  
+     ",
+Find the consecutive numbers whose squares have the sum 85.,"
+      1. Let x be the smaller number.  
+      2. The next consecutive number is (x + 1).  
+      3. Their squares sum up to:  
+           x� + (x + 1)� = 85  
+      Final Equations:  
+           x� + (x + 1)� = 85  
+     ",
+,,
+Divide 29 into two parts so that the sum of the squares of the parts is 425.,"
+      1. Let one part be x.  
+      2. The other part is (29 - x).  
+      3. The sum of their squares is:  
+           x� + (29 - x)� = 425  
+      Final Equations:  
+           x� + (29 - x)� = 425  
+     ",
+,,
+Two squares have sides x cm and (x + 4) cm. The sum of their areas is 656 cm�. Find the sides of the squares.,"
+      1. Let x be the side of the smaller square.  
+      2. The side of the larger square is (x + 4).  
+      3. The sum of their areas is:  
+           x� + (x + 4)� = 656  
+      Final Equations:  
+           x� + (x + 4)� = 656  
+     ",
+,,
+The sum of two numbers is 48 and their product is 432. Find the numbers.,"
+      1. Let the two numbers be x and (48 - x).  
+      2. Their product is given by:  
+           x(48 - x) = 432  
+      Final Equations:  
+           x(48 - x) = 432  
+     ",
+,,
+"If an integer is added to its square, the sum is 90. Find the integer with the help of a quadratic equation.","
+      1. Let the integer be x.  
+      2. Given that the sum of the integer and its square is 90:  
+           x� + x = 90  
+      Final Equations:  
+           x� + x = 90  
+     ",
+Find the whole numbers which when decreased by 20 is equal to 69 times the reciprocal of the number.,  ,
+   "      1. Let the number be x.  ,,
+      2. According to the given condition:  ,,
+           x - 20 = 69/x  ,,
+      Final Equations:  ,,
+           x - 20 = 69/x  ,,
+   "  ,,
+,,
+Find the two consecutive natural numbers whose product is 20.,  ,
+   "      1. Let the smaller number be x.  ,,
+      2. The next consecutive number is (x + 1).  ,,
+      3. Their product is given by:  ,,
+           x(x + 1) = 20  ,,
+      Final Equations:  ,,
+           x(x + 1) = 20  ,,
+   "  ,,
+,,
+The sum of the squares of the two consecutive odd positive integers is 394. Find them.,  ,
+   "      1. Let the smaller odd integer be x.  ,,
+      2. The next consecutive odd integer is (x + 2).  ,,
+      3. Their squares sum up to:  ,,
+           x� + (x + 2)� = 394  ,,
+      Final Equations:  ,,
+           x� + (x + 2)� = 394  ,,
+   "  ,,
+,,
+The sum of two numbers is 8 and 15 times the sum of their reciprocals is also 8. Find the numbers.,  ,
+   "      1. Let the two numbers be x and (8 - x).  ,,
+      2. Their reciprocal sum condition gives:  ,,
+           15 * (1/x + 1/(8 - x)) = 8  ,,
+      Final Equations:  ,,
+           15 * (1/x + 1/(8 - x)) = 8  ,,
+   "  ,,
+,,
+The sum of a number and its positive square root is 6/25. Find the number.,  ,
+   "      1. Let the number be x.  ,,
+      2. Given condition:  ,,
+           x + vx = 6/25  ,,
+      Final Equations:  ,,
+           x + vx = 6/25  ,,
+   "  ,,
+,,
+The sum of a number and its square is 63/4. Find the numbers.,  ,
+   "      1. Let the number be x.  ,,
+      2. Given condition:  ,,
+           x + x� = 63/4  ,,
+      Final Equations:  ,,
+           x + x� = 63/4  ,,
+   "  ,,
+,,
+There are three consecutive integers such that the square of the first increased by the product of the other two gives 154. What are the integers?,  ,
+   "      1. Let the three consecutive integers be x, (x + 1), and (x + 2).  
+      2. Given condition:  ,,
+           x� + (x + 1)(x + 2) = 154  ,,
+      Final Equations:  ,,
+           x� + (x + 1)(x + 2) = 154  ,,
+   "  ,,
+,,
+The product of two successive integral multiples of 5 is 300. Determine the multiples.,  ,
+   "      1. Let the smaller multiple be 5x.  ,,
+      2. The next successive multiple is 5(x + 1).  ,,
+      3. Their product is given by:  ,,
+           5x * 5(x + 1) = 300  ,,
+      Final Equations:  ,,
+           5x * 5(x + 1) = 300  ,,
+   "  ,,
+,,
+"The sum of the squares of two numbers is 233, and one of the numbers is 3 less than twice the other number. Find the numbers.",  ,
+   "      1. Let the smaller number be x.  ,,
+      2. The second number is given by (2x - 3).  ,,
+      3. Their squares sum up to:  ,,
+           x� + (2x - 3)� = 233  ,,
+      Final Equations:  ,,
+           x� + (2x - 3)� = 233  ,,
+   "  ,,
+,,
+Find the consecutive even integers whose squares have the sum 340.,  ,
+   "      1. Let the smaller even integer be x.  ,,
+      2. The next consecutive even integer is (x + 2).  ,,
+      3. Their squares sum up to:  ,,
+           x� + (x + 2)� = 340  ,,
+      Final Equations:  ,,
+           x� + (x + 2)� = 340  ,,
+   "  ,,
+,,
+The difference of two numbers is 4. If the difference of their reciprocals is 4/21. Find the numbers.,  ,
+   "      1. Let the two numbers be x and (x + 4).  ,,
+      2. Given condition:  ,,
+           (1/x) - (1/(x + 4)) = 4/21  ,,
+      Final Equations:  ,,
+           (1/x) - (1/(x + 4)) = 4/21  ,,
+   "  ,,
+,,
+Let us find two natural numbers which differ by 3 and whose squares have the sum 117.,  ,
+   "      1. Let the smaller number be x.  ,,
+      2. The second number is (x + 3).  ,,
+      3. Their squares sum up to:  ,,
+           x� + (x + 3)� = 117  ,,
+      Final Equations:  ,,
+           x� + (x + 3)� = 117  ,,
+   "  ,,
+,,
+The sum of the squares of three consecutive natural numbers is 149. Find the numbers.,  ,
+   "      1. Let the three consecutive natural numbers be x, (x + 1), and (x + 2).  
+      2. Given condition:  ,,
+           x� + (x + 1)� + (x + 2)� = 149  ,,
+      Final Equations:  ,,
+           x� + (x + 1)� + (x + 2)� = 149  ,,
+   "  ,,
+,,
+Sum of two numbers is 16. The sum of their reciprocals is 1/3. Find the numbers.,  ,
+   "      1. Let the two numbers be x and (16 - x).  ,,
+      2. Given condition:  ,,
+           (1/x) + (1/(16 - x)) = 1/3  ,,
+      Final Equations:  ,,
+           (1/x) + (1/(16 - x)) = 1/3  ,,
+   "  ,,
+,,
+"Determine two consecutive multiples of 3, whose product is 270.",  ,
+   "      1. Let the smaller multiple be 3x.  ,,
+      2. The next consecutive multiple is 3(x + 1).  ,,
+      3. Their product is given by:  ,,
+           3x * 3(x + 1) = 270  ,,
+      Final Equations:  ,,
+           3x * 3(x + 1) = 270  ,,
+   "  ,,
+The sum of a number and its reciprocal is 17/4. Find the number.,  ,
+   "      1. Let the number be x.  ,,
+      2. Given condition:  ,,
+           x + (1/x) = 17/4  ,,
+      Final Equations:  ,,
+           x + (1/x) = 17/4  ,,
+   "  ,,
+,,
+"A two-digit number is such that the product of its digits is 8. When 18 is subtracted from the number, the digits interchange their places. Find the number?",  ,
+   "      1. Let the two-digit number be 10x + y, where x is the tens digit and y is the units digit.  ,
+      2. Given conditions:  ,,
+           x * y = 8  ,,
+           (10x + y) - 18 = 10y + x  ,,
+      Final Equations:  ,,
+           x * y = 8  ,,
+           10x + y - 18 = 10y + x  ,,
+   "  ,,
+,,
+"A two-digit number is such that the product of the digits is 12. When 36 is added to the number, the digits interchange their places. Determine the number.",  ,
+   "      1. Let the two-digit number be 10x + y, where x is the tens digit and y is the units digit.  ,
+      2. Given conditions:  ,,
+           x * y = 12  ,,
+           (10x + y) + 36 = 10y + x  ,,
+      Final Equations:  ,,
+           x * y = 12  ,,
+           10x + y + 36 = 10y + x  ,,
+   "  ,,
+,,
+"A two-digit number is such that the product of the digits is 16. When 54 is subtracted from the number, the digits are interchanged. Find the number.",  ,
+   "      1. Let the two-digit number be 10x + y, where x is the tens digit and y is the units digit.  ,
+      2. Given conditions:  ,,
+           x * y = 16  ,,
+           (10x + y) - 54 = 10y + x  ,,
+      Final Equations:  ,,
+           x * y = 16  ,,
+           10x + y - 54 = 10y + x  ,,
+   "  ,,
+Two numbers differ by 3 and their product is 504. Find the numbers,  ,
+   "      1. Let the two numbers be x and (x + 3).  ,,
+      2. Given condition:  ,,
+           x * (x + 3) = 504  ,,
+      Final Equations:  ,,
+           x^2 + 3x - 504 = 0  ,,
+   "  ,,
+,,
+Two numbers differ by 4 and their product is 192. Find the numbers?,  ,
+   "      1. Let the two numbers be x and (x + 4).  ,,
+      2. Given condition:  ,,
+           x * (x + 4) = 192  ,,
+      Final Equations:  ,,
+           x^2 + 4x - 192 = 0  ,,
+   "  ,,
+,,
+A two-digit number is 4 times the sum of its digits and twice the product of its digits. Find the number.,  ,
+   "      1. Let the two-digit number be 10x + y, where x is the tens digit and y is the units digit.  ,
+      2. Given conditions:  ,,
+           10x + y = 4(x + y)  ,,
+           10x + y = 2(x * y)  ,,
+      Final Equations:  ,,
+           10x + y - 4x - 4y = 0  ,,
+           10x + y - 2xy = 0  ,,
+   "  ,,
+,,
+The difference of squares of two numbers is 180. The square of the smaller number is 8 times the larger number. Find two numbers.,  ,
+   "      1. Let the two numbers be x and y, where x > y.  ,
+      2. Given conditions:  ,,
+           x^2 - y^2 = 180  ,,
+           y^2 = 8x  ,,
+      Final Equations:  ,,
+           x^2 - 8x - 180 = 0  ,,
+   "  ,,
+,,
+The sum of two numbers is 18. The sum of their reciprocals is 1/4. Find the numbers.,  ,
+   "      1. Let the two numbers be x and y.  ,,
+      2. Given conditions:  ,,
+           x + y = 18  ,,
+           (1/x) + (1/y) = 1/4  ,,
+      Final Equations:  ,,
+           xy = 72  ,,
+           x + y = 18  ,,
+   "  ,,
+,,
+The sum of two numbers is 9. The sum of their reciprocals is 1/2. Find the numbers.,  ,
+   "      1. Let the two numbers be x and y.  ,,
+      2. Given conditions:  ,,
+           x + y = 9  ,,
+           (1/x) + (1/y) = 1/2  ,,
+      Final Equations:  ,,
+           xy = 18  ,,
+           x + y = 9  ,,
+   "  ,,
+,,
+Three consecutive positive integers are such that the sum of the square of the first and the product of the other two is 46. Find the integers.,  ,
+   "      1. Let the three consecutive integers be x, (x + 1), and (x + 2).  
+      2. Given condition:  ,,
+           x^2 + (x + 1)(x + 2) = 46  ,,
+      Final Equations:  ,,
+           x^2 + x^2 + 3x + 2 = 46  ,,
+           2x^2 + 3x - 44 = 0  ,,
+   "  ,,
+,,
+"The difference of squares of two numbers is 88. If the larger number is 5 less than twice the smaller number, then find the two numbers.",  ,
+   "      1. Let the two numbers be x and y, where x > y.  ,
+      2. Given conditions:  ,,
+           x^2 - y^2 = 88  ,,
+           x = 2y - 5  ,,
+      Final Equations:  ,,
+           (2y - 5)^2 - y^2 = 88  ,,
+   "  ,,
+,,
+The speed of a boat in still water is 8 km/hr. It can go 15 km upstream and 22 km downstream in 5 hours. Find the speed of the stream.,  ,
+   "      1. Let the speed of the stream be x km/hr.  ,,
+      2. The effective speed upstream = (8 - x) km/hr, and the effective speed downstream = (8 + x) km/hr.  ,
+      3. Given that the total time taken for the journey is 5 hours:  ,,
+           (15 / (8 - x)) + (22 / (8 + x)) = 5  ,,
+      Final Equation:  ,,
+           (15 / (8 - x)) + (22 / (8 + x)) = 5  ,,
+   "  ,,
+,,
+"A passenger train takes 3 hours less for a journey of 360 km, if its speed is increased by 10 km/hr from its usual speed. What is the usual speed?",  ,
+   "      1. Let the usual speed of the train be x km/hr.  ,,
+      2. The time taken at usual speed = 360 / x hours.  ,,
+      3. The time taken at increased speed = 360 / (x + 10) hours.  ,,
+      4. Given condition:  ,,
+           (360 / x) - (360 / (x + 10)) = 3  ,,
+      Final Equation:  ,,
+           (360 / x) - (360 / (x + 10)) = 3  ,,
+   "  ,,
+,,
+"A fast train takes one hour less than a slow train for a journey of 200 km. If the speed of the slow train is 10 km/hr less than that of the fast train, find the speed of the two trains.",  ,
+   "      1. Let the speed of the fast train be x km/hr, and the slow train be (x - 10) km/hr.  ,
+      2. The time taken by the fast train = 200 / x hours.  ,,
+      3. The time taken by the slow train = 200 / (x - 10) hours.  ,,
+      4. Given condition:  ,,
+           (200 / (x - 10)) - (200 / x) = 1  ,,
+      Final Equation:  ,,
+           (200 / (x - 10)) - (200 / x) = 1  ,,
+   "  ,,
+,,
+A passenger train takes one hour less for a journey of 150 km if its speed is increased by 5 km/hr from its usual speed. Find the usual speed of the train.,  ,
+   "      1. Let the usual speed of the train be x km/hr.  ,,
+      2. The time taken at usual speed = 150 / x hours.  ,,
+      3. The time taken at increased speed = 150 / (x + 5) hours.  ,,
+      4. Given condition:  ,,
+           (150 / x) - (150 / (x + 5)) = 1  ,,
+      Final Equation:  ,,
+           (150 / x) - (150 / (x + 5)) = 1  ,,
+   "  ,,
+"The time taken by a person to cover 150 km was 2.5 hrs more than the time taken in the return journey. If he returned at a speed of 10 km/hr more than the speed of going, what was the speed per hour in each direction?", ,
+"1. Let the speed while going be `x` km/hr.  
+2. The return speed is `x + 10` km/hr.  
+3. Time taken while going = `150 / x`.  
+4. Time taken while returning = `150 / (x + 10)`.  
+5. The time difference is given as 2.5 hours more while going.  
+Final Equation: 150 / x - 150 / (x + 10) = 2.5",,
+,,
+"A plane left 40 minutes late due to bad weather and in order to reach its destination, 1600 km away in time, it had to increase its speed by 400 km/hr from its usual speed. Find the usual speed of the plane.", ,
+"1. Let the usual speed of the plane be `x` km/hr.  
+2. The time it should have taken to cover the distance of 1600 km with its usual speed is `1600 / x`.  
+3. Due to bad weather, the plane left 40 minutes late. It had to increase its speed by 400 km/hr, so the new speed is `x + 400`.  
+4. The time taken with the increased speed is `1600 / (x + 400)`.  
+Final Equation: 1600 / x - 1600 / (x + 400) = 2 / 3",,
+,,
+An aeroplane takes 1 hour less for a journey of 1200 km if its speed is increased by 100 km/hr from its usual speed. Find its usual speed., ,
+"1. Let the usual speed of the plane be `x` km/hr.  
+2. The time taken for the journey at the usual speed is `1200 / x`.  
+3. The time taken with the increased speed of `x + 100` km/hr is `1200 / (x + 100)`.  
+4. The time difference is 1 hour.  
+Final Equation: 1600 / x - 1600 / (x + 400) = 2 / 3",,
+,,
+An aeroplane takes 1 hour less for a journey of 1200 km if its speed is increased by 100 km/hr from its usual speed. Find its usual speed., ,
+"1. Let the usual speed of the plane be `x` km/hr.  
+2. The time taken for the journey at the usual speed is `1200 / x`.  
+3. The time taken with the increased speed of `x + 100` km/hr is `1200 / (x + 100)`.  
+4. The time difference is 1 hour.  
+Final Equation: 1200 / x - 1200 / (x + 100) = 1",,
+,,
+A passenger train takes 2 hours less for a journey of 300 km if its speed is increased by 5 km/hr from its usual speed. Find the usual speed of the train., ,
+"1. Let the usual speed of the train be `x` km/hr.  
+2. Time taken for the journey at the usual speed is `300 / x`.  
+3. The time taken with the increased speed of `x + 5` km/hr is `300 / (x + 5)`.  
+4. The difference in time is 2 hours.  
+Final Equation: 300 / x - 300 / (x + 5) = 2",,
+,,
+"A train travels at a certain average speed for a distance 63 km and then travels a distance of 72 km at an average speed of 6 km/hr more than the original speed, If it takes 3 hours to complete total journey, what is its original average speed?", ,
+"1. Let the original average speed be `x` km/hr.  
+2. Time taken for the 63 km journey is `63 / x`.  
+3. Time taken for the 72 km journey at the increased speed of `x + 6` km/hr is `72 / (x + 6)`.  
+4. The total time is 3 hours.  
+Final Equation: 63 / x + 72 / (x + 6) = 3",,
+,,
+"A train covers a distance of 90 km at a uniform speed. Had the speed been 15 km/hour more, it would have taken 30 minutes less for a journey. Find the original speed of the train.", ,
+"1. Let the original speed of the train be `x` km/hr.  
+2. The time taken at the original speed is `90 / x`.  
+3. The time taken at the increased speed of `x + 15` km/hr is `90 / (x + 15)`.  
+4. The time difference is 30 minutes or 0.5 hours.  
+Final Equation: 90 / x - 90 / (x + 15) = 0.5",,
+,,
+"A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.", ,
+"1. Let the original speed of the train be `x` km/hr.  
+2. The time taken at the original speed is `360 / x`.  
+3. The time taken with the increased speed of `x + 5` km/hr is `360 / (x + 5)`.  
+4. The time difference is 1 hour.  
+Final Equation: 360 / x - 360 / (x + 5) = 1",,
+,,
+"An express train takes 1 hour less than a passenger train to travel 132 km between Mysore and Bangalore (without taking into consideration the time they stop at intermediate stations). If the average speed of the express train is 11 km/h more than that of the passenger train, find the average speed of the two trains.", ,
+"1. Let the speed of the passenger train be `x` km/hr.  
+2. The speed of the express train is `x + 11` km/hr.  
+3. Time taken by the passenger train is `132 / x`.  
+4. Time taken by the express train is `132 / (x + 11)`.  
+5. The difference in time is 1 hour. 
+Final Equation: 132 / x - 132 / (x + 11) = 1",,
+,,
+"An aeroplane left 50 minutes later than its scheduled time, and in order to reach the destination, 1250 km away, in time, it had to increase its speed by 250 km/hr from its usual speed. Find its usual speed.", ,
+"1. Let the usual speed of the aeroplane be `x` km/hr.  
+2. The time it would have taken to cover 1250 km with the usual speed is `1250 / x`.  
+3. Due to the 50-minute delay, the new speed is `x + 250` km/hr.  
+4. The time taken with the new speed is `1250 / (x + 250)`.  
+Final Equation: 1250 / x - 1250 / (x + 250) = 5 / 6",,
+,,
+"While boarding an aeroplane, a passenger got hurt. The pilot showing promptness and concern, made arrangements to hospitalise the injured and so the plane started late by 30 minutes to reach the destination, 1500 km away in time, the pilot increased the speed by 100 km/hr. Find the original speed/hour of the plane.", ,
+"1. Let the original speed of the aeroplane be `x` km/hr.  
+2. The time it would have taken with the original speed is `1500 / x`.  
+3. The new speed after the increase is `x + 100` km/hr.  
+4. The time taken with the new speed is `1500 / (x + 100)`.  
+5. The difference in time is 30 minutes or 0.5 hours.
+Final Equation: 1500 / x - 1500 / (x + 100) = 0.5",,
+,,
+A motor boat whose speed in still water is 18 km/hr takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream., ,
+"1. Let the speed of the stream be `x` km/hr.  
+2. The speed of the boat upstream is `18 - x` km/hr.  
+3. The speed of the boat downstream is `18 + x` km/hr.  
+4. Time taken to go upstream is `24 / (18 - x)`.  
+5. Time taken to return downstream is `24 / (18 + x)`.  
+6. The difference in time is 1 hour.  
+Final Equation: 24 / (18 - x) - 24 / (18 + x) = 1",,
+,,
+"A car moves a distance of 2592 km with uniform speed. The number of hours taken for the journey is one-half the number representing the speed, in km/hour. Find the time taken to cover the distance.", ,
+"1. Let the speed of the car be `x` km/hr.  
+2. The time taken to cover the distance is `2592 / x`.  
+3. The time is half of the speed.
+Final Equation: 2592 / x = x / 2",,
+,,
+Ashu is x years old while his mother Veena is x� years old. Five years hence Veena will be three times as old as Ashu. Find their present ages.,  ,
+"1. Let Ashu's present age be `x` years.  
+2. Veena's present age is `x�` years.  
+3. Five years hence, Ashu's age will be `x + 5` years, and Veena's age will be `x� + 5` years.  
+Final Equation: x� + 5 = 3(x + 5)",,
+,,
+"The sum of ages of a man and his own son is 45 years. Five years ago, the product of their ages was four times the man's age at the time. Find their present ages.",  ,
+"1. Let the man's age be `x` years and his son's age be `y` years.  
+2. The sum of their ages:  x + y = 45
+3. Five years ago, their ages were `(x - 5)` and `(y - 5)`, and the product of these ages was four times the man's age at that time
+Final Equations: x + y = 45 and (x - 5)(y - 5) = 4(x - 5)",,
+,,
+"The product of Shikha's age five years ago and her age 8 years later is 30, her age at both times being given in years. Find her present age.",  ,
+"1. Let Shikha's present age be `x` years.  
+2. Her age five years ago was `(x - 5)`.  
+3. Her age eight years later will be `(x + 8)`.  
+4. Given that their product is 30
+Final Equation: (x - 5)(x + 8) = 30",,
+,,
+The product of Ramu's age five years ago and his age nine years later is 15. Determine his present age.,  ,
+"1. Let Ramu's present age be `x` years.  
+2. His age five years ago was `(x - 5)`.  
+3. His age nine years later will be `(x + 9)`.  
+4. Given that their product is 15 
+Final Equation: (x - 5)(x + 9) = 15",,
+,,
+"The sum of the ages of two friends is 20 years. Four years ago, the product of their ages was 48. Find their ages.",  ,
+"1. Let the ages of the two friends be `x` and `y`.  
+2. Their sum is given by: x + y = 20.
+3. Four years ago, their ages were `(x - 4)` and `(y - 4)`, and their product was 48.
+Final Equations: x + y = 20 and (x - 4)(y - 4) = 48",,
+,,
+"A girl is twice as old as her sister. Four years hence, the product of their ages (in years) will be 160. Find their present ages.",  ,
+"1. Let the sister�s present age be `x` years.  
+2. The girl�s present age is `2x`.  
+3. Four years hence, their ages will be `(x + 4)` and `(2x + 4)`.  
+4. Given that their product will be 160.
+Final Equation: (x + 4)(2x + 4) = 160",,
+,,
+"The sum of the reciprocals of Rehman's ages, 3 years ago and 5 years from now is 1/3. Find his present age.",  ,
+"1. Let Rehman's present age be `x` years.  
+2. His age 3 years ago was `(x - 3)`.  
+3. His age 5 years from now will be `(x + 5)`.  
+4. Given that the sum of their reciprocals is 1/3.
+Final Equation: 1 / (x - 3) + 1 / (x + 5) = 1 / 3",,
+,,
+The hypotenuse of a right triangle is 25 cm. The difference between the lengths of the other two sides of the triangle is 5 cm. Find the lengths of these sides.,  ,
+"1. Let the lengths of the two other sides be `x` and `y` such that `x > y`.  
+2. Given that the hypotenuse is 25 cm, applying the Pythagorean theorem: x^2 + y^2 = 25^2.
+3. Also given that the difference of the two sides is 5 cm.
+Final Equations: x**2 + y**2 = 625 and x - y = 5",,
+,,
+"The diagonal of a rectangular field is 60 metres more than the shorter side. If the longer side is 30 metres more than the shorter side, find the sides of the field.",  ,
+"1. Let the shorter side be `x` meters.  
+2. The longer side is `x + 30` meters.  
+3. The diagonal is `x + 60` meters.  
+4. Applying the Pythagorean theorem.
+Final Equation: x**2 + (x + 30)**2 = (x + 60)**2",,
+,,
+A pole has to be erected at a point on the boundary of a circular park of diameter 13 meters in such a way that the difference of its distances from two diametrically opposite fixed gates A and B on the boundary is 7 meters. At what distances from the two gates should the pole be erected?,  ,
+"1. Let the radius of the circular park be `r = 13/2 = 6.5` meters.  
+2. Let the distances of the pole from gates A and B be `x` and `y` such that `x > y`.  
+3. Given that the difference of these distances is 7 meters: x-y = 7.
+4. Using the property of a circle where distances from diametrically opposite points relate to the chord length.
+Final Equations: x - y = 7 and x**2 + y**2 = (6.5) ** 2",,
+,,
+The perimeter of a rectangular field is 82 m and its area is 400 m�. Find the breadth of the rectangle.,  ,
+"1. Let the length and breadth of the rectangle be `l` and `b`.  
+2. Given that the perimeter is 82 m:  2(l + b) = 82.
+3. Given that the area is 400 m�:  l * b = 400.
+Final Equations: 2(l + b) = 82 and l * b = 400",,
+,,
+"The length of a hall is 5 m more than its breadth. If the area of the floor of the hall is 84 m�, what are the length and breadth of the hall?",  ,
+"1. Let the breadth of the hall be `x` meters.  
+2. The length is given as `x + 5` meters.  
+3. Given that the area is 84 m�:  x * (x + 5) = 84.
+Final Equation: x * (x + 5) = 84",,
+,,
+Two squares have sides x cm and (x + 4) cm. The sum of their areas is 656 cm�. Find the sides of the squares.,  ,
+"1. The areas of the squares are `x�` and `(x + 4)�`.  
+2. Given that their sum is 656 cm�.
+Final Equation: x**2 + (x + 4)**2 = 656",,
+,,
+The area of a right-angled triangle is 165 m�. Determine its base and altitude if the latter exceeds the former by 7 m.,  ,
+"1. Let the base be `x` meters.  
+2. The altitude is given as `x + 7` meters.  
+3. Given that the area is 165 m�:  
+Final Equation: (1/2) * x * (x + 7) = 165",,
+,,
+"Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m�? If so, find its length and breadth.",  ,
+"1. Let the breadth be `x` meters.  
+2. The length is given as `2x` meters.  
+3. Given that the area is 800 m�. 
+Final Equation: x * 2x = 800",,
+,,
+"Is it possible to design a rectangular park of perimeter 80 and area 400 m�? If so, find its length and breadth.",  ,
+"1. Let the length and breadth be `l` and `b`.  
+2. Given that the perimeter is 80 m: 2(l + b) = 80.
+3. Given that the area is 400 m�.
+Final Equations: 2(l + b) = 80 and l * b = 400",,
+,,
+"Sum of the areas of two squares is 640 m�. If the difference of their perimeters is 64 m, find the sides of the two squares.",  ,
+"1. Let the sides of the squares be `x` and `y` meters, where `x > y`.  
+2. Given that the sum of their areas is 640 m�: x**2 + y**2 = 640.
+3. Given that the difference of their perimeters is 64 m.
+Final Equations: x**2 + y**2 = 640 and 4x - 4y = 64",,
+,,
+"Sum of the area of two squares is 400 cm�. If the difference of their perimeters is 16 cm, find the sides of two squares.",  ,
+"1. Let the sides of the squares be `x` and `y` cm, where `x > y`.  
+2. Given that the sum of their areas is 400 cm�:  x**2 + y**2 = 400.
+3. Given that the difference of their perimeters is 16 cm.
+Final Equations: x**2 + y**2 = 400 and 4x - 4y = 16.",,
+,,
+"A takes 10 days less than the time taken by B to finish a piece of work. If both A and B together can finish the work in 12 days, find the time taken by B to finish the work.",  ,
+"1. Let B take `x` days to finish the work alone.  
+2. Since A takes 10 days less, A will take `(x - 10)` days.  
+3. Work done by A in one day is `1 / (x - 10)`, and by B in one day is `1 / x`.  
+4. Together, they complete the work in 12 days.
+Final Equation: (1 / (x - 10)) + (1 / x) = 1 / 12",,
+,,
+"If two pipes function simultaneously, a reservoir will be filled in 12 hours. One pipe fills the reservoir 10 hours faster than the other. How many hours will the second pipe take to fill the reservoir?",  ,
+"1. Let the time taken by the slower pipe to fill the reservoir alone be `x` hours.  
+2. Then, the faster pipe takes `(x - 10)` hours.  
+3. Work done by the slower pipe in one hour is `1 / x`, and by the faster pipe is `1 / (x - 10)`.  
+4. Together, they fill the reservoir in 12 hours.
+Final Equation: (1 / x) + (1 / (x - 10)) = 1 / 12",,
+,,
+"To fill a swimming pool, two pipes are used. If the pipe of larger diameter is used for 4 hours and the pipe of smaller diameter for 9 hours, only half of the pool can be filled. Find how long it would take for each pipe to fill the pool separately, if the pipe of smaller diameter takes 10 hours more than the pipe of larger diameter to fill the pool.",  ,
+"1. Let the larger pipe take `x` hours to fill the pool alone.  
+2. The smaller pipe takes `x + 10` hours.  
+3. Work done by the larger pipe in one hour is `1 / x`, and by the smaller pipe is `1 / (x + 10)`.  
+4. Given that using the larger pipe for 4 hours and the smaller pipe for 9 hours fills half the pool:  
+Final Equation: (4 / x) + (9 / (x + 10)) = 1 / 2",,

@@ -1,0 +1,40 @@
+{
+  "original_count": 100,
+  "cleaning_report": {
+    "total_rows": 100,
+    "changed_texts": 14,
+    "empty_after_clean": 0,
+    "unchanged_texts": 86
+  },
+  "cleaned_count": 100,
+  "canonicalization": {
+    "valid_fingerprints": 98,
+    "unique_fingerprints": 69,
+    "success_rate": 0.98,
+    "avg_confidence": 0.6839999999999997,
+    "failed_count": 2
+  },
+  "metadata": {
+    "problem_types": {
+      "algebra": 55,
+      "geometry": 18,
+      "unknown": 14,
+      "arithmetic": 8,
+      "physics": 3,
+      "finance": 1,
+      "statistics": 1
+    },
+    "difficulty_distribution": {
+      "Hard": 87,
+      "Medium": 8,
+      "Easy": 5
+    },
+    "avg_equations": 1.17,
+    "avg_variables": 5.02
+  },
+  "features": {
+    "valid_vectors": 100,
+    "vector_dimensions": 256,
+    "feature_success_rate": 1.0
+  }
+}
