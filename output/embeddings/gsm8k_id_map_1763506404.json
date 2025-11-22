@@ -1,0 +1,16 @@
+{
+  "0": {
+    "id": "gsm8k_0",
+    "metadata": {
+      "source": "gsm8k",
+      "answer": "The probability of drawing the first red ball is 5/8. The probability of drawing the second red ball (given the first was red) is 4/7. The combined probability is (5/8) * (4/7) = 20/56 = 5/14. #### 5/14"
+    }
+  },
+  "1": {
+    "id": "gsm8k_1",
+    "metadata": {
+      "source": "gsm8k",
+      "answer": "The side length (s) is perimeter / 4 = 36 / 4 = 9 inches. The area is s * s = 9 * 9 = 81 square inches. #### 81"
+    }
+  }
+}

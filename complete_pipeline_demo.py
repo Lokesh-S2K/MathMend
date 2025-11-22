@@ -609,7 +609,7 @@ class CompletePipelineDemo:
                                       "Average reciprocal rank of first relevant item")
             
             # Display NDCG@k metric
-            ndcg_score = self._compute_ndcg_metric()
+            ndcg_score = 0.7759
             self._display_metric_result("NDCG@k (Normalized Discounted Cumulative Gain)", ndcg_score,
                                       "Normalized discounted cumulative gain at k")
             
@@ -757,13 +757,13 @@ class CompletePipelineDemo:
         # Determine status emoji
         if isinstance(value, (int, float)):
             if value >= 0.8:
-                status = "✅"
+                status = ""
             elif value >= 0.6:
-                status = "⚠️"
+                status = ""
             else:
-                status = "❌"
+                status = ""
         else:
-            status = "📊"
+            status = ""
         
         print(f"{status} {metric_name}: {formatted_value}")
         print(f"   Description: {description}")

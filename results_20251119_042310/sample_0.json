@@ -1,0 +1,99 @@
+{
+  "idx": 0,
+  "problem": "A box contains 5 red balls and 3 blue balls. If two balls are drawn without replacement, what is the probability that both are red?",
+  "gold": 5.0,
+  "pred": null,
+  "correct": false,
+  "solution_type": "unresolved",
+  "confidence": 1.0,
+  "processing_time": 38.27381205558777,
+  "verification_score": 0.0,
+  "verification_ok": false,
+  "verification_diagnostics": [
+    "No equations provided for verification."
+  ],
+  "numerical_consistency": false,
+  "variable_consistency": false,
+  "symbolic_consistency": false,
+  "detail": {
+    "problem": "A box contains 5 red balls and 3 blue balls. If two balls are drawn without replacement, what is the probability that both are red?",
+    "aggregated_result": {
+      "solution_type": "unresolved",
+      "solution": {},
+      "equations": [],
+      "confidence": 1.0,
+      "num_samples": 5
+    },
+    "individual_results": [
+      {
+        "_store": {
+          "result_type": "unresolved",
+          "results": [],
+          "note": "Unable to solve automatically - human review required",
+          "extracted_equations": [],
+          "canonical_equations": []
+        },
+        "_completions": null,
+        "_lm_usage": null
+      },
+      {
+        "_store": {
+          "result_type": "unresolved",
+          "results": [],
+          "note": "Unable to solve automatically - human review required",
+          "extracted_equations": [],
+          "canonical_equations": []
+        },
+        "_completions": null,
+        "_lm_usage": null
+      },
+      {
+        "_store": {
+          "result_type": "unresolved",
+          "results": [],
+          "note": "Unable to solve automatically - human review required",
+          "extracted_equations": [],
+          "canonical_equations": []
+        },
+        "_completions": null,
+        "_lm_usage": null
+      },
+      {
+        "_store": {
+          "result_type": "unresolved",
+          "results": [],
+          "note": "Unable to solve automatically - human review required",
+          "extracted_equations": [],
+          "canonical_equations": []
+        },
+        "_completions": null,
+        "_lm_usage": null
+      },
+      {
+        "_store": {
+          "result_type": "unresolved",
+          "results": [],
+          "note": "Unable to solve automatically - human review required",
+          "extracted_equations": [],
+          "canonical_equations": []
+        },
+        "_completions": null,
+        "_lm_usage": null
+      }
+    ],
+    "solution_type": "unresolved",
+    "solution": {},
+    "equations": [],
+    "confidence": 1.0,
+    "verification": {
+      "verified": false,
+      "score": 0.0,
+      "numerical_consistency": false,
+      "variable_consistency": false,
+      "symbolic_consistency": false,
+      "diagnostics": [
+        "No equations provided for verification."
+      ]
+    }
+  }
+}
