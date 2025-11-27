@@ -10,7 +10,7 @@ Comprehensive demonstration of the entire DSPy neuro-symbolic system:
 6. Complete end-to-end pipeline flow
 7. Performance metrics and analysis
 """
-
+import math
 import time
 import textwrap
 import numpy as np
@@ -21,13 +21,12 @@ from dspy_modules import (
     SymbolicSolver, 
     Verifier, 
     LLMReasoner,
-    initialize_ctransformers_model,
+    initialize_mistral_transformers,
     explain_similarity,
     ComprehensiveMetricsEvaluator
 )
 from pipeline_sequence.embedder import encode_texts
 import re
-from mlx_lm import load, generate
 from sympy import symbols, Eq, pi
 
 
@@ -88,7 +87,7 @@ class CompletePipelineDemo:
         try:
             # Initialize CTransformers LLM
             print("\n🤖 Step 1: Initializing CTransformers LLM...")
-            self.llm_model, self.llm_tokenizer = initialize_ctransformers_model()
+            self.llm_model, self.llm_tokenizer = initialize_mistral_transformers()
 
             if self.llm_model is not None:
                 print("✅ CTransformers LLM loaded successfully!")

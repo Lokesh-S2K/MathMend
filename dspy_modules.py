@@ -17,6 +17,8 @@ from pipeline_sequence.indexer_faiss import FaissIndexer
 import json
 import re
 from typing import List, Dict, Any, Optional
+import time
+import torch
 
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
@@ -26,38 +28,41 @@ from collections import defaultdict
 import statistics
 
 # MLX imports
-try:
-    from mlx_lm import load, generate
-    MLX_AVAILABLE = True
-except ImportError:
-    MLX_AVAILABLE = False
-    print("⚠️ MLX not available. Install with: pip install mlx-lm")
+# Remove MLX imports and replace with:
 
 
 # --------------------------
 # MLX Mistral Model Initialization
 # --------------------------
-def initialize_mlx_mistral_model():
-    """Initialize MLX-based Mistral model for local LLM inference"""
-    if not MLX_AVAILABLE:
-        print("❌ MLX not available. Cannot load Mistral model.")
-        return None, None
-    
+def initialize_mistral_transformers():
+    """Load Mistral using Transformers library (Best option)"""
     try:
-        MODEL_ID = "mlx-community/Mistral-7B-Instruct-v0.3-4bit"
-        print("🔄 Loading MLX Mistral model...")
-        print("📥 This may take a few minutes on first run as the model downloads...")
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+        import torch
         
-        model, tokenizer = load(MODEL_ID, tokenizer_config={"trust_remote_code": True})
+        print("Loading Mistral via Transformers...")
         
-        print("✅ MLX Mistral Model Loaded Successfully!")
+        model_name = "mistralai/Mistral-7B-Instruct-v0.1"
+        
+        # Load tokenizer
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        tokenizer.pad_token = tokenizer.eos_token
+        
+        # Load model (use smaller precision for memory efficiency)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            torch_dtype=torch.float16,  # Use half precision
+            device_map="auto",  # Automatically use GPU if available
+            low_cpu_mem_usage=True
+        )
+        
+        print("✅ Mistral loaded successfully via Transformers!")
         return model, tokenizer
+        
     except Exception as e:
-        print(f"❌ Failed to load MLX Mistral model: {e}")
-        print("💡 Try running: pip install --upgrade mlx-lm")
+        print(f"❌ Mistral Transformers failed: {e}")
+        print("💡 Try: pip install transformers accelerate")
         return None, None
-
-
 # --------------------------
 # Symbolic Solver
 # --------------------------
@@ -372,143 +377,45 @@ class Verifier(dspy.Module):
 # LLM Reasoner with MLX Mistral
 # --------------------------
 class LLMReasoner(dspy.Module):
-    """Uses MLX Mistral to extract equations from problems and similar examples"""
+    """Uses Transformers with Mistral to extract equations from problems"""
     
     def __init__(self, model=None, tokenizer=None):
         super().__init__()
         if model is None or tokenizer is None:
-            self.model, self.tokenizer = initialize_mlx_mistral_model()
+            self.model, self.tokenizer = initialize_mistral_transformers()
         else:
             self.model = model
             self.tokenizer = tokenizer
     
-    def build_prompt(self, query: str, canonical_eqs: List, retrieved_examples: List[Dict], max_shots: int = 3) -> str:
-        """Build prompt for MLX Mistral model"""
-        system_instruction = """You are a Python coding assistant.
-Convert the word problem into a SymPy equation.
-1. Import symbols and Eq from sympy.
-2. Define variables.
-3. Define the equation using `Eq()` and ASSIGN it to a variable named 'equation'.
-4. Output ONLY the Python code. No explanation. No markdown."""
+    def build_mistral_prompt(self, query: str, retrieved_examples: List[Dict]) -> str:
+        """Build prompt for Mistral model using its chat format"""
+        system_message = """You are a mathematics expert. Extract the mathematical equations from the given problem. 
+Return ONLY the equations in this format:
+equation1
+equation2
+...
 
-        user_content = f"{system_instruction}\n\nProblem: {query}\nCode:"
+Examples:
+Problem: "Two numbers sum to 50 and their difference is 10"
+x + y = 50
+x - y = 10
 
-        return user_content
+Problem: "What is 15 plus 25?"
+15 + 25 = 40
 
-    def forward(self, query_text: str, canonical_equations: List, retrieved_examples: List[Dict]):
-        try:
-            # First try pattern-based extraction for common problems
-            pattern_equations = self._extract_equations_by_pattern(query_text)
-            if pattern_equations:
-                print(f"🔍 Pattern-based extraction found: {pattern_equations}")
-                return dspy.Prediction(
-                    llm_equations=pattern_equations,
-                    llm_solution={},
-                    llm_steps="Pattern-based equation extraction",
-                    success=True
-                )
-            
-            if self.model is None or self.tokenizer is None:
-                print("⚠️ No LLM model available, using fallback extraction")
-                equations = [str(eq) for eq in (canonical_equations or [])]
-                return dspy.Prediction(
-                    llm_equations=equations,
-                    llm_solution={},
-                    llm_steps="Used fallback equation extraction",
-                    success=bool(equations)
-                )
-            
-            # Build prompt
-            user_content = self.build_prompt(query_text, canonical_equations, retrieved_examples)
-            
-            # Apply chat template
-            messages = [{"role": "user", "content": user_content}]
-            prompt = self.tokenizer.apply_chat_template(
-                messages, 
-                tokenize=False, 
-                add_generation_prompt=True
-            )
-            
-            # Generate with MLX
-            print(f"🔍 Generating with MLX Mistral...")
-            generated_text = generate(
-                self.model,
-                self.tokenizer,
-                prompt=prompt,
-                max_tokens=200,
-                verbose=False
-            )
-            
-            print(f"🔍 LLM Raw Response:\n{generated_text[:300]}...")
-            
-            # Validate and extract SymPy equation
-            equations = self._validate_and_extract_sympy(generated_text)
-            
-            if not equations:
-                # Try fallback extraction
-                fallback_equations = self._create_fallback_equations(query_text)
-                if fallback_equations:
-                    equations = fallback_equations
-                elif canonical_equations:
-                    equations = [str(eq) for eq in canonical_equations]
-            
-            return dspy.Prediction(
-                llm_equations=equations,
-                llm_solution={},
-                llm_steps=generated_text,
-                success=bool(equations)
-            )
-                
-        except Exception as e:
-            print(f"⚠️ LLM Reasoning failed: {str(e)}")
-            return dspy.Prediction(
-                llm_equations=[],
-                llm_solution={},
-                llm_steps=f"Error: {str(e)}",
-                success=False
-            )
-    
-    def _validate_and_extract_sympy(self, code_string: str) -> List[Any]:
-        """Validate and extract SymPy equations from generated code"""
-        equations = []
+Problem: "Solve for x: 2x + 5 = 15"
+2x + 5 = 15"""
 
-        try:
-            # Clean up markdown
-            code_string = code_string.replace("```python", "").replace("```", "").strip()
-
-            # Execute the code
-            local_vars = {}
-            exec(code_string, globals(), local_vars)
-
-            # Strategy 1: Look for the specific variable 'equation'
-            if 'equation' in local_vars and isinstance(local_vars['equation'], Eq):
-                equations.append(local_vars['equation'])
-                return equations
-
-            # Strategy 2: Look for ANY Eq object in locals
-            for var_name, var_val in local_vars.items():
-                if isinstance(var_val, Eq):
-                    equations.append(var_val)
-
-            if equations:
-                return equations
-
-            # Strategy 3: Parse as string equations (fallback)
-            lines = code_string.split('\n')
-            for line in lines:
-                if 'Eq(' in line and '=' in line:
-                    # Extract equation string
-                    match = re.search(r'Eq\((.*?)\)', line)
-                    if match:
-                        eq_str = match.group(1)
-                        equations.append(eq_str)
-
-        except Exception as e:
-            print(f"⚠️ SymPy validation error: {e}")
-
-        return equations
-            # Clean up markdown
-            # Clean up markdown
+        # Add retrieved examples if available
+        examples_text = ""
+        if retrieved_examples and len(retrieved_examples) > 0:
+            examples_text = "\n\nSimilar problems for context:\n"
+            for i, example in enumerate(retrieved_examples[:2]):
+                if 'text' in example:
+                    examples_text += f"- {example['text']}\n"
+        
+        prompt = f"<s>[INST] {system_message}{examples_text}\n\nProblem: {query}\n\nEquations: [/INST]"
+        return prompt
     
     def _extract_equations_by_pattern(self, query_text: str) -> List[str]:
         """Extract equations using pattern matching for common problem types"""
@@ -542,11 +449,11 @@ Convert the word problem into a SymPy equation.
                     ]
         
         # Simple arithmetic problems
-        elif 'plus' in query_lower or 'plus' in query_text:
+        elif 'plus' in query_lower or 'add' in query_lower:
             if len(numbers) >= 2:
                 result = sum(float(n) for n in numbers)
                 equations = [f"{numbers[0]} + {numbers[1]} = {result}"]
-        elif 'times' in query_lower or 'times' in query_text:
+        elif 'times' in query_lower or 'multiply' in query_lower:
             if len(numbers) >= 2:
                 result = float(numbers[0]) * float(numbers[1])
                 equations = [f"{numbers[0]} * {numbers[1]} = {result}"]
@@ -560,8 +467,120 @@ Convert the word problem into a SymPy equation.
         
         return equations
     
+    def forward(self, query_text: str, canonical_equations: List, retrieved_examples: List[Dict]):
+        try:
+            # First try pattern-based extraction for common problems (fast and reliable)
+            pattern_equations = self._extract_equations_by_pattern(query_text)
+            if pattern_equations:
+                print(f"🔍 Pattern-based extraction found: {pattern_equations}")
+                return dspy.Prediction(
+                    llm_equations=pattern_equations,
+                    llm_solution={},
+                    llm_steps="Pattern-based equation extraction",
+                    success=True
+                )
+            
+            if self.model is None or self.tokenizer is None:
+                print("⚠️ No Mistral model available, using fallback extraction")
+                equations = [str(eq) for eq in (canonical_equations or [])]
+                return dspy.Prediction(
+                    llm_equations=equations,
+                    llm_solution={},
+                    llm_steps="Used fallback equation extraction",
+                    success=bool(equations)
+                )
+            
+            # Build Mistral-specific prompt
+            prompt = self.build_mistral_prompt(query_text, retrieved_examples)
+            
+            # Generate with Mistral
+            print(f"🔍 Generating with Mistral...")
+            
+            # Tokenize input
+            inputs = self.tokenizer(prompt, return_tensors="pt")
+            
+            # Generate response
+            with torch.no_grad():
+                outputs = self.model.generate(
+                    inputs.input_ids,
+                    max_new_tokens=150,
+                    temperature=0.1,  # Low temperature for deterministic math output
+                    do_sample=False,   # Use greedy decoding for math
+                    pad_token_id=self.tokenizer.eos_token_id,
+                    repetition_penalty=1.1
+                )
+            
+            # Decode response
+            generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            
+            # Extract just the response part (after [/INST])
+            if "[/INST]" in generated_text:
+                response = generated_text.split("[/INST]")[-1].strip()
+            else:
+                response = generated_text
+            
+            print(f"🔍 Mistral Response:\n{response[:200]}...")
+            
+            # Extract equations from response
+            equations = self._extract_equations_from_text(response)
+            
+            if not equations:
+                # Try fallback extraction
+                fallback_equations = self._create_fallback_equations(query_text)
+                if fallback_equations:
+                    equations = fallback_equations
+                elif canonical_equations:
+                    equations = [str(eq) for eq in canonical_equations]
+            
+            return dspy.Prediction(
+                llm_equations=equations,
+                llm_solution={},
+                llm_steps=response,
+                success=bool(equations)
+            )
+                
+        except Exception as e:
+            print(f"⚠️ Mistral reasoning failed: {str(e)}")
+            return dspy.Prediction(
+                llm_equations=[],
+                llm_solution={},
+                llm_steps=f"Error: {str(e)}",
+                success=False
+            )
+    
+    def _extract_equations_from_text(self, text: str) -> List[str]:
+        """Extract equations from generated text"""
+        equations = []
+        
+        # Look for equation patterns in the text
+        patterns = [
+            r'(\w+\s*[\+\-\*\/]\s*\w+\s*=\s*\w+)',
+            r'(\w+\s*=\s*\w+\s*[\+\-\*\/]\s*\w+)',
+            r'(\w+\s*=\s*\d+(?:\.\d+)?)',  # Simple assignments
+            r'(\d+\s*[\+\-\*\/]\s*\d+\s*=\s*\d+)',  # Simple arithmetic
+        ]
+        
+        for pattern in patterns:
+            matches = re.findall(pattern, text)
+            equations.extend(matches)
+        
+        # Also extract equations line by line (Mistral often puts one per line)
+        lines = text.split('\n')
+        for line in lines:
+            line = line.strip()
+            if any(char in line for char in ['=', '+', '-', '*', '/']) and len(line) > 3:
+                # Basic validation: should contain numbers or variables
+                if re.search(r'[a-zA-Z]', line) or re.search(r'\d', line):
+                    equations.append(line)
+        
+        # Remove duplicates and clean
+        equations = list(set(equations))
+        equations = [eq.strip() for eq in equations if eq.strip()]
+        
+        return equations
+    
     def _create_fallback_equations(self, query_text: str) -> List[str]:
-        """Create fallback equations when LLM fails"""
+        """Create fallback equations when Mistral fails"""
         query_lower = query_text.lower()
         equations = []
         
@@ -581,11 +600,22 @@ Convert the word problem into a SymPy equation.
                     f"x + y = {numbers[0]}",
                     f"x - y = {numbers[1]}"
                 ]
+            elif 'solve for' in query_lower and '=' in query_text:
+                # Handle equations like "solve for x: 5.9 = 5.11 + x"
+                parts = query_text.split('=')
+                if len(parts) == 2:
+                    left, right = parts[0].strip(), parts[1].strip()
+                    if 'x' in left and numbers:
+                        x_value = numbers[1] - numbers[0] if '+' in right else numbers[0] - numbers[1]
+                    elif 'x' in right and numbers:
+                        x_value = numbers[0] - numbers[1] if '+' in right else numbers[1] - numbers[0]
+                    else:
+                        x_value = None
+                    
+                    if x_value is not None:
+                        equations = [f"x = {x_value}"]
         
         return equations
-
-
-# --------------------------
 # Enhanced Retriever
 # --------------------------
 class Retriever(dspy.Module):
@@ -726,7 +756,7 @@ class SmartRetrievalPipeline(dspy.Module):
     def __init__(self, index_path: str, idmap_path: str, model=None, tokenizer=None):
         super().__init__()
         
-        print("Loading DSPy Hybrid Neuro-Symbolic Retrieval System with MLX Mistral...")
+        print("Loading DSPy Hybrid Neuro-Symbolic Retrieval System with CTransformers...")
         print("=" * 60)
         
         # Core modules
@@ -751,7 +781,7 @@ class SmartRetrievalPipeline(dspy.Module):
         print(f"  Knowledge Base: {len(self.problem_db)} math problems")
         print(f"  Index dimension: {self.index.d}")
         if self.llm_reasoner.model is not None:
-            print(f"  LLM Model: MLX Mistral-7B-Instruct-v0.3-4bit")
+            print(f"  LLM Model: CTransformers (Llama-2-7B)")
         else:
             print(f"  LLM Model: Not available")
         print()
@@ -1327,9 +1357,7 @@ class ComprehensiveMetricsEvaluator:
 # --------------------------
 # CTransformers Model Initialization (alias for compatibility)
 # --------------------------
-def initialize_ctransformers_model():
-    """Alias for MLX initialization for compatibility"""
-    return initialize_mlx_mistral_model()
+\
 
 # --------------------------
 # Explain Similarity
@@ -1351,15 +1379,21 @@ def explain_similarity(similarity_score):
 # Example Usage
 # --------------------------
 if __name__ == "__main__":
-    print("DSPy Hybrid Neuro-Symbolic Pipeline with MLX Mistral")
+    print("DSPy Hybrid Neuro-Symbolic Pipeline with Mistral")
     print("=" * 70)
     
     # Initialize the pipeline
-    INDEX_PATH = "path/to/your/faiss_index.index"
-    IDMAP_PATH = "path/to/your/idmap.json"
+    INDEX_PATH = "output/embeddings/faiss_index_20251015_145706.bin"  # Update with your actual path
+    IDMAP_PATH = "output/embeddings/faiss_id_map_20251015_145706.json"  # Update with your actual path
     
-    # Load MLX Mistral model
-    model, tokenizer = initialize_mlx_mistral_model()
+    # Load Mistral model
+    print("🔄 Loading Mistral model...")
+    model, tokenizer = initialize_mistral_transformers()
+    
+    if model is not None:
+        print("✅ Mistral model loaded successfully!")
+    else:
+        print("⚠️ Mistral model not available, using pattern-based fallback only")
     
     # Create pipeline
     pipeline = SmartRetrievalPipeline(INDEX_PATH, IDMAP_PATH, model, tokenizer)
@@ -1368,23 +1402,41 @@ if __name__ == "__main__":
     test_problems = [
         "Two numbers sum to 50 and their difference is 10. What are the numbers?",
         "What is 15 plus 25?",
-        "The perimeter of a rectangular garden, with length L and width W, is 100 feet."
+        "Solve for x: 5.9 = 5.11 + x",
+        "The perimeter of a rectangular garden, with length L and width W, is 100 feet.",
+        "If 7 times a number is 56, what is the number?"
     ]
     
-    for problem in test_problems:
+    for i, problem in enumerate(test_problems, 1):
         print(f"\n{'='*70}")
-        print(f"Problem: {problem}")
+        print(f"Test {i}: {problem}")
         print(f"{'-'*70}")
         
-        result = pipeline(problem, top_k=5)
+        start_time = time.time()
+        result = pipeline(problem, top_k=3)
+        processing_time = time.time() - start_time
         
-        print(f"Result Type: {result.result_type}")
-        if hasattr(result, 'solution'):
-            print(f"Solution: {result.solution}")
-        if hasattr(result, 'equations'):
-            print(f"Equations: {result.equations}")
-        if hasattr(result, 'reasoning'):
-            print(f"Reasoning: {result.reasoning[:200]}...")
+        print(f"⏱ Processing Time: {processing_time:.2f} seconds")
+        print(f"📊 Result Type: {getattr(result, 'result_type', 'unknown')}")
+        
+        if hasattr(result, 'solution') and result.solution:
+            print(f"✅ Solution: {result.solution}")
+        else:
+            print("❌ No solution found")
+            
+        if hasattr(result, 'equations') and result.equations:
+            print(f"📝 Equations: {result.equations}")
+            
+        if hasattr(result, 'reasoning') and result.reasoning:
+            reasoning_preview = result.reasoning[:200] + "..." if len(result.reasoning) > 200 else result.reasoning
+            print(f"🤖 Reasoning: {reasoning_preview}")
+            
+        if hasattr(result, 'results') and result.results:
+            print(f"🔍 Retrieved {len(result.results)} similar problems")
+            for j, res in enumerate(result.results[:2], 1):
+                similarity = res.get('similarity', 0)
+                text = res.get('text', '')[:80] + "..."
+                print(f"   {j}. Similarity: {similarity:.3f} - {text}")
         
     print(f"\n{'='*70}")
-    print("Pipeline execution completed!")
+    print("🎉 Pipeline execution completed!")

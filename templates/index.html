@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcmate - Neuro-Symbolic Math Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: #2d3748;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #4a5568;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #48bb78;
+        }
+
+        .status-dot.offline {
+            background: #f56565;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .messages {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+            background: #f7fafc;
+        }
+
+        .message {
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .message.user .message-content {
+            background: #007bff;
+            color: white;
+            border-bottom-right-radius: 0.25rem;
+        }
+
+        .message.assistant .message-content {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        .input-area {
+            padding: 1.5rem 2rem;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .input-form {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+
+        .input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        .message-input {
+            width: 100%;
+            min-height: 60px;
+            max-height: 120px;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            resize: none;
+            font-family: inherit;
+            font-size: 1rem;
+            line-height: 1.5;
+            background: #f7fafc;
+        }
+
+        .message-input:focus {
+            outline: none;
+            border-color: #007bff;
+            background: white;
+        }
+
+        .send-button {
+            padding: 1rem 2rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .send-button:hover:not(:disabled) {
+            background: #0056b3;
+        }
+
+        .send-button:disabled {
+            background: #a0aec0;
+            cursor: not-allowed;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 1rem 1.5rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #a0aec0;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes typing {
+            0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        .error-message {
+            background: #fed7d7 !important;
+            border-color: #feb2b2 !important;
+            color: #c53030 !important;
+        }
+
+        .details-section {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f7fafc;
+            border-radius: 0.5rem;
+            border-left: 4px solid #007bff;
+        }
+
+        .details-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+
+        .welcome-message {
+            text-align: center;
+            padding: 2rem;
+            color: #4a5568;
+        }
+
+        .welcome-message h2 {
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .example-questions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .example-question {
+            padding: 1rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .example-question:hover {
+            border-color: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .control-button {
+            padding: 0.5rem 1rem;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .control-button:hover {
+            background: #cbd5e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <span>🧮</span>
+                <span>Calcmate</span>
+            </div>
+            <div class="status">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Initializing...</span>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="messages" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to Calcmate! 🧮</h2>
+                    <p>Your neuro-symbolic math assistant. I can help you solve mathematical problems using advanced AI reasoning.</p>
+                    
+                    <div class="example-questions">
+                        <div class="example-question" onclick="insertExample(this)">
+                            Two numbers sum to 50 and their difference is 10. What are the numbers?
+                        </div>
+                        <div class="example-question" onclick="insertExample(this)">
+                            A car travels 120 km in 2 hours. What is its speed?
+                        </div>
+                        <div class="example-question" onclick="insertExample(this)">
+                            If a pizza costs $18 and you order 3 pizzas, what's the total cost?
+                        </div>
+                        <div class="example-question" onclick="insertExample(this)">
+                            A rectangle has length 12 cm and width 8 cm. What is its area?
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form class="input-form" id="chatForm">
+                    <div class="input-wrapper">
+                        <textarea 
+                            class="message-input" 
+                            id="messageInput" 
+                            placeholder="Ask me any mathematical problem..." 
+                            rows="1"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="send-button" id="sendButton" disabled>
+                        Send
+                    </button>
+                </form>
+                <div class="controls">
+                    <button type="button" class="control-button" onclick="clearChat()">Clear Chat</button>
+                    <button type="button" class="control-button" onclick="loadHistory()">Reload History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class CalcmateChat {
+            constructor() {
+                this.messagesContainer = document.getElementById('messagesContainer');
+                this.messageInput = document.getElementById('messageInput');
+                this.sendButton = document.getElementById('sendButton');
+                this.chatForm = document.getElementById('chatForm');
+                this.typingIndicator = document.getElementById('typingIndicator');
+                this.statusDot = document.getElementById('statusDot');
+                this.statusText = document.getElementById('statusText');
+                
+                this.initializeEventListeners();
+                this.checkSystemStatus();
+                this.loadChatHistory();
+            }
+
+            initializeEventListeners() {
+                this.chatForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.sendMessage();
+                });
+
+                this.messageInput.addEventListener('input', () => {
+                    this.adjustTextareaHeight();
+                    this.updateSendButton();
+                });
+
+                this.messageInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        this.sendMessage();
+                    }
+                });
+            }
+
+            adjustTextareaHeight() {
+                this.messageInput.style.height = 'auto';
+                this.messageInput.style.height = Math.min(this.messageInput.scrollHeight, 120) + 'px';
+            }
+
+            updateSendButton() {
+                const hasText = this.messageInput.value.trim().length > 0;
+                this.sendButton.disabled = !hasText;
+            }
+
+            async checkSystemStatus() {
+                try {
+                    const response = await fetch('/api/status');
+                    const status = await response.json();
+                    
+                    if (status.system_ready) {
+                        this.statusDot.className = 'status-dot';
+                        this.statusText.textContent = 'System Ready';
+                    } else {
+                        this.statusDot.className = 'status-dot offline';
+                        this.statusText.textContent = 'System Offline';
+                    }
+                } catch (error) {
+                    console.error('Status check failed:', error);
+                    this.statusDot.className = 'status-dot offline';
+                    this.statusText.textContent = 'Connection Error';
+                }
+            }
+
+            async sendMessage() {
+                const message = this.messageInput.value.trim();
+                if (!message) return;
+
+                // Add user message to chat
+                this.addMessage('user', message);
+                this.messageInput.value = '';
+                this.adjustTextareaHeight();
+                this.updateSendButton();
+                
+                // Show typing indicator
+                this.showTypingIndicator();
+
+                try {
+                    const response = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ message }),
+                    });
+
+                    const data = await response.json();
+                    this.hideTypingIndicator();
+                    
+                    if (data.type === 'error') {
+                        this.addMessage('assistant', data.content, { isError: true });
+                    } else {
+                        this.addMessage('assistant', data.content, {
+                            details: data.details,
+                            processingTime: data.processing_time
+                        });
+                    }
+                } catch (error) {
+                    this.hideTypingIndicator();
+                    this.addMessage('assistant', 'Sorry, I encountered an error. Please try again.', { isError: true });
+                    console.error('Chat error:', error);
+                }
+            }
+
+            addMessage(role, content, options = {}) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${role}`;
+                
+                const messageContent = document.createElement('div');
+                messageContent.className = 'message-content';
+                
+                if (options.isError) {
+                    messageContent.classList.add('error-message');
+                }
+
+                const header = document.createElement('div');
+                header.className = 'message-header';
+                
+                const timestamp = new Date().toLocaleTimeString();
+                header.innerHTML = `
+                    <span>${role === 'user' ? 'You' : 'Calcmate'}</span>
+                    <span>${timestamp}</span>
+                `;
+
+                messageContent.appendChild(header);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.innerHTML = this.formatContent(content);
+                messageContent.appendChild(contentDiv);
+
+                if (options.details || options.processingTime) {
+                    const detailsSection = document.createElement('div');
+                    detailsSection.className = 'details-section';
+                    
+                    let detailsContent = '';
+                    if (options.processingTime) {
+                        detailsContent += `<div><strong>Processing Time:</strong> ${options.processingTime}</div>`;
+                    }
+                    if (options.details?.method) {
+                        detailsContent += `<div><strong>Method:</strong> ${options.details.method}</div>`;
+                    }
+                    if (options.details?.similar_problems_found) {
+                        detailsContent += `<div><strong>Similar Problems Found:</strong> ${options.details.similar_problems_found}</div>`;
+                    }
+                    
+                    detailsSection.innerHTML = detailsContent;
+                    messageContent.appendChild(detailsSection);
+                }
+
+                messageDiv.appendChild(messageContent);
+                this.messagesContainer.appendChild(messageDiv);
+                this.scrollToBottom();
+            }
+
+            formatContent(content) {
+                // Simple markdown-like formatting
+                return content
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\n/g, '<br>');
+            }
+
+            showTypingIndicator() {
+                this.typingIndicator.style.display = 'block';
+                this.scrollToBottom();
+            }
+
+            hideTypingIndicator() {
+                this.typingIndicator.style.display = 'none';
+            }
+
+            scrollToBottom() {
+                this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+            }
+
+            async loadChatHistory() {
+                try {
+                    const response = await fetch('/api/history');
+                    const data = await response.json();
+                    
+                    // Clear welcome message if there's history
+                    if (data.history.length > 0) {
+                        const welcomeMessage = this.messagesContainer.querySelector('.welcome-message');
+                        if (welcomeMessage) {
+                            welcomeMessage.remove();
+                        }
+                    }
+                    
+                    // Add history messages
+                    data.history.forEach(chat => {
+                        this.addMessage('user', chat.user);
+                        this.addMessage('assistant', chat.assistant.content, {
+                            details: chat.assistant.details,
+                            processingTime: chat.assistant.processing_time
+                        });
+                    });
+                } catch (error) {
+                    console.error('Failed to load history:', error);
+                }
+            }
+
+            async clearChat() {
+                try {
+                    await fetch('/api/clear', { method: 'POST' });
+                    this.messagesContainer.innerHTML = `
+                        <div class="welcome-message">
+                            <h2>Welcome to Calcmate! 🧮</h2>
+                            <p>Your neuro-symbolic math assistant. I can help you solve mathematical problems using advanced AI reasoning.</p>
+                            <div class="example-questions">
+                                <div class="example-question" onclick="insertExample(this)">
+                                    Two numbers sum to 50 and their difference is 10. What are the numbers?
+                                </div>
+                                <div class="example-question" onclick="insertExample(this)">
+                                    A car travels 120 km in 2 hours. What is its speed?
+                                </div>
+                                <div class="example-question" onclick="insertExample(this)">
+                                    If a pizza costs $18 and you order 3 pizzas, what's the total cost?
+                                </div>
+                                <div class="example-question" onclick="insertExample(this)">
+                                    A rectangle has length 12 cm and width 8 cm. What is its area?
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } catch (error) {
+                    console.error('Failed to clear chat:', error);
+                }
+            }
+        }
+
+        // Global functions
+        function insertExample(element) {
+            const chat = window.calcmateChat;
+            chat.messageInput.value = element.textContent;
+            chat.adjustTextareaHeight();
+            chat.updateSendButton();
+        }
+
+        function clearChat() {
+            window.calcmateChat.clearChat();
+        }
+
+        function loadHistory() {
+            window.calcmateChat.loadChatHistory();
+        }
+
+        // Initialize chat when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            window.calcmateChat = new CalcmateChat();
+        });
+    </script>
+</body>
+</html>
